@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary": "#b00f69",
+              "surface-variant": "#ffd5b4",
+              "on-primary-fixed": "#1a0700",
+              "tertiary-fixed-dim": "#ff73b0",
+              "surface-container-highest": "#ffd5b4",
+              "primary": "#954400",
+              "on-surface": "#482603",
+              "background": "#fff4ef",
+              "secondary-container": "#dac9ff",
+              "on-tertiary-container": "#640039",
+              "surface-bright": "#fff4ef",
+              "on-secondary-fixed-variant": "#594291",
+              "primary-dim": "#833b00",
+              "inverse-surface": "#1b0a00",
+              "surface-dim": "#ffca9f",
+              "outline-variant": "#d9a274",
+              "on-tertiary": "#ffeff2",
+              "tertiary-dim": "#9d005c",
+              "primary-fixed": "#fb8b3f",
+              "tertiary-container": "#ff8cbb",
+              "on-primary": "#fff0e9",
+              "on-surface-variant": "#7d522b",
+              "on-error-container": "#520c00",
+              "on-error": "#ffefec",
+              "outline": "#9c6d43",
+              "primary-container": "#fb8b3f",
+              "primary-fixed-dim": "#ea7e33",
+              "on-tertiary-fixed-variant": "#740043",
+              "surface-container-low": "#ffeee2",
+              "secondary-dim": "#584190",
+              "secondary-fixed": "#dac9ff",
+              "on-primary-container": "#481e00",
+              "error": "#b02500",
+              "on-tertiary-fixed": "#37001d",
+              "error-dim": "#b92902",
+              "secondary-fixed-dim": "#cdb9ff",
+              "secondary": "#644e9d",
+              "on-secondary-fixed": "#3c2472",
+              "error-container": "#f95630",
+              "surface-container-high": "#ffdcc2",
+              "surface-tint": "#954400",
+              "on-secondary-container": "#503987",
+              "surface-container": "#ffe3cf",
+              "on-background": "#482603",
+              "inverse-primary": "#fb8b3f",
+              "surface-container-lowest": "#ffffff",
+              "surface": "#fff4ef",
+              "on-secondary": "#f8f0ff",
+              "tertiary-fixed": "#ff8cbb",
+              "on-primary-fixed-variant": "#562500",
+              "inverse-on-surface": "#c79265"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #FFF4EF; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-card { background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(20px); }
+        .pulse-gradient { background: linear-gradient(135deg, #954400 0%, #FB8B3F 100%); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="text-on-surface antialiased pb-32">
+<!-- TopAppBar -->
+<header class="w-full top-0 z-50 bg-[#FFF4EF] dark:bg-stone-950 flex items-center justify-between px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#954400] dark:text-[#FB8B3F] cursor-pointer hover:opacity-80 transition-opacity active:scale-95 duration-200">arrow_back</span>
+<h1 class="font-['Plus_Jakarta_Sans'] font-bold tracking-tight text-[#954400] dark:text-[#FB8B3F] text-lg">Order Confirmed</h1>
+</div>
+<img alt="Vibra Logo" class="h-6 w-auto" data-alt="minimalist modern tech brand logo with clean geometric lines in dark brown color" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUeU1Y_vt6cYQoofNubNfZQzOErMKwEh-o5AgGheVRRQY_F_P681ONZP3kYjQmgLnde3nrHsyKsyMArRZzatbeF7zd9_0Bm7M37oDh1aK_NE80PML6U0qHOd7IPsPYl54gx3vrGYa2dCSIWNj1Qz_XJXP4BsE5PFJRcBWjkYbWiAAVfrJn1mc9rKVidpF7jMSY1tmDl081mV0wCGpbN3CiKE1IJ1gVoUiObEqwmRd1JJa0aEb1jZmNetu5HqQQNKT5D-87aMfLfa4"/>
+</header>
+<main class="max-w-2xl mx-auto px-6 pt-8 space-y-12">
+<!-- Success Indicator Section -->
+<section class="flex flex-col items-center text-center space-y-4">
+<div class="w-24 h-24 rounded-full bg-primary-container flex items-center justify-center shadow-[0_12px_40px_rgba(72,38,3,0.15)] mb-2">
+<span class="material-symbols-outlined text-on-primary-fixed text-5xl" style="font-variation-settings: 'wght' 700;">check</span>
+</div>
+<h2 class="text-[3.5rem] leading-[1.1] font-extrabold tracking-tight text-primary">
+                Ingresso<br/>Garantido!
+            </h2>
+<p class="text-on-surface-variant font-medium text-lg">Seu lugar no Neon Dreams Festival está reservado.</p>
+</section>
+<!-- Ticket Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch">
+<!-- Main Event Card -->
+<div class="md:col-span-12 lg:col-span-12 rounded-xl overflow-hidden bg-surface-container-lowest shadow-[0_12px_40px_rgba(72,38,3,0.08)]">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="vibrant music festival at night with neon stage lights, large crowds, and purple and orange atmospheric glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5S0DqW-knJ-kP4xnmvIqQH4bMwTFssQS4XlrY3wUpwGzT2dXhkFcJ6Mf4vb_5RVlFKODbctGRO5GuHvaiEyAysezF7yDIEirf2-JgnivS-myMNDMAnv7z0M_d5y9AhMcuPrIXaEq5YPOmBT3A3VKo3Ks29mp6gncMNHQ_GOgdWU1HjtvYVE2HT5UQvtU8x36MzjC1GESTvCbri51YmMY4gLlFVLD9Wt0vhMSUch_n7XKqOYYmGkrySmxlj9Q0lCh4LAbIVSZJPrc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<span class="bg-primary-container text-on-primary-fixed text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-2 inline-block">Música • Festival</span>
+<h3 class="text-white text-2xl font-bold">Neon Dreams Festival 2024</h3>
+</div>
+</div>
+<div class="p-8 flex flex-col md:flex-row gap-8 items-center">
+<!-- QR Code Section -->
+<div class="flex-shrink-0 p-4 bg-white border-2 border-surface-container-high rounded-xl">
+<img class="w-40 h-40" data-alt="clean digital qr code for event check-in on a white background with rounded corners" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoblVZvf0mQYxdJnMiWofSZvHiYCn5amMaykGFlYMdYhg3zMYvVogZMNGRUSvGTrhy5T6Q-_78Dd5lBJYlGpeK2xg3rE_5NmF9AyWsrziPt795melFINaQod7YsMKFBv2c8SmIlU_SAulXt2VZ9Zdh_3H72FRNA1xRF8MdqZCuP_KSkRPOLfpBYugvvkIaW7Gx8Trnan4v3H7W7I5dhRAYLVt_7mZZCypC9CGfpz5JqKc9nLZ5nbS5JEmMIKqZTsEisr4klWxSICQ"/>
+<p class="text-center text-[10px] font-bold text-on-surface-variant mt-3 uppercase tracking-widest">Apresente no Check-in</p>
+</div>
+<!-- Details Details Details -->
+<div class="flex-grow w-full space-y-6">
+<div class="grid grid-cols-2 gap-y-6">
+<div>
+<p class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest mb-1">Data</p>
+<p class="text-xl font-bold text-primary">24 Ago</p>
+<p class="text-sm text-on-surface-variant">Sábado, 21:00h</p>
+</div>
+<div>
+<p class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest mb-1">Setor</p>
+<p class="text-xl font-bold text-primary">VIP Lounge</p>
+<p class="text-sm text-on-surface-variant">Acesso Exclusivo</p>
+</div>
+<div>
+<p class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest mb-1">Quantidade</p>
+<p class="text-xl font-bold text-primary">1 Ingresso</p>
+</div>
+<div>
+<p class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest mb-1">Local</p>
+<p class="text-xl font-bold text-primary">Arena Vibra</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Social Actions Row -->
+<div class="md:col-span-6">
+<button class="w-full flex items-center justify-between bg-surface-container-low hover:bg-surface-container-high transition-colors p-6 rounded-xl group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined">share</span>
+</div>
+<span class="font-bold text-on-surface">Compartilhar no Story</span>
+</div>
+<span class="material-symbols-outlined text-outline transition-transform group-hover:translate-x-1">chevron_right</span>
+</button>
+</div>
+<div class="md:col-span-6">
+<button class="w-full flex items-center justify-between bg-surface-container-low hover:bg-surface-container-high transition-colors p-6 rounded-xl group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">group_add</span>
+</div>
+<span class="font-bold text-on-surface">Convidar Amigos</span>
+</div>
+<span class="material-symbols-outlined text-outline transition-transform group-hover:translate-x-1">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Primary Actions -->
+<div class="flex flex-col gap-4">
+<button class="pulse-gradient text-white w-full py-5 rounded-full font-bold text-lg shadow-[0_12px_32px_rgba(149,68,0,0.25)] hover:scale-[1.02] active:scale-95 transition-all">
+                Ver Meus Ingressos
+            </button>
+<button class="w-full py-5 rounded-full font-bold text-primary hover:bg-surface-container-low transition-colors">
+                Ir para o Evento
+            </button>
+</div>
+<!-- Pulse Decorator -->
+<div class="flex justify-center pt-8">
+<div class="h-1 w-24 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full w-1/2 pulse-gradient rounded-full"></div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-4 bg-[#FFFFFF]/60 dark:bg-stone-900/60 backdrop-blur-xl z-50 rounded-t-[3rem] shadow-[0_-12px_40px_rgba(72,38,3,0.08)]">
+<a class="flex flex-col items-center justify-center text-[#482603] dark:text-[#FFF4EF] opacity-60 hover:scale-110 transition-transform active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined">explore</span>
+<span class="text-[10px] font-bold uppercase tracking-widest mt-1">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#FB8B3F] text-[#1A0700] rounded-full px-6 py-2 hover:scale-110 transition-transform active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined">confirmation_number</span>
+<span class="text-[10px] font-bold uppercase tracking-widest mt-1">Tickets</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#482603] dark:text-[#FFF4EF] opacity-60 hover:scale-110 transition-transform active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined">bookmark</span>
+<span class="text-[10px] font-bold uppercase tracking-widest mt-1">Saved</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#482603] dark:text-[#FFF4EF] opacity-60 hover:scale-110 transition-transform active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined">person_outline</span>
+<span class="text-[10px] font-bold uppercase tracking-widest mt-1">Profile</span>
+</a>
+</nav>
+</body></html>

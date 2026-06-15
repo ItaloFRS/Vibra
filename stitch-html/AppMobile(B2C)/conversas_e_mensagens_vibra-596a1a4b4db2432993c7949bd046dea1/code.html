@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pulse Events - Matches</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed-dim": "#ff73b0",
+              "surface-dim": "#ffca9f",
+              "background": "#fff4ef",
+              "surface-container-highest": "#ffd5b4",
+              "on-error": "#ffefec",
+              "on-secondary-fixed": "#3c2472",
+              "secondary": "#644e9d",
+              "on-error-container": "#520c00",
+              "surface-container-low": "#ffeee2",
+              "on-primary-container": "#481e00",
+              "outline": "#9c6d43",
+              "surface-tint": "#954400",
+              "surface-variant": "#ffd5b4",
+              "primary-fixed": "#fb8b3f",
+              "surface-container-high": "#ffdcc2",
+              "on-secondary-fixed-variant": "#594291",
+              "secondary-container": "#dac9ff",
+              "surface": "#fff4ef",
+              "on-surface": "#482603",
+              "on-secondary": "#f8f0ff",
+              "surface-bright": "#fff4ef",
+              "primary": "#954400",
+              "tertiary-fixed": "#ff8cbb",
+              "error-dim": "#b92902",
+              "on-secondary-container": "#503987",
+              "primary-fixed-dim": "#ea7e33",
+              "on-tertiary-fixed-variant": "#740043",
+              "error": "#b02500",
+              "primary-dim": "#833b00",
+              "on-background": "#482603",
+              "on-primary-fixed-variant": "#562500",
+              "secondary-dim": "#584190",
+              "on-primary-fixed": "#1a0700",
+              "error-container": "#f95630",
+              "inverse-surface": "#1b0a00",
+              "outline-variant": "#d9a274",
+              "secondary-fixed-dim": "#cdb9ff",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed": "#dac9ff",
+              "on-primary": "#fff0e9",
+              "on-tertiary": "#ffeff2",
+              "tertiary": "#b00f69",
+              "on-tertiary-container": "#640039",
+              "on-tertiary-fixed": "#37001d",
+              "surface-container": "#ffe3cf",
+              "tertiary-container": "#ff8cbb",
+              "on-surface-variant": "#7d522b",
+              "tertiary-dim": "#9d005c",
+              "primary-container": "#fb8b3f",
+              "inverse-on-surface": "#c79265",
+              "inverse-primary": "#fb8b3f"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      body { font-family: 'Plus Jakarta Sans', sans-serif; }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface min-h-screen flex flex-col pb-32">
+<!-- TopAppBar -->
+<header class="bg-[#FFF4EF] text-[#954400] font-['Plus_Jakarta_Sans'] font-bold tracking-tight w-full top-0 flex items-center justify-between px-6 py-4 z-40 sticky">
+<div class="active:scale-95 transition-transform hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined text-2xl">bubble_chart</span>
+</div>
+<h1 class="text-2xl font-black text-[#954400] tracking-tighter">Matches</h1>
+<div class="active:scale-95 transition-transform hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined text-2xl">search</span>
+</div>
+</header>
+<main class="flex-1 px-6 pt-2">
+<!-- New Matches Section -->
+<!-- Messages Section -->
+<section>
+<div class="flex items-center gap-4 mb-8">
+<h2 class="text-2xl font-black tracking-tighter text-on-surface">Recent Messages</h2>
+<div class="h-[2px] flex-1 bg-surface-container-low rounded-full"></div>
+</div>
+<div class="space-y-2">
+<!-- Chat Row 1 (Unread) -->
+<div class="flex items-center gap-4 p-4 rounded-xl bg-surface-container-lowest transition-all hover:bg-surface-container shadow-[0_4px_20px_rgba(72,38,3,0.04)] active:scale-[0.98]">
+<div class="relative shrink-0">
+<img class="w-14 h-14 rounded-full object-cover" data-alt="headshot of Elena smiling broadly in warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtLcV1xn0WRWB4CvMcWeNkRWVtqb4P2WC3F1czpNpqDdkYgsh4e3Xa3_XUU0PCcxcCtlJMHVYwdx8BQbYhJckhvejpZVxRWGPU3fssLfDpNxP9IkrMxEXbC_laOwUkXaoxwK1t9vHgg91De-Zcnq2ENNLVDFgpke5Q4qx6TQBjK8Ch5Xc2ycXy0A2i93-DmY8BrQ8emtPxMCMWdJJy8epWh-fkGja40dNqJATSEnjjLXbxerQMr_iuoxS2i9-N34DBOjH4dZp1r88"/>
+<div class="absolute bottom-0 right-0 w-4 h-4 bg-primary-container border-2 border-surface-container-lowest rounded-full"></div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-baseline mb-0.5">
+<h3 class="text-on-surface font-bold truncate">Elena</h3>
+<span class="text-[10px] font-bold uppercase tracking-tighter text-primary">2 min ago</span>
+</div>
+<p class="text-sm font-medium text-on-surface truncate leading-snug">That rooftop concert sounds incredible! Count me in for sure...</p>
+</div>
+<div class="w-2.5 h-2.5 bg-primary-container rounded-full shrink-0 shadow-sm shadow-primary-container/40"></div>
+</div>
+<!-- Chat Row 2 -->
+<div class="flex items-center gap-4 p-4 rounded-xl hover:bg-surface-container-low transition-all active:scale-[0.98]">
+<div class="shrink-0">
+<img class="w-14 h-14 rounded-full object-cover grayscale-[0.2]" data-alt="portrait of a stylish man leaning against a brick wall in a trendy urban neighborhood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTrl4J731uviYCX9uE0hAWD8RO0VVdb66HOG1gR58xcRsYibhqnf3SGWMtlynfDAkULp5zSbMtEWH-_z3SwVdXn3S09lnFFx6cWIb1LlqCOoxfY7QcuTgHD8nPocyvR43Crbr49LqDe0MCtfbc3Znu3hutgbUM-2dN__MW0Rm1rNNj3Ld8qQl2bF5vkmemnDV_gkKEg0tB3ZIRRzp62Rih2hdQDl1VUVBVLCqe1szvC57pK8M68wm9pjw48Psn8HbY-_2VogQVnOM"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-baseline mb-0.5">
+<h3 class="text-on-surface font-bold truncate">David</h3>
+<span class="text-[10px] font-medium text-on-surface-variant opacity-60">15 min ago</span>
+</div>
+<p class="text-sm font-medium text-on-surface-variant truncate leading-snug">Haha, I know exactly what you mean about the venue.</p>
+</div>
+</div>
+<!-- Chat Row 3 (Unread) -->
+<div class="flex items-center gap-4 p-4 rounded-xl bg-surface-container-lowest transition-all hover:bg-surface-container shadow-[0_4px_20px_rgba(72,38,3,0.04)] active:scale-[0.98]">
+<div class="relative shrink-0">
+<img class="w-14 h-14 rounded-full object-cover" data-alt="portrait of Sophia with a joyful expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8xLM67YlC89jZiNVkb9btVlQjo-MCDZwNFwrSG1f1D4HJLecPRkTmtQ_KzSj0eUoW149vUuY55MEYBifr8Ibxm4GvD07XKzPXTTJnv4RKn3UvyKCW2yk7mgoRUO8Mrb5-NFjj0fM0El_Qr52KI3A32MorREGZ5Luepjk1Ga-gS9UpSHkstI6JoJVgItOrAlUp4YAmwCGauvNMojQbqOgMGpAmNwm95-49NA_wHahgNZzY9530pSp40Egq8ysiSjLiHN9XaXvzL-E"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-baseline mb-0.5">
+<h3 class="text-on-surface font-bold truncate">Sophia</h3>
+<span class="text-[10px] font-bold uppercase tracking-tighter text-primary">45 min ago</span>
+</div>
+<p class="text-sm font-medium text-on-surface truncate leading-snug">Are you going to the gallery opening tomorrow night?</p>
+</div>
+<div class="w-2.5 h-2.5 bg-primary-container rounded-full shrink-0"></div>
+</div>
+<!-- Chat Row 4 -->
+<div class="flex items-center gap-4 p-4 rounded-xl hover:bg-surface-container-low transition-all active:scale-[0.98]">
+<div class="shrink-0">
+<img class="w-14 h-14 rounded-full object-cover opacity-80" data-alt="close up profile of a man with soft lighting on his face" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiPg3O18KAYrQxQ5g2ho4z-3oJ7ewmu34nLEG-KUP7__3uGqvfTqGLVMswiSV8O1fYggHEqoLJtI7ia8_-ZWm7VQc-PsdQ0uGE2CIeCv21yLhQx71YB37MvV2xZKsUA8HIe3bupKBzanPzFQfcVlqYQBT8FSwFIJPwNojnmjYDXt4j3tBEX4-dihg_V6sxB3TpUEvHlacCkwrNOG4flOMU5AP0FfoRIgn7xf5QDfxZoTi1krgkdcZmlvby_trHCi1Yyd-_sx3hBaI"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-baseline mb-0.5">
+<h3 class="text-on-surface font-bold truncate">Marco</h3>
+<span class="text-[10px] font-medium text-on-surface-variant opacity-60">3 hours ago</span>
+</div>
+<p class="text-sm font-medium text-on-surface-variant truncate leading-snug">The mix you sent was fire. Let's collab soon.</p>
+</div>
+</div>
+<!-- Chat Row 5 -->
+<div class="flex items-center gap-4 p-4 rounded-xl hover:bg-surface-container-low transition-all active:scale-[0.98]">
+<div class="shrink-0">
+<img class="w-14 h-14 rounded-full object-cover opacity-80" data-alt="portrait of a young woman with glasses and a thoughtful expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRJ2-ZWKrRh8cZc2t7trCccpZ5Y-PBi1c1qcL1Kn3Usj_gv6n-PcUVJMnsUmEi3bTOSv9aUVDpeG2Qu3uC6h-5YsuFW34CY5GKYo6JJaH56_7yj6Frz3IeCLOCso9ecTZAuUSVLkb3g5tAXCbJ7sAn7czxnHq7kkTBC63ipKEQfSFBqkkbkG4434PNfVTxtOBoMArvjaOhLtnVylgcmZHffo5d2IjSYpABEYzLtTjeprl9z53OZXGb7neWqq8zzTJtJI9IOs81XGg"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-baseline mb-0.5">
+<h3 class="text-on-surface font-bold truncate">Isabella</h3>
+<span class="text-[10px] font-medium text-on-surface-variant opacity-60">Yesterday</span>
+</div>
+<p class="text-sm font-medium text-on-surface-variant truncate leading-snug">Thanks for the recommendation!</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Shell -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-8 pt-4 bg-[#FFFFFF]/60 dark:bg-orange-950/60 backdrop-blur-xl shadow-[0_-12px_40px_rgba(72,38,3,0.08)] rounded-t-[3rem]">
+<!-- Discover Tab -->
+<a class="flex flex-col items-center justify-center text-[#482603] dark:text-orange-100 opacity-50 px-4 py-2 hover:bg-[#FFEE E2] dark:hover:bg-orange-900 rounded-full active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined mb-1">explore</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-bold uppercase tracking-widest">Discover</span>
+</a>
+<!-- Events Tab -->
+<a class="flex flex-col items-center justify-center text-[#482603] dark:text-orange-100 opacity-50 px-4 py-2 hover:bg-[#FFEE E2] dark:hover:bg-orange-900 rounded-full active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined mb-1">event</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-bold uppercase tracking-widest">Events</span>
+</a>
+<!-- Matches Tab (Active) -->
+<a class="flex flex-col items-center justify-center bg-[#FB8B3F] text-[#1A0700] rounded-full px-6 py-2 transition-all duration-300 scale-105 active:scale-90" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-bold uppercase tracking-widest">Matches</span>
+</a>
+<!-- Profile Tab -->
+<a class="flex flex-col items-center justify-center text-[#482603] dark:text-orange-100 opacity-50 px-4 py-2 hover:bg-[#FFEE E2] dark:hover:bg-orange-900 rounded-full active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined mb-1">person</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-bold uppercase tracking-widest">Profile</span>
+</a>
+</nav>
+</body></html>

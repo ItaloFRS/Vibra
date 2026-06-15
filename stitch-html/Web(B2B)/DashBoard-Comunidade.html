@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-on-surface": "#c79265",
+                        "primary": "#954400",
+                        "on-primary": "#fff0e9",
+                        "primary-container": "#fb8b3f",
+                        "secondary-container": "#dac9ff",
+                        "error-dim": "#b92902",
+                        "on-surface": "#482603",
+                        "surface-container-highest": "#ffd5b4",
+                        "inverse-surface": "#1b0a00",
+                        "on-primary-fixed": "#1a0700",
+                        "on-primary-container": "#481e00",
+                        "primary-dim": "#833b00",
+                        "secondary": "#644e9d",
+                        "surface-bright": "#fff4ef",
+                        "outline-variant": "#d9a274",
+                        "tertiary-fixed": "#ff8cbb",
+                        "error-container": "#f95630",
+                        "inverse-primary": "#fb8b3f",
+                        "surface-container": "#ffe3cf",
+                        "on-tertiary-fixed": "#37001d",
+                        "secondary-dim": "#584190",
+                        "tertiary-dim": "#9d005c",
+                        "surface": "#fff4ef",
+                        "surface-container-high": "#ffdcc2",
+                        "on-primary-fixed-variant": "#562500",
+                        "surface-tint": "#954400",
+                        "on-error": "#ffefec",
+                        "secondary-fixed-dim": "#cdb9ff",
+                        "on-tertiary": "#ffeff2",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-dim": "#ffca9f",
+                        "on-secondary-fixed-variant": "#594291",
+                        "outline": "#9c6d43",
+                        "tertiary": "#b00f69",
+                        "secondary-fixed": "#dac9ff",
+                        "on-surface-variant": "#7d522b",
+                        "on-secondary": "#f8f0ff",
+                        "surface-variant": "#ffd5b4",
+                        "on-secondary-container": "#503987",
+                        "tertiary-fixed-dim": "#ff73b0",
+                        "surface-container-low": "#ffeee2",
+                        "on-tertiary-container": "#640039",
+                        "on-background": "#482603",
+                        "background": "#fff4ef",
+                        "tertiary-container": "#ff8cbb",
+                        "primary-fixed": "#fb8b3f",
+                        "primary-fixed-dim": "#ea7e33",
+                        "error": "#b02500",
+                        "on-tertiary-fixed-variant": "#740043",
+                        "on-error-container": "#520c00",
+                        "on-secondary-fixed": "#3c2472"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #0c0a09; /* Overriding for Dark Mode theme requested */
+            color: #fff4ef;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(28, 25, 23, 0.6);
+            backdrop-filter: blur(20px);
+        }
+        .pulse-gradient {
+            background: linear-gradient(135deg, #954400 0%, #fb8b3f 100%);
+        }
+    </style>
+</head>
+<body class="antialiased">
+<!-- SideNavBar (from JSON) -->
+<aside class="h-screen w-64 fixed left-0 top-0 bg-stone-950 border-r border-stone-800/50 shadow-2xl shadow-orange-900/10 flex flex-col p-6 z-50">
+<div class="mb-10">
+<h1 class="text-2xl font-black tracking-tighter text-orange-500">Pulse Premium</h1>
+<p class="text-stone-500 text-xs font-medium tracking-widest mt-1 uppercase">Event Producer</p>
+</div>
+<nav class="flex-1 space-y-2">
+<!-- Dashboard (Active) -->
+<a class="flex items-center gap-3 px-4 py-3 text-orange-500 font-bold bg-stone-900/50 rounded-full border-l-4 border-orange-600 transition-all duration-300 scale-[0.98] active:scale-95" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-['Plus_Jakarta_Sans'] text-sm tracking-tight">Dashboard</span>
+</a>
+<!-- Events -->
+<a class="flex items-center gap-3 px-4 py-3 text-stone-400 font-medium hover:text-stone-200 hover:bg-stone-900/30 transition-all duration-300 scale-[0.98] active:scale-95" href="#">
+<span class="material-symbols-outlined">event</span>
+<span class="font-['Plus_Jakarta_Sans'] text-sm tracking-tight">Events</span>
+</a>
+<!-- Finance -->
+<a class="flex items-center gap-3 px-4 py-3 text-stone-400 font-medium hover:text-stone-200 hover:bg-stone-900/30 transition-all duration-300 scale-[0.98] active:scale-95" href="#">
+<span class="material-symbols-outlined">payments</span>
+<span class="font-['Plus_Jakarta_Sans'] text-sm tracking-tight">Finance</span>
+</a>
+<!-- Communities (Active Contextual Match for this Page) -->
+<a class="flex items-center gap-3 px-4 py-3 text-stone-400 font-medium hover:text-stone-200 hover:bg-stone-900/30 transition-all duration-300 scale-[0.98] active:scale-95" href="#">
+<span class="material-symbols-outlined">groups</span>
+<span class="font-['Plus_Jakarta_Sans'] text-sm tracking-tight">Communities</span>
+</a>
+<!-- Settings -->
+<a class="flex items-center gap-3 px-4 py-3 text-stone-400 font-medium hover:text-stone-200 hover:bg-stone-900/30 transition-all duration-300 scale-[0.98] active:scale-95" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-['Plus_Jakarta_Sans'] text-sm tracking-tight">Settings</span>
+</a>
+</nav>
+<div class="mt-auto pt-6 border-t border-stone-800/50 flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-stone-800 overflow-hidden">
+<img alt="Producer Profile" class="w-full h-full object-cover" data-alt="portrait of a professional male event producer in a stylish dark studio setting with warm accent lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAArtzAuPZCiypSSpILTy32whTcmtuGqCp26_fEQfF-elFdbUkbN3gJvu1OokqIRHkHsGUK8SshBG-u-egLVqeX8-eF4xSbh5AeY8rkjkuPvBqxtLHHBAMENh-FODycW1j2uMk8wAZMRZ9xDbk5Y7GovGv0apql9lZPoctvLkOGr_fPyraYEXtuu_o1RkWIEKfAJ71u0buyTdHgRH_0s-KryC2ggQ8bM5KOETECbsdfhT8cBM5KMBxVVye2lveotfypM8AZGGrFZEQ"/>
+</div>
+<div>
+<p class="text-sm font-bold text-stone-200">Alex Rivers</p>
+<p class="text-xs text-stone-500">Sr. Manager</p>
+</div>
+</div>
+</aside>
+<!-- TopNavBar (from JSON) -->
+<header class="fixed top-0 right-0 left-64 h-20 bg-stone-950/80 backdrop-blur-xl border-b border-stone-800/30 flex items-center justify-between px-8 w-full z-40">
+<div class="flex items-center gap-6 flex-1">
+<span class="text-xl font-bold text-stone-100 font-['Plus_Jakarta_Sans']">Management Pulse</span>
+<div class="relative w-96">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-stone-500 text-sm">search</span>
+<input class="w-full bg-stone-900 border-none rounded-full py-2 pl-10 pr-4 text-sm text-stone-300 focus:ring-1 focus:ring-orange-500 transition-all" placeholder="Search communities..." type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="flex gap-4">
+<button class="text-stone-400 hover:text-orange-400 transition-colors opacity-80 hover:opacity-100">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="text-stone-400 hover:text-orange-400 transition-colors opacity-80 hover:opacity-100">
+<span class="material-symbols-outlined">help</span>
+</button>
+</div>
+<div class="w-8 h-8 rounded-full bg-orange-500/10 flex items-center justify-center border border-orange-500/20">
+<span class="material-symbols-outlined text-orange-500 text-lg" style="font-variation-settings: 'FILL' 1;">account_circle</span>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="ml-64 mt-20 p-8 min-h-screen bg-stone-950 text-stone-100">
+<!-- Header Section -->
+<div class="mb-12">
+<h2 class="text-6xl font-extrabold tracking-tighter text-stone-50 leading-none mb-4">Dashboard de Comunidades</h2>
+<p class="text-lg text-stone-400 max-w-2xl font-light">The pulse of your audience. Monitor real-time engagement and manage the collective energy of your events.</p>
+</div>
+<!-- Metric Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+<div class="bg-stone-900/40 p-8 rounded-xl border border-stone-800/30 hover:border-orange-500/20 transition-all group">
+<p class="text-stone-500 text-sm font-semibold uppercase tracking-widest mb-4">Total Members</p>
+<div class="flex items-end gap-3">
+<span class="text-4xl font-bold">142.5k</span>
+<span class="text-orange-500 text-sm font-bold mb-1">+12%</span>
+</div>
+<div class="mt-4 h-1 w-full bg-stone-800 rounded-full overflow-hidden">
+<div class="h-full pulse-gradient w-3/4"></div>
+</div>
+</div>
+<div class="bg-stone-900/40 p-8 rounded-xl border border-stone-800/30 hover:border-orange-500/20 transition-all group">
+<p class="text-stone-500 text-sm font-semibold uppercase tracking-widest mb-4">Active Channels</p>
+<div class="flex items-end gap-3">
+<span class="text-4xl font-bold">84</span>
+<span class="text-stone-400 text-sm font-bold mb-1">Global</span>
+</div>
+<div class="mt-4 h-1 w-full bg-stone-800 rounded-full overflow-hidden">
+<div class="h-full bg-stone-600 w-1/2"></div>
+</div>
+</div>
+<div class="bg-stone-900/40 p-8 rounded-xl border border-stone-800/30 hover:border-orange-500/20 transition-all group">
+<p class="text-stone-500 text-sm font-semibold uppercase tracking-widest mb-4">Daily Messages</p>
+<div class="flex items-end gap-3">
+<span class="text-4xl font-bold">28.4k</span>
+<span class="text-orange-500 text-sm font-bold mb-1">Peak</span>
+</div>
+<div class="mt-4 h-1 w-full bg-stone-800 rounded-full overflow-hidden">
+<div class="h-full pulse-gradient w-5/6"></div>
+</div>
+</div>
+<div class="bg-stone-900/40 p-8 rounded-xl border border-stone-800/30 hover:border-orange-500/20 transition-all group">
+<p class="text-stone-500 text-sm font-semibold uppercase tracking-widest mb-4">Engagement Rate</p>
+<div class="flex items-end gap-3">
+<span class="text-4xl font-bold">72%</span>
+<span class="text-orange-500 text-sm font-bold mb-1">Optimized</span>
+</div>
+<div class="mt-4 h-1 w-full bg-stone-800 rounded-full overflow-hidden">
+<div class="h-full pulse-gradient w-[72%]"></div>
+</div>
+</div>
+</div>
+<!-- Bento Grid Section -->
+<div class="grid grid-cols-12 gap-8 mb-12">
+<!-- Engagement Chart (Large Area) -->
+<div class="col-span-12 lg:col-span-8 bg-stone-900/30 p-8 rounded-xl border border-stone-800/20">
+<div class="flex justify-between items-center mb-10">
+<div>
+<h3 class="text-2xl font-bold mb-1">Social Activity</h3>
+<p class="text-stone-500 text-sm">Messages &amp; Likes over the last 30 days</p>
+</div>
+<div class="flex gap-2">
+<button class="px-4 py-2 bg-stone-800 text-xs font-bold rounded-full text-stone-300">Month</button>
+<button class="px-4 py-2 bg-stone-950 text-xs font-bold rounded-full text-stone-500">Week</button>
+</div>
+</div>
+<!-- Visual Mockup of a chart -->
+<div class="h-64 relative flex items-end gap-2 px-4">
+<div class="flex-1 bg-stone-800/40 rounded-t-lg h-[40%] transition-all hover:h-[50%] hover:bg-orange-500/40 group relative">
+<span class="absolute -top-8 left-1/2 -translate-x-1/2 text-[10px] text-orange-500 font-bold opacity-0 group-hover:opacity-100">12k</span>
+</div>
+<div class="flex-1 bg-stone-800/40 rounded-t-lg h-[60%] transition-all hover:h-[70%] hover:bg-orange-500/40 group relative"></div>
+<div class="flex-1 bg-stone-800/40 rounded-t-lg h-[30%] transition-all hover:h-[40%] hover:bg-orange-500/40 group relative"></div>
+<div class="flex-1 bg-stone-800/40 rounded-t-lg h-[80%] transition-all hover:h-[90%] hover:bg-orange-500/40 group relative"></div>
+<div class="flex-1 bg-orange-600/80 rounded-t-lg h-[95%] transition-all hover:h-full hover:bg-orange-500 group relative">
+<span class="absolute -top-8 left-1/2 -translate-x-1/2 text-[10px] text-orange-500 font-bold">28.4k</span>
+</div>
+<div class="flex-1 bg-stone-800/40 rounded-t-lg h-[50%] transition-all hover:h-[60%] hover:bg-orange-500/40 group relative"></div>
+<div class="flex-1 bg-stone-800/40 rounded-t-lg h-[45%] transition-all hover:h-[55%] hover:bg-orange-500/40 group relative"></div>
+<div class="flex-1 bg-stone-800/40 rounded-t-lg h-[70%] transition-all hover:h-[80%] hover:bg-orange-500/40 group relative"></div>
+<div class="flex-1 bg-stone-800/40 rounded-t-lg h-[85%] transition-all hover:h-[95%] hover:bg-orange-500/40 group relative"></div>
+<div class="flex-1 bg-stone-800/40 rounded-t-lg h-[40%] transition-all hover:h-[50%] hover:bg-orange-500/40 group relative"></div>
+<div class="flex-1 bg-stone-800/40 rounded-t-lg h-[60%] transition-all hover:h-[70%] hover:bg-orange-500/40 group relative"></div>
+<div class="flex-1 bg-stone-800/40 rounded-t-lg h-[30%] transition-all hover:h-[40%] hover:bg-orange-500/40 group relative"></div>
+</div>
+<div class="flex justify-between mt-4 px-4 text-[10px] text-stone-600 font-bold uppercase tracking-tighter">
+<span>Week 1</span>
+<span>Week 2</span>
+<span>Week 3</span>
+<span>Week 4</span>
+</div>
+</div>
+<!-- Popular Topics (Cloud/List) -->
+<div class="col-span-12 lg:col-span-4 bg-orange-600/10 p-8 rounded-xl border border-orange-900/20 flex flex-col">
+<h3 class="text-2xl font-bold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-orange-500">trending_up</span>
+                    Popular Topics
+                </h3>
+<div class="flex flex-wrap gap-3">
+<span class="px-6 py-3 bg-stone-950 rounded-full text-stone-200 text-sm font-bold border border-stone-800 hover:border-orange-500/50 transition-all cursor-default">#Transporte</span>
+<span class="px-6 py-3 bg-orange-500 text-on-primary-fixed rounded-full text-sm font-black shadow-lg shadow-orange-900/20">#Ingressos VIP</span>
+<span class="px-6 py-3 bg-stone-950 rounded-full text-stone-200 text-sm font-bold border border-stone-800">#Lineup</span>
+<span class="px-6 py-3 bg-stone-950 rounded-full text-stone-200 text-sm font-bold border border-stone-800">#Camping</span>
+<span class="px-6 py-3 bg-stone-950 rounded-full text-stone-200 text-sm font-bold border border-stone-800">#FoodCourt</span>
+<span class="px-6 py-3 bg-stone-950 rounded-full text-stone-200 text-sm font-bold border border-stone-800">#AfterParty</span>
+<span class="px-6 py-3 bg-stone-950 rounded-full text-stone-200 text-sm font-bold border border-stone-800">#EcoSustainability</span>
+</div>
+<div class="mt-auto pt-8">
+<div class="p-4 rounded-xl bg-orange-500/20 border border-orange-500/30">
+<p class="text-xs font-bold text-orange-300 uppercase tracking-widest mb-1">Hot Alert</p>
+<p class="text-sm text-stone-200 leading-tight">Interest in "VIP Lounge" spiked by 42% in the last 2 hours.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Sections -->
+<div class="grid grid-cols-12 gap-8">
+<!-- Active Communities List -->
+<div class="col-span-12 lg:col-span-8">
+<h3 class="text-2xl font-bold mb-6">Active Communities</h3>
+<div class="bg-stone-900/20 rounded-xl overflow-hidden border border-stone-800/30">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-stone-900/50 text-stone-500 text-xs font-bold uppercase tracking-widest">
+<th class="px-6 py-4">Evento</th>
+<th class="px-6 py-4">Membros</th>
+<th class="px-6 py-4">Mensagens Hoje</th>
+<th class="px-6 py-4 text-right">Sentimento</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-stone-800/50">
+<tr class="hover:bg-stone-800/20 transition-colors">
+<td class="px-6 py-5">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-stone-800 overflow-hidden">
+<img alt="Summer Fest" class="w-full h-full object-cover" data-alt="vibrant outdoor music festival stage with colorful lights and a cheering crowd at night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJa2btcCG5Nb22KSnfl2ybkaiZHRHIG2O9hJzN8QNYRqhjG3CrmO9iuJGJdpeLXmrH6xrDE-SJ8jQSLBmyq8PwBdvouqt8EHKIncg9T7RT3896osQCPH3JGqorQbYN0rZ99Sc4FhvW0EcA9D2spWZJGc7CnI76EhOnDT8Samth1QmayIPMJw_KNji2cBT1z_EibZPpfcrAep1MZbwImJMFksQyxH1unvgpz7VggpjD_uh_vPpvsrvAYOSF-whjp4bU1hKef2Rcg4c"/>
+</div>
+<div>
+<p class="font-bold">Summer Fest 2024</p>
+<p class="text-xs text-stone-500">Main Stage Community</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-5 font-medium text-stone-300">42,800</td>
+<td class="px-6 py-5 font-medium text-stone-300">8,420</td>
+<td class="px-6 py-5 text-right">
+<span class="px-3 py-1 bg-green-500/10 text-green-400 text-xs font-bold rounded-full">Positive</span>
+</td>
+</tr>
+<tr class="hover:bg-stone-800/20 transition-colors">
+<td class="px-6 py-5">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-stone-800 overflow-hidden">
+<img alt="Tech Summit" class="w-full h-full object-cover" data-alt="professional conference hall with futuristic blue lighting and speakers on a large stage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPM6ElgDC0_VUQbIG5rsgk8Os8sKkiaVXcDmBIRM7JT_3TzORylYOEYcx4oTW4BD5SImalwtPDz_EYyVoUzd7XbJo3DJlXi6ptI4uV_rW5zBxQ0bOd1A-LXfiMYU3asJnka8KTbIxzWQBoO0dEwi7icsZxSFGXxRK8LSGrwosICirNwXaER7YbqeUHOZNAu5DMl9ciYmj2Hrn_yXH1zh2DlCPLAdkiu8QuJOdNcw3iYV8ybJoVQbIDdejvn2Z965FQbktfYci5xI0"/>
+</div>
+<div>
+<p class="font-bold">Global Tech Summit</p>
+<p class="text-xs text-stone-500">Exhibitors Lounge</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-5 font-medium text-stone-300">12,150</td>
+<td class="px-6 py-5 font-medium text-stone-300">3,110</td>
+<td class="px-6 py-5 text-right">
+<span class="px-3 py-1 bg-stone-700/50 text-stone-400 text-xs font-bold rounded-full">Neutral</span>
+</td>
+</tr>
+<tr class="hover:bg-stone-800/20 transition-colors">
+<td class="px-6 py-5">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-stone-800 overflow-hidden">
+<img alt="Neon Night" class="w-full h-full object-cover" data-alt="abstract neon lights in a dark club setting with silhouettes of people dancing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6m9uo4APdMCZh5_i71KA6uqYUAfKW0QkjKe_9-lzNKdE6MXcRX0abTGnT9y5iFppO-r9YuQjpgcA3m1G5hC02D41dGXUoD6NGOFn5rVB6BfsoqDceiO2vgz1BcSchrN_a-Zg5TLVhVX8xiRYAEk7I_P4gCn0CIWDBGIkvywBMVUCt2AdOwVrMRHIUal1MANfnawxLsvIytoKUdK2xjJ84dh6IfgRDqryjX47iNZl_JByWMvhd4T_yNfiAKqnpRBMYF7iH7BIkXmg"/>
+</div>
+<div>
+<p class="font-bold">Neon Night Experience</p>
+<p class="text-xs text-stone-500">VIP Underground</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-5 font-medium text-stone-300">8,900</td>
+<td class="px-6 py-5 font-medium text-stone-300">4,500</td>
+<td class="px-6 py-5 text-right">
+<span class="px-3 py-1 bg-green-500/10 text-green-400 text-xs font-bold rounded-full">Positive</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Recent Moderator Actions -->
+<div class="col-span-12 lg:col-span-4">
+<h3 class="text-2xl font-bold mb-6">Moderation Log</h3>
+<div class="space-y-4">
+<div class="p-4 bg-stone-900/40 rounded-xl border-l-4 border-orange-600 flex items-start gap-4">
+<span class="material-symbols-outlined text-orange-500 mt-1">shield_person</span>
+<div>
+<p class="text-sm font-bold">New Moderator Added</p>
+<p class="text-xs text-stone-500 mb-1">July 24, 14:20</p>
+<p class="text-xs text-stone-400">Marcos S. assigned to "Summer Fest" VIP channel.</p>
+</div>
+</div>
+<div class="p-4 bg-stone-900/40 rounded-xl border-l-4 border-stone-700 flex items-start gap-4">
+<span class="material-symbols-outlined text-stone-500 mt-1">block</span>
+<div>
+<p class="text-sm font-bold">Spam Filter Triggered</p>
+<p class="text-xs text-stone-500 mb-1">July 24, 13:05</p>
+<p class="text-xs text-stone-400">14 messages blocked in Global Chat (Keyword: Promo).</p>
+</div>
+</div>
+<div class="p-4 bg-stone-900/40 rounded-xl border-l-4 border-stone-700 flex items-start gap-4">
+<span class="material-symbols-outlined text-stone-500 mt-1">update</span>
+<div>
+<p class="text-sm font-bold">Pinned Message Updated</p>
+<p class="text-xs text-stone-500 mb-1">July 24, 09:15</p>
+<p class="text-xs text-stone-400">Updated "Safety Guidelines" in Tech Summit Lounge.</p>
+</div>
+</div>
+<div class="p-4 bg-stone-900/40 rounded-xl border-l-4 border-orange-600 flex items-start gap-4">
+<span class="material-symbols-outlined text-orange-500 mt-1">campaign</span>
+<div>
+<p class="text-sm font-bold">Global Broadcast Sent</p>
+<p class="text-xs text-stone-500 mb-1">July 23, 22:00</p>
+<p class="text-xs text-stone-400">Final call for Early Bird tickets announced across all hubs.</p>
+</div>
+</div>
+</div>
+<button class="w-full mt-6 py-4 bg-stone-800/50 hover:bg-stone-800 text-stone-400 text-xs font-bold rounded-xl transition-all uppercase tracking-widest">
+                    View Full Audit Log
+                </button>
+</div>
+</div>
+<!-- Floating Action Button (FAB) -->
+<button class="fixed bottom-10 right-10 w-16 h-16 rounded-full pulse-gradient shadow-2xl shadow-orange-900/40 flex items-center justify-center text-on-primary-fixed group transition-transform active:scale-95">
+<span class="material-symbols-outlined text-3xl font-bold" style="font-variation-settings: 'wght' 700;">add</span>
+<div class="absolute right-20 bg-stone-900 px-4 py-2 rounded-lg text-xs font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity border border-stone-800">
+                Create Community
+            </div>
+</button>
+</main>
+</body></html>

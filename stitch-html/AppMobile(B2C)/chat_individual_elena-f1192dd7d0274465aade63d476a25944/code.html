@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Chat with Elena</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-fixed-variant": "#594291",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary": "#f8f0ff",
+              "tertiary-container": "#ff8cbb",
+              "secondary": "#644e9d",
+              "inverse-primary": "#fb8b3f",
+              "surface": "#fff4ef",
+              "on-secondary-fixed": "#3c2472",
+              "on-error-container": "#520c00",
+              "background": "#fff4ef",
+              "outline": "#9c6d43",
+              "surface-container-highest": "#ffd5b4",
+              "secondary-fixed-dim": "#cdb9ff",
+              "secondary-dim": "#584190",
+              "on-tertiary-fixed-variant": "#740043",
+              "tertiary-dim": "#9d005c",
+              "on-tertiary-container": "#640039",
+              "error-dim": "#b92902",
+              "primary-dim": "#833b00",
+              "on-primary-fixed": "#1a0700",
+              "error": "#b02500",
+              "secondary-fixed": "#dac9ff",
+              "primary-fixed": "#fb8b3f",
+              "error-container": "#f95630",
+              "secondary-container": "#dac9ff",
+              "on-error": "#ffefec",
+              "tertiary": "#b00f69",
+              "surface-bright": "#fff4ef",
+              "on-background": "#482603",
+              "surface-dim": "#ffca9f",
+              "on-tertiary-fixed": "#37001d",
+              "on-primary-fixed-variant": "#562500",
+              "primary-fixed-dim": "#ea7e33",
+              "outline-variant": "#d9a274",
+              "surface-variant": "#ffd5b4",
+              "surface-container-low": "#ffeee2",
+              "surface-tint": "#954400",
+              "on-surface-variant": "#7d522b",
+              "on-surface": "#482603",
+              "inverse-on-surface": "#c79265",
+              "primary-container": "#fb8b3f",
+              "on-primary": "#fff0e9",
+              "on-tertiary": "#ffeff2",
+              "surface-container": "#ffe3cf",
+              "tertiary-fixed-dim": "#ff73b0",
+              "on-secondary-container": "#503987",
+              "surface-container-high": "#ffdcc2",
+              "inverse-surface": "#1b0a00",
+              "tertiary-fixed": "#ff8cbb",
+              "primary": "#954400",
+              "on-primary-container": "#481e00"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .chat-gradient {
+            background: linear-gradient(135deg, #954400 0%, #FB8B3F 100%);
+        }
+        /* Custom scrollbar for editorial feel */
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #D9A274; border-radius: 10px; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen flex flex-col overflow-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex items-center justify-between px-6 py-4 bg-[#FFF4EF] dark:bg-stone-950">
+<div class="flex items-center gap-4">
+<button class="active:scale-95 transition-transform text-[#954400] dark:text-[#FB8B3F]">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<div class="flex items-center gap-3">
+<div class="relative">
+<img class="w-12 h-12 rounded-full object-cover ring-2 ring-primary-container/20" data-alt="close-up portrait of a stylish young woman with a warm smile and soft editorial lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSh_XuDaYcDMOyA5disCfk5fq58zBEyjmQ3FjW70BHxOoXZ8o5vL_qXroz86A3bNsIk6tG3ezg_ANXNXeRmiE-eF44wO4Yz5a5ryQWC25hXsIxtMVdpnY_KG-VTwkL01DZeBgkZpF9v3_mPtGS9pw44ADEFzfoQoQLTi7AQ0tp018omsJEe788c9mjvxzLsZLriXl6VPRVlHTH9BT9wwg2UDonaQ1inE34-7XvDiRWxTcxm9LJi3dmsqsgF9K4yvnYBsa_JFYwvj4"/>
+<span class="absolute bottom-0 right-0 w-3 h-3 bg-emerald-500 border-2 border-surface rounded-full"></span>
+</div>
+<div>
+<h1 class="font-headline text-lg font-bold tracking-tight text-[#954400] leading-none">Elena</h1>
+<p class="text-[10px] font-bold uppercase tracking-widest text-[#482603]/60 dark:text-stone-400 mt-1">Online</p>
+</div>
+</div>
+</div>
+<button class="active:scale-95 transition-transform text-[#954400] dark:text-[#FB8B3F]">
+<span class="material-symbols-outlined" data-icon="more_vert">more_vert</span>
+</button>
+</header>
+<!-- Chat Canvas -->
+<main class="flex-1 mt-20 mb-28 overflow-y-auto px-6 space-y-8 flex flex-col">
+<!-- Date Marker -->
+<div class="flex justify-center my-4">
+<span class="px-4 py-1.5 bg-surface-container-low text-on-surface-variant text-[10px] font-bold uppercase tracking-widest rounded-full">Today</span>
+</div>
+<!-- Elena Message -->
+<div class="flex flex-col items-start max-w-[85%] self-start animate-fade-in">
+<div class="bg-surface-container-lowest text-on-surface px-6 py-4 rounded-xl rounded-tl-none shadow-[0_4px_20px_rgba(72,38,3,0.04)]">
+<p class="text-[15px] leading-relaxed">Aquele show no rooftop parece incrível!</p>
+</div>
+<span class="text-[10px] text-on-surface-variant font-medium mt-2 ml-1">14:02</span>
+</div>
+<!-- User Message -->
+<div class="flex flex-col items-end max-w-[85%] self-end">
+<div class="chat-gradient text-white px-6 py-4 rounded-xl rounded-tr-none shadow-[0_12px_30px_rgba(149,68,0,0.15)]">
+<p class="text-[15px] leading-relaxed font-medium">Com certeza! Já garanti meu ingresso, você vai?</p>
+</div>
+<div class="flex items-center gap-1 mt-2 mr-1">
+<span class="text-[10px] text-on-surface-variant font-medium">14:05</span>
+<span class="material-symbols-outlined text-[14px] text-primary" data-icon="done_all">done_all</span>
+</div>
+</div>
+<!-- Elena Message -->
+<div class="flex flex-col items-start max-w-[85%] self-start">
+<div class="bg-surface-container-lowest text-on-surface px-6 py-4 rounded-xl rounded-tl-none shadow-[0_4px_20px_rgba(72,38,3,0.04)]">
+<p class="text-[15px] leading-relaxed">Vou sim! Acabei de pegar o meu pelo Vibra.</p>
+</div>
+<span class="text-[10px] text-on-surface-variant font-medium mt-2 ml-1">14:06</span>
+</div>
+<!-- Typing Indicator (Subtle Editorial Detail) -->
+<div class="flex items-center gap-2 px-2 opacity-60">
+<div class="flex gap-1">
+<span class="w-1.5 h-1.5 bg-primary rounded-full animate-bounce"></span>
+<span class="w-1.5 h-1.5 bg-primary rounded-full animate-bounce [animation-delay:0.2s]"></span>
+<span class="w-1.5 h-1.5 bg-primary rounded-full animate-bounce [animation-delay:0.4s]"></span>
+</div>
+<span class="text-[10px] font-bold uppercase tracking-widest text-primary">Elena está digitando</span>
+</div>
+</main>
+<!-- Floating Input Bar -->
+<div class="fixed bottom-0 left-0 w-full px-4 pb-8 pt-4 bg-gradient-to-t from-background via-background to-transparent pointer-events-none">
+<div class="max-w-screen-md mx-auto flex items-center gap-3 bg-surface-container-lowest/80 backdrop-blur-xl p-2 pl-4 rounded-full shadow-[0_12px_40px_rgba(72,38,3,0.08)] border border-white/20 pointer-events-auto">
+<button class="p-2 text-primary active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="add_circle">add_circle</span>
+</button>
+<input class="flex-1 bg-transparent border-none focus:ring-0 text-on-surface placeholder:text-on-surface-variant/50 font-medium py-3" placeholder="Escreva sua mensagem..." type="text"/>
+<div class="flex items-center gap-1 pr-1">
+<button class="p-2 text-on-surface-variant active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="mood">mood</span>
+</button>
+<button class="bg-primary-container text-on-primary-fixed w-12 h-12 rounded-full flex items-center justify-center active:scale-95 transition-transform shadow-lg shadow-primary-container/20">
+<span class="material-symbols-outlined font-variation-settings: 'FILL' 1" data-icon="send" style="font-variation-settings: 'FILL' 1;">send</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Background Decoration (Asymmetric Editorial Pulse) -->
+<div class="fixed top-1/4 -right-24 w-64 h-64 bg-primary-container/5 rounded-full blur-[100px] -z-10"></div>
+<div class="fixed bottom-1/3 -left-24 w-48 h-48 bg-secondary-container/10 rounded-full blur-[80px] -z-10"></div>
+</body></html>

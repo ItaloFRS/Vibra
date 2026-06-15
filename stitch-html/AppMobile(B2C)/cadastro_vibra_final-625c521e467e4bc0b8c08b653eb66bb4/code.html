@@ -1,0 +1,184 @@
+<!DOCTYPE html><html class="light" lang="pt-BR"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Vibra - Cadastrar</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed-dim": "#ff73b0",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary": "#f8f0ff",
+              "secondary-fixed": "#dac9ff",
+              "on-primary": "#fff0e9",
+              "on-surface": "#482603",
+              "on-tertiary-fixed": "#37001d",
+              "inverse-on-surface": "#c79265",
+              "on-primary-fixed": "#1a0700",
+              "on-background": "#482603",
+              "secondary-container": "#dac9ff",
+              "surface": "#fff4ef",
+              "secondary-fixed-dim": "#cdb9ff",
+              "outline-variant": "#d9a274",
+              "on-secondary-container": "#503987",
+              "surface-container": "#ffe3cf",
+              "primary": "#954400",
+              "tertiary-container": "#ff8cbb",
+              "outline": "#9c6d43",
+              "surface-container-highest": "#ffd5b4",
+              "error": "#b02500",
+              "on-secondary-fixed": "#3c2472",
+              "inverse-primary": "#fb8b3f",
+              "on-tertiary": "#ffeff2",
+              "on-primary-fixed-variant": "#562500",
+              "primary-fixed": "#fb8b3f",
+              "error-dim": "#b92902",
+              "surface-container-low": "#ffeee2",
+              "error-container": "#f95630",
+              "secondary-dim": "#584190",
+              "surface-dim": "#ffca9f",
+              "on-primary-container": "#481e00",
+              "surface-container-high": "#ffdcc2",
+              "surface-bright": "#fff4ef",
+              "surface-tint": "#954400",
+              "background": "#fff4ef",
+              "on-surface-variant": "#7d522b",
+              "on-error-container": "#520c00",
+              "tertiary-fixed": "#ff8cbb",
+              "primary-container": "#fb8b3f",
+              "surface-variant": "#ffd5b4",
+              "tertiary": "#b00f69",
+              "on-error": "#ffefec",
+              "on-tertiary-fixed-variant": "#740043",
+              "primary-fixed-dim": "#ea7e33",
+              "primary-dim": "#833b00",
+              "inverse-surface": "#1b0a00",
+              "on-secondary-fixed-variant": "#594291",
+              "tertiary-dim": "#9d005c",
+              "secondary": "#644e9d",
+              "on-tertiary-container": "#640039"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #FFF4EF;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<nav class="w-full top-0 z-50 flex items-center justify-between px-6 py-4 w-full bg-[#FFF4EF] dark:bg-stone-950">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#954400] dark:text-[#FB8B3F] hover:opacity-80 transition-opacity active:scale-95 duration-200 cursor-pointer" data-icon="arrow_back" style="">arrow_back</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="text-2xl font-black text-[#954400] dark:text-[#FB8B3F] uppercase tracking-tighter" style=""><br></span>
+</div>
+<div class="w-6"></div> <!-- Spacer for centering -->
+</nav>
+<main class="flex-grow flex flex-col items-center px-6 pt-8 pb-32 max-w-md mx-auto w-full">
+<!-- Logo and Hero Header -->
+<div class="w-full mb-10 flex flex-col items-center text-center">
+<div class="mb-6">
+<img alt="Vibra Logo" class="h-16 w-auto" data-alt="minimalist modern abstract logo with organic circular shapes in warm orange and brown tones on a soft cream background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIbsZKaw7A8DGSsqhHBFLYI3Ch-aFzQvBHfIsjh523_4wKoyRgXg4_6sZ59r7JwfeaO9ms6g90YBGrPyrCvT1k44hTdfX1WDz4kMxhTlGD-zNsI2BdTxm2F0WVzD_P2MjV1SCe_a4rorPowHjVpygtteIo5oCC4ebSN-nF9sW2FeMHVhgXG7N_JOzVbYf8nzt9WLlAGxC6C4VgZlmpk2ZWNnqkdwMhPRkJuYWFLhCgvvQhAS_CZUSm8wDdSVDZ3m6PFgLbodVPpeo" style="">
+</div>
+<h1 class="text-[3.5rem] font-extrabold leading-tight tracking-tight text-on-surface mb-2" style="">Crie sua conta</h1>
+<p class="text-on-surface-variant text-lg leading-relaxed" style="">Faça parte do ritmo de cada experiência.</p>
+</div>
+<!-- Social Register Buttons -->
+<div class="w-full grid grid-cols-2 gap-4 mb-10">
+<button class="flex items-center justify-center gap-3 bg-surface-container-lowest py-4 rounded-full shadow-[0_12px_40px_rgba(72,38,3,0.08)] hover:bg-surface-container-low transition-all active:scale-95" style="">
+<img alt="Google" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmBdTxTRL58gL6zRxPXB8aOQzpwCvzkQvbqKoIhDw6owY5NyZUkUyZaEyuOSXzHX9wqDgGsieWQsx0UjYKNj2j3PUwtPN1Ok1dL41bX94HRrqKLNqEoOzrReZcSbGOfkfNWAuQDwszjFwO7ocf6gy5XCNmi3cbz5J_7fb4s7xNVA0JrRs5NcqyLUSxF5sbEhmS_4LGtvHJyhpiRlU5C71tNw3TiMcDGVwbVxNUC0-AB29TvSL8ZT_sny7VcYUlV_3NnGiPHDmP5ic" style="">
+<span class="font-bold text-on-surface" style="">Google</span>
+</button>
+<button class="flex items-center justify-center gap-3 bg-surface-container-lowest py-4 rounded-full shadow-[0_12px_40px_rgba(72,38,3,0.08)] hover:bg-surface-container-low transition-all active:scale-95" style="">
+<span class="material-symbols-outlined text-black" data-icon="apple" style="font-variation-settings: &quot;FILL&quot; 1;">ios</span>
+<span class="font-bold text-on-surface" style="">Apple</span>
+</button>
+</div>
+<!-- Divider -->
+<div class="w-full flex items-center gap-4 mb-10">
+<div class="flex-grow h-[1px] bg-outline-variant opacity-20"></div>
+<span class="text-on-surface-variant text-sm font-medium uppercase tracking-widest" style="">Ou com e-mail</span>
+<div class="flex-grow h-[1px] bg-outline-variant opacity-20"></div>
+</div>
+<!-- Registration Form -->
+<form class="w-full space-y-6">
+<div class="space-y-2">
+<label class="block text-sm font-bold ml-4 text-on-surface" style="">Nome Completo</label>
+<div class="relative">
+<input class="w-full bg-surface-container-highest border-none rounded-full px-6 py-4 text-on-surface focus:ring-2 focus:ring-primary-container focus:bg-surface-container-lowest transition-all placeholder:text-on-surface-variant/50" placeholder="Como podemos te chamar?" type="text">
+</div>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-bold ml-4 text-on-surface" style="">E-mail</label>
+<div class="relative">
+<input class="w-full bg-surface-container-highest border-none rounded-full px-6 py-4 text-on-surface focus:ring-2 focus:ring-primary-container focus:bg-surface-container-lowest transition-all placeholder:text-on-surface-variant/50" placeholder="seu@email.com" type="email">
+</div>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-bold ml-4 text-on-surface" style="">CPF</label>
+<div class="relative">
+<input class="w-full bg-surface-container-highest border-none rounded-full px-6 py-4 text-on-surface focus:ring-2 focus:ring-primary-container focus:bg-surface-container-lowest transition-all placeholder:text-on-surface-variant/50" placeholder="000.000.000-00" type="text">
+</div>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-bold ml-4 text-on-surface" style="">Senha</label>
+<div class="relative">
+<input class="w-full bg-surface-container-highest border-none rounded-full px-6 py-4 text-on-surface focus:ring-2 focus:ring-primary-container focus:bg-surface-container-lowest transition-all placeholder:text-on-surface-variant/50" placeholder="Mínimo 8 caracteres" type="password">
+<button class="absolute right-6 top-1/2 -translate-y-1/2 text-on-surface-variant" type="button" style="">
+<span class="material-symbols-outlined" data-icon="visibility" style="">visibility</span>
+</button>
+</div>
+</div>
+<!-- Primary Action Button -->
+<div class="pt-6">
+<button class="w-full bg-primary-container text-on-primary-fixed font-black text-lg py-5 rounded-full shadow-[0_12px_40px_rgba(200,100,25,0.2)] hover:opacity-90 active:scale-95 transition-all" type="submit" style="">
+                    Cadastrar na Vibra
+                </button>
+</div>
+</form>
+<!-- Login Link -->
+<div class="mt-8 mb-12">
+<p class="text-on-surface" style="">
+                Já tem uma conta? 
+                <a class="text-primary font-bold hover:underline" href="#" style="">Entrar</a>
+</p>
+</div>
+</main>
+<!-- BottomNavBar (Hidden on desktop, logic as per instruction) -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-8 pb-8 pt-4 bg-[#FFFFFF]/60 dark:bg-stone-900/60 backdrop-blur-xl rounded-t-[3rem] z-50 shadow-[0_-12px_40px_rgba(72,38,3,0.08)] border-t border-[#D9A274]/15 md:hidden">
+<a class="flex flex-col items-center justify-center text-[#482603] dark:text-stone-400 px-6 py-2 hover:bg-[#FFEE E2] dark:hover:bg-stone-800 rounded-full active:scale-95 transition-all" href="#" style="">
+<span class="material-symbols-outlined" data-icon="login" style="">login</span>
+<span class="font-['Plus_Jakarta_Sans'] text-xs font-bold" style="">Entrar</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#FB8B3F] text-[#1A0700] rounded-full px-6 py-2 active:scale-95 transition-all" href="#" style="">
+<span class="material-symbols-outlined" data-icon="person_add" style="">person_add</span>
+<span class="font-['Plus_Jakarta_Sans'] text-xs font-bold" style="">Cadastrar</span>
+</a>
+</nav>
+</body></html>

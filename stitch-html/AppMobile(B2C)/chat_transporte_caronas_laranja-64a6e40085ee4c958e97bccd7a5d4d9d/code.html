@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-surface": "#1b0a00",
+              "outline-variant": "#d9a274",
+              "primary-container": "#fb8b3f",
+              "outline": "#9c6d43",
+              "on-secondary": "#f8f0ff",
+              "inverse-primary": "#fb8b3f",
+              "surface-tint": "#954400",
+              "surface-container-lowest": "#ffffff",
+              "on-surface": "#482603",
+              "error": "#b02500",
+              "surface-variant": "#ffd5b4",
+              "primary-fixed": "#fb8b3f",
+              "tertiary-container": "#ff8cbb",
+              "surface": "#fff4ef",
+              "on-tertiary": "#ffeff2",
+              "on-tertiary-fixed-variant": "#740043",
+              "primary": "#954400",
+              "surface-container-highest": "#ffd5b4",
+              "on-primary": "#fff0e9",
+              "inverse-on-surface": "#c79265",
+              "tertiary-fixed": "#ff8cbb",
+              "primary-fixed-dim": "#ea7e33",
+              "surface-container-low": "#ffeee2",
+              "on-secondary-fixed": "#3c2472",
+              "tertiary": "#b00f69",
+              "on-primary-fixed": "#1a0700",
+              "tertiary-fixed-dim": "#ff73b0",
+              "secondary-fixed": "#dac9ff",
+              "primary-dim": "#833b00",
+              "on-secondary-fixed-variant": "#594291",
+              "on-tertiary-fixed": "#37001d",
+              "on-tertiary-container": "#640039",
+              "on-error": "#ffefec",
+              "background": "#fff4ef",
+              "on-secondary-container": "#503987",
+              "surface-container-high": "#ffdcc2",
+              "tertiary-dim": "#9d005c",
+              "surface-dim": "#ffca9f",
+              "secondary-fixed-dim": "#cdb9ff",
+              "on-error-container": "#520c00",
+              "secondary-dim": "#584190",
+              "on-surface-variant": "#7d522b",
+              "secondary-container": "#dac9ff",
+              "error-dim": "#b92902",
+              "error-container": "#f95630",
+              "surface-bright": "#fff4ef",
+              "surface-container": "#ffe3cf",
+              "secondary": "#644e9d",
+              "on-primary-container": "#481e00",
+              "on-background": "#482603",
+              "on-primary-fixed-variant": "#562500"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .chat-scroll::-webkit-scrollbar { width: 0px; background: transparent; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#FFF4EF]/60 backdrop-blur-xl shadow-[0_12px_40px_rgba(72,38,3,0.08)] flex items-center px-6 py-4 w-full justify-start gap-4">
+<button class="active:scale-95 transition-transform p-2 rounded-full hover:bg-[#FFEEE2]">
+<span class="material-symbols-outlined text-[#954400]">arrow_back</span>
+</button>
+<div class="flex flex-col">
+<h1 class="font-['Plus_Jakarta_Sans'] font-bold tracking-tight text-[1.25rem] text-[#482603]">Transporte &amp; Caronas</h1>
+<span class="text-xs font-semibold text-primary opacity-80 uppercase tracking-widest">Neon Dreams Festival</span>
+</div>
+<div class="ml-auto flex -space-x-2">
+<img class="w-8 h-8 rounded-full border-2 border-surface" data-alt="avatar of a young male participant with glasses and a smiling expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsi1lvKcHrjaevog2hCuO5C2XvYJFQhEI4vfr-uYsTH01n6KEbcH0PuBUe75d2RsY-UsBcsrNbmjBHuLv1K6nJBOW8-JwfpKjGUvh6ZaFqSJnYtC8EF1s7WK8W2G9ulT1yYHJ2wg-X7VtechzDQW-naXdC9PGMEbrfW_c_05dGni_cVzwXI7GFcQL0Ho-ciZxQM5Y6gg_DcdS3Dhk-egQtl91nQjNl6UnOYFIRlx7Jw-4kdelWBX6s426i72aLPOSBL8L6Armve0E"/>
+<img class="w-8 h-8 rounded-full border-2 border-surface" data-alt="avatar of a cheerful young female participant with curly hair" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8CDcLV8lm-ZMWymeoaMy78Dd7kuPeXcP4Guk8v_WMlzDe2PPwLl0SepBhcUz4yE6Dy96Ppf6-D1mt5Zw2SKtCMwHEobIwo3KQgpXDGMLkOLgPOO4wrUp5_6ySljt6CfnYgHsVykviZvcxpIiOOrQelYRlD8Jctwq2dbxiRuDMrjt9hbXdGgd9TtqgTxcYLIFqtlm9xmrUEkJ-H3zYz3k5QCxzuZhMz7pHG0fDld9B6R2gqUIxRgoYUN4nvR1m7a6gLhg0cbSkdbU"/>
+<div class="w-8 h-8 rounded-full border-2 border-surface bg-primary-container flex items-center justify-center text-[10px] font-bold text-on-primary-fixed">+14</div>
+</div>
+</header>
+<!-- Main Content: Chat Messages -->
+<main class="flex-1 mt-20 mb-24 px-6 overflow-y-auto chat-scroll flex flex-col gap-8 pb-4">
+<!-- Date Indicator -->
+<div class="flex justify-center my-4">
+<span class="bg-surface-container-high px-4 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-widest text-on-surface-variant">Hoje, 14 de Junho</span>
+</div>
+<!-- Incoming Message: Beatriz -->
+<div class="flex items-end gap-3 max-w-[85%]">
+<img class="w-10 h-10 rounded-full bg-surface-container-low" data-alt="close-up profile photo of a young Brazilian woman named Beatriz with warm smile and natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5oPgI1CwG-5ASIWWoElQ2hlUKxgqvSz2iKYoetATTkNafyvo8bKlBbmqoSfmkNi6QXSrJgUHUewK9bdE8aOhgO7UMtMwhGxYwFZgRojHIkcREmfAJuQGh0I1_bp_kk9Dr1o2IPhCsoVK_7fUIbDkaCnLlYevoC5jJ8jFyeo6lG69R4YTl0nSSznqVcTZsdrPpn7c1ckWqx4ZxCy0j6dMbLJoV5CZlINPLxR5epthTdqxkFsIctcp1mUO8SPWzTMSaM5sft0cc4ls"/>
+<div class="flex flex-col gap-1">
+<span class="text-xs font-bold ml-2 text-on-surface-variant">Beatriz</span>
+<div class="bg-surface-container-lowest px-5 py-4 rounded-t-xl rounded-br-xl shadow-sm">
+<p class="text-[0.95rem] leading-relaxed">Oi pessoal! Alguém saindo da região da Paulista no sábado à tarde? 🎡</p>
+</div>
+<span class="text-[10px] font-medium ml-2 opacity-50">14:22</span>
+</div>
+</div>
+<!-- Incoming Message: Marcos -->
+<div class="flex items-end gap-3 max-w-[85%]">
+<img class="w-10 h-10 rounded-full bg-surface-container-low" data-alt="profile avatar of a young man named Marcos wearing a festival cap and denim jacket" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCngE-PN87r8d2LGQSTVucvCiWurjZJfL1y5eQsP95nEZOSGWm1kPt619SluII9uzvlWUAxQhUsEse2knQ7oheNKO4Dm4fS0-6xMz7Gv-apojXBQSACkbzJ4h07v5rVuoNXMdazAq5SzPctXc2bi6rhTY66PTu11jLnp4cVGwy3eVSlXFLa2aYyMQ5yhsFbl-x871mA6jRUfevYtbLEj37GskhFDcV-xUamBe7GBXewATw2FVLI2Av79XgMuYe3gw0JEXeD-f2uqbU"/>
+<div class="flex flex-col gap-1">
+<span class="text-xs font-bold ml-2 text-on-surface-variant">Marcos</span>
+<div class="bg-surface-container-lowest px-5 py-4 rounded-t-xl rounded-br-xl shadow-sm">
+<p class="text-[0.95rem] leading-relaxed">Eu vou sair de lá por volta das 15h! Tenho 2 vagas no carro. Quem tiver interesse me avisa no PV. 🚗💨</p>
+</div>
+<span class="text-[10px] font-medium ml-2 opacity-50">14:25</span>
+</div>
+</div>
+<!-- Outgoing Message: User -->
+<div class="flex flex-col items-end gap-1 ml-auto max-w-[85%]">
+<div class="bg-gradient-to-tr from-[#954400] to-[#FB8B3F] px-5 py-4 rounded-t-xl rounded-bl-xl shadow-lg">
+<p class="text-[0.95rem] leading-relaxed text-white">Oi Marcos! Sobrou alguma vaga ainda? Sou eu e mais uma amiga saindo do metrô Consolação.</p>
+</div>
+<div class="flex items-center gap-1 mr-2">
+<span class="text-[10px] font-medium opacity-50">14:28</span>
+<span class="material-symbols-outlined text-[14px] text-primary">done_all</span>
+</div>
+</div>
+<!-- Incoming Message: Marina -->
+<div class="flex items-end gap-3 max-w-[85%]">
+<img class="w-10 h-10 rounded-full bg-surface-container-low" data-alt="profile photo of Marina, a young woman with neon colored hair highlights, smiling brightly" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3kFjVN0hGLfkQ1Wifxx9PmL1AQTetSyXjZKIjyEgt2kPpUIG5Us24hw5oh3nSuSHjSlL4NhKDCsA_fARiWJ8yVnyLsk_7LBI3tEcC5YFs7pOv7TDjKIF0yh9g6oM8umXSEtZbC-ablpIVMTxK_INNHFT1M3sR3f5XxcMK1vcLVFMpYZYCcWuXqQYUeaR4A5T4AcW5z_oeezao6RjRs9LKor_XrRKwhp_bCuygLhmef0FkPXqzLRA93w1im3kQlXKMFqsGwdM3N10"/>
+<div class="flex flex-col gap-1">
+<span class="text-xs font-bold ml-2 text-on-surface-variant">Marina</span>
+<div class="bg-surface-container-lowest px-5 py-4 rounded-t-xl rounded-br-xl shadow-sm border-l-4 border-primary-container">
+<p class="text-[0.95rem] leading-relaxed">Gente, vou de Uber Black e divido o valor se alguém quiser ir junto. Saio da Vila Mariana às 16h!</p>
+</div>
+<span class="text-[10px] font-medium ml-2 opacity-50">14:30</span>
+</div>
+</div>
+<!-- New Message Toast (Editorial) -->
+<div class="flex items-center gap-3 bg-tertiary-container/10 p-4 rounded-xl border border-tertiary-container/20">
+<span class="material-symbols-outlined text-tertiary">info</span>
+<p class="text-xs font-semibold text-on-tertiary-container">Dica: Lembrem-se de dividir os custos do pedágio e combustível! ✨</p>
+</div>
+</main>
+<!-- BottomNavBar / Input Shell -->
+<footer class="fixed bottom-0 w-full bg-[#FFF4EF] shadow-[0_-8px_30px_rgba(72,38,3,0.05)] z-50 px-6 pb-8 pt-4">
+<div class="flex items-center gap-3">
+<!-- Attachment Button -->
+<button class="w-12 h-12 flex items-center justify-center rounded-full bg-surface-container-low text-primary hover:bg-surface-container-high transition-all active:scale-90">
+<span class="material-symbols-outlined" data-icon="add_circle">add_circle</span>
+</button>
+<!-- Input Field -->
+<div class="flex-1 relative">
+<input class="w-full bg-surface-container-highest border-none rounded-full px-6 py-3.5 text-sm font-medium focus:ring-2 focus:ring-primary-container focus:bg-surface-container-lowest transition-all placeholder:text-on-surface-variant/50" placeholder="Escreva sua mensagem..." type="text"/>
+<button class="absolute right-3 top-1/2 -translate-y-1/2 text-primary opacity-60 hover:opacity-100">
+<span class="material-symbols-outlined" data-icon="mic">mic</span>
+</button>
+</div>
+<!-- Send Button -->
+<button class="w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-tr from-[#954400] to-[#FB8B3F] text-white shadow-lg shadow-primary-container/20 hover:scale-110 transition-all active:scale-90">
+<span class="material-symbols-outlined" data-icon="send">send</span>
+</button>
+</div>
+<!-- Contextual App Nav -->
+<nav class="flex justify-between items-center mt-6 px-4">
+<button class="p-3 text-[#482603] opacity-60 hover:opacity-100 hover:scale-110 transition-all">
+<span class="material-symbols-outlined" data-icon="sentiment_satisfied">sentiment_satisfied</span>
+</button>
+<button class="bg-gradient-to-tr from-[#954400] to-[#FB8B3F] text-white rounded-full p-3 shadow-lg active:scale-90 duration-200">
+<span class="material-symbols-outlined" data-icon="directions_car" style="font-variation-settings: 'FILL' 1;">directions_car</span>
+</button>
+<button class="p-3 text-[#482603] opacity-60 hover:opacity-100 hover:scale-110 transition-all">
+<span class="material-symbols-outlined" data-icon="groups">groups</span>
+</button>
+<button class="p-3 text-[#482603] opacity-60 hover:opacity-100 hover:scale-110 transition-all">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+</nav>
+</footer>
+</body></html>

@@ -1,0 +1,50 @@
+spring:
+  application:
+    name: vibra-backend
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  datasource:
+    url: jdbc:postgresql://localhost:5432/Vibra
+    username: postgres
+    password: 2024
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: italoFRS11@gmail.com
+    password: italo11farias
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+gemini:
+  api-key: ${GEMINI_API_KEY}
+
+mercadopago:
+  public-key: TEST-74ffa3ea-7927-4af4-bce0-477de613fea5
+  access-token: TEST-6599290559851392-040814-0bb66cc674c6f1d6a6193f3816746c82-3322771577
+  notification-url: https://webhook.site/#!/view/3b4d4b1a-5b1a-4b1a-8b1a-3b4d4b1a5b1a/ # Placeholder, troque pelo seu dominio real
+
+cloudinary:
+  cloud-name: dlqnarabz
+  api-key: 745992276213338
+  api-secret: x4Bteb0xmkNkHjBIIW1IPmLIlXo
+
+server:
+  port: 8080

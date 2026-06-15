@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-on-surface": "#c79265",
+              "on-tertiary": "#ffeff2",
+              "tertiary-fixed-dim": "#ff73b0",
+              "surface-container-low": "#ffeee2",
+              "surface-container-highest": "#ffd5b4",
+              "secondary": "#644e9d",
+              "tertiary-dim": "#9d005c",
+              "outline-variant": "#d9a274",
+              "surface-container-lowest": "#ffffff",
+              "secondary-container": "#dac9ff",
+              "surface": "#fff4ef",
+              "on-secondary-container": "#503987",
+              "surface-variant": "#ffd5b4",
+              "background": "#fff4ef",
+              "on-secondary-fixed-variant": "#594291",
+              "outline": "#9c6d43",
+              "secondary-fixed": "#dac9ff",
+              "error": "#b02500",
+              "secondary-dim": "#584190",
+              "on-surface": "#482603",
+              "on-tertiary-fixed": "#37001d",
+              "tertiary-fixed": "#ff8cbb",
+              "surface-tint": "#954400",
+              "on-tertiary-container": "#640039",
+              "tertiary": "#b00f69",
+              "on-primary-fixed": "#1a0700",
+              "on-secondary": "#f8f0ff",
+              "on-error-container": "#520c00",
+              "surface-dim": "#ffca9f",
+              "primary-fixed": "#fb8b3f",
+              "on-background": "#482603",
+              "surface-container-high": "#ffdcc2",
+              "inverse-surface": "#1b0a00",
+              "surface-container": "#ffe3cf",
+              "tertiary-container": "#ff8cbb",
+              "on-secondary-fixed": "#3c2472",
+              "primary-dim": "#833b00",
+              "error-container": "#f95630",
+              "primary-fixed-dim": "#ea7e33",
+              "primary-container": "#fb8b3f",
+              "surface-bright": "#fff4ef",
+              "on-error": "#ffefec",
+              "on-tertiary-fixed-variant": "#740043",
+              "on-primary-container": "#481e00",
+              "on-primary": "#fff0e9",
+              "on-primary-fixed-variant": "#562500",
+              "inverse-primary": "#fb8b3f",
+              "primary": "#954400",
+              "error-dim": "#b92902",
+              "on-surface-variant": "#7d522b",
+              "secondary-fixed-dim": "#cdb9ff"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="w-full top-0 z-50 bg-[#FFEE E2] dark:bg-orange-900/10 flex justify-between items-center px-6 py-4 w-full">
+<button class="text-[#954400] dark:text-[#FB8B3F] hover:bg-[#FFD5B4] dark:hover:bg-orange-800/30 transition-colors p-2 rounded-full active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-['Plus_Jakarta_Sans'] font-bold tracking-tight text-[#954400] dark:text-[#FB8B3F] text-xl">Perfil</h1>
+<button class="text-[#954400] dark:text-[#FB8B3F] hover:bg-[#FFD5B4] dark:hover:bg-orange-800/30 transition-colors p-2 rounded-full active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+</header>
+<main class="max-w-2xl mx-auto px-6 pt-8">
+<!-- Profile Header -->
+<section class="flex flex-col items-center mb-10 text-center">
+<div class="relative mb-6">
+<div class="w-40 h-40 rounded-full p-1 bg-gradient-to-tr from-primary to-primary-container">
+<img alt="Mariana Silva" class="w-full h-full object-cover rounded-full border-4 border-surface" data-alt="Close-up portrait of a smiling young woman with curly hair, natural outdoor lighting with soft sun flare, vibrant and friendly atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-vIqrZlEVNc5w48UbfkQl5GgzHaIBlEniRakszQTiC6YH2RifpOCxSSMkF8YRlzVxoXHyr3QueHIbv2sp4w0bSNr_9adFpqrJA8mMxdV4Fl5lENpbyT6iLOURu2NFOsYKJ8IdhD58WmrbiG3_pu0ymjRTS27HCB03OJIAX8Y74ekAAXG66QVKMdNcUgdISaNutXjnxWMnu20-3IX6ekIbtfLAIjBYGt2Ul658xA0eMuE8GBpCRN1pqZq-bz6VBhZsAHaVEEdrQWI"/>
+</div>
+<div class="absolute bottom-1 right-1 bg-primary-container text-on-primary-fixed p-2 rounded-full shadow-lg">
+<span class="material-symbols-outlined text-sm" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<h2 class="text-4xl font-extrabold tracking-tight mb-1">Mariana Silva</h2>
+<div class="flex items-center gap-1 text-on-surface-variant font-medium mb-4">
+<span class="material-symbols-outlined text-lg" data-icon="location_on">location_on</span>
+<span>São Paulo, SP</span>
+</div>
+<p class="text-lg text-on-surface/80 max-w-sm leading-relaxed italic">
+            “Vivendo cada show como se fosse o único! 🎸”
+        </p>
+</section>
+<!-- Quick Actions -->
+<section class="grid grid-cols-2 gap-4 mb-12">
+<button class="bg-primary-container text-on-primary-fixed py-4 px-6 rounded-full font-bold flex items-center justify-center gap-2 hover:opacity-90 active:scale-95 transition-all shadow-md">
+<span class="material-symbols-outlined" data-icon="confirmation_number">confirmation_number</span>
+            Meus Ingressos
+        </button>
+<button class="bg-surface-container-highest text-on-surface py-4 px-6 rounded-full font-bold flex items-center justify-center gap-2 hover:bg-surface-container-high active:scale-95 transition-all">
+<span class="material-symbols-outlined" data-icon="edit">edit</span>
+            Editar Perfil
+        </button>
+</section>
+<!-- Statistics Section - Editorial Layout -->
+<section class="bg-surface-container-low rounded-xl p-8 mb-12 flex justify-around items-center">
+<div class="text-center group">
+<p class="text-3xl font-black text-primary group-hover:scale-110 transition-transform">12</p>
+<p class="text-[10px] uppercase tracking-widest font-bold opacity-60">Eventos</p>
+</div>
+<div class="w-px h-8 bg-outline-variant/20"></div>
+<div class="text-center group">
+<p class="text-3xl font-black text-primary group-hover:scale-110 transition-transform">84</p>
+<p class="text-[10px] uppercase tracking-widest font-bold opacity-60">Matches</p>
+</div>
+<div class="w-px h-8 bg-outline-variant/20"></div>
+<div class="text-center group">
+<p class="text-3xl font-black text-primary group-hover:scale-110 transition-transform">156</p>
+<p class="text-[10px] uppercase tracking-widest font-bold opacity-60">Conexões</p>
+</div>
+</section>
+<!-- Interesses Section -->
+<section class="mb-12">
+<h3 class="text-xl font-extrabold mb-6 flex items-center gap-2">
+            Minha Vibe
+            <span class="h-1 w-12 bg-primary-container rounded-full"></span>
+</h3>
+<div class="flex flex-wrap gap-3">
+<span class="bg-primary text-on-primary px-6 py-2 rounded-full text-sm font-bold shadow-sm">Techno</span>
+<span class="bg-surface-container-lowest border border-outline-variant/15 px-6 py-2 rounded-full text-sm font-bold shadow-sm">Rock Indie</span>
+<span class="bg-secondary-container text-on-secondary-container px-6 py-2 rounded-full text-sm font-bold shadow-sm">VIP Lounge</span>
+<span class="bg-surface-container-lowest border border-outline-variant/15 px-6 py-2 rounded-full text-sm font-bold shadow-sm">Festivais</span>
+<span class="bg-surface-container-lowest border border-outline-variant/15 px-6 py-2 rounded-full text-sm font-bold shadow-sm">Lollapalooza</span>
+</div>
+</section>
+<!-- Configurações Section -->
+<section class="mb-12">
+<h3 class="text-xl font-extrabold mb-6 flex items-center gap-2">
+            Configurações
+            <span class="h-1 w-12 bg-primary-container rounded-full"></span>
+</h3>
+<div class="space-y-3">
+<button class="w-full flex items-center justify-between p-5 bg-surface-container-lowest border border-outline-variant/10 rounded-full hover:bg-primary-container/10 transition-colors group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="payments">payments</span>
+</div>
+<span class="font-bold text-on-surface">Métodos de Pagamento</span>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</button>
+<button class="w-full flex items-center justify-between p-5 bg-surface-container-lowest border border-outline-variant/10 rounded-full hover:bg-primary-container/10 transition-colors group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="shield">shield</span>
+</div>
+<span class="font-bold text-on-surface">Segurança da Conta</span>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</button>
+<button class="w-full flex items-center justify-between p-5 bg-surface-container-lowest border border-outline-variant/10 rounded-full hover:bg-primary-container/10 transition-colors group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</div>
+<span class="font-bold text-on-surface">Notificações</span>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</button>
+<button class="w-full flex items-center justify-between p-5 bg-surface-container-lowest border border-outline-variant/10 rounded-full hover:bg-primary-container/10 transition-colors group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="lock">lock</span>
+</div>
+<span class="font-bold text-on-surface">Privacidade</span>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-[#FFFFFF]/60 dark:bg-orange-900/40 backdrop-blur-xl border-t border-[#D9A274]/15 rounded-t-[3rem] z-50 shadow-[0_-12px_40px_rgba(72,38,3,0.08)]">
+<a class="flex flex-col items-center justify-center text-[#482603] dark:text-orange-100/60 px-4 py-2 hover:opacity-80 active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="explore">explore</span>
+<span class="text-[11px] font-bold uppercase tracking-widest">Discover</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#482603] dark:text-orange-100/60 px-4 py-2 hover:opacity-80 active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="confirmation_number">confirmation_number</span>
+<span class="text-[11px] font-bold uppercase tracking-widest">Events</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#482603] dark:text-orange-100/60 px-4 py-2 hover:opacity-80 active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="group">group</span>
+<span class="text-[11px] font-bold uppercase tracking-widest">Connect</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#FB8B3F] text-[#1A0700] rounded-full px-6 py-2 hover:opacity-80 active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="text-[11px] font-bold uppercase tracking-widest">Profile</span>
+</a>
+</nav>
+</body></html>

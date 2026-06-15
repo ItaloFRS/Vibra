@@ -1,0 +1,8 @@
+{
+  "track_id": "refinamento_cadastro_20260419",
+  "type": "feature",
+  "status": "new",
+  "created_at": "2026-04-19T10:00:00Z",
+  "updated_at": "2026-04-19T10:00:00Z",
+  "description": "Refinamento do cadastro ( validação do CPF, senha forte, validação do e-mail com verificação de código) além da possibilidade de cadastrar pelo Google, deve ser adicionado com formulário perguntando Informaçoes extras ( idade(difinada pela data do aniversario) , gênero, preferências de Match , suas \"vibes\" ). As preferencias de match devem perguntar faixa etaria do macth e genero, esses dados devem pode ser editadas pela tela de perfil."
+}

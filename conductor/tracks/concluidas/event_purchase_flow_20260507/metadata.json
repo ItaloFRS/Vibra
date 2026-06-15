@@ -1,0 +1,10 @@
+{
+  "id": "event_purchase_flow_20260507",
+  "title": "Fluxo de Compra de Ingressos Premium (web-home)",
+  "description": "Criar uma experiência premium de compra de ingressos: Visualmente cinematográfica, extremamente fluida e com foco em conversão.",
+  "status": "in-progress",
+  "created_at": "2026-05-07",
+  "priority": "high",
+  "stack": ["Next.js", "Tailwind", "Framer Motion", "Radix UI", "Zod", "React Hook Form"],
+  "app": "web-home"
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html><html class="light" lang="pt-BR"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Vibra Events - Login</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed": "#1a0700",
+              "surface-tint": "#954400",
+              "error": "#b02500",
+              "background": "#fff4ef",
+              "primary-fixed-dim": "#ea7e33",
+              "on-surface": "#482603",
+              "inverse-on-surface": "#c79265",
+              "outline": "#9c6d43",
+              "on-surface-variant": "#7d522b",
+              "on-tertiary": "#ffeff2",
+              "tertiary-fixed": "#ff8cbb",
+              "surface-container-lowest": "#ffffff",
+              "surface-container": "#ffe3cf",
+              "secondary-dim": "#584190",
+              "on-tertiary-fixed-variant": "#740043",
+              "secondary-fixed": "#dac9ff",
+              "inverse-primary": "#fb8b3f",
+              "tertiary": "#b00f69",
+              "surface-container-highest": "#ffd5b4",
+              "on-tertiary-fixed": "#37001d",
+              "primary-container": "#fb8b3f",
+              "secondary": "#644e9d",
+              "on-error": "#ffefec",
+              "surface-variant": "#ffd5b4",
+              "tertiary-dim": "#9d005c",
+              "on-secondary": "#f8f0ff",
+              "primary": "#954400",
+              "surface-dim": "#ffca9f",
+              "on-background": "#482603",
+              "surface-container-high": "#ffdcc2",
+              "surface-container-low": "#ffeee2",
+              "on-secondary-container": "#503987",
+              "error-container": "#f95630",
+              "tertiary-container": "#ff8cbb",
+              "secondary-fixed-dim": "#cdb9ff",
+              "on-error-container": "#520c00",
+              "on-primary": "#fff0e9",
+              "outline-variant": "#d9a274",
+              "tertiary-fixed-dim": "#ff73b0",
+              "primary-dim": "#833b00",
+              "error-dim": "#b92902",
+              "on-secondary-fixed-variant": "#594291",
+              "on-primary-fixed-variant": "#562500",
+              "primary-fixed": "#fb8b3f",
+              "secondary-container": "#dac9ff",
+              "inverse-surface": "#1b0a00",
+              "surface-bright": "#fff4ef",
+              "surface": "#fff4ef",
+              "on-primary-container": "#481e00",
+              "on-tertiary-container": "#640039",
+              "on-secondary-fixed": "#3c2472"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .kinetic-pulse-bg {
+        background: linear-gradient(135deg, #FFF4EF 0%, #FFEEE2 100%);
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(20px);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-fixed">
+<main class="min-h-screen relative flex flex-col items-center justify-center p-6 kinetic-pulse-bg overflow-hidden">
+<!-- Decorative Pulse Element -->
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-primary-container/20 rounded-full blur-[100px]"></div>
+<div class="absolute -bottom-24 -left-24 w-96 h-96 bg-secondary-container/30 rounded-full blur-[100px]"></div>
+<div class="w-full max-w-md relative z-10 flex flex-col items-center">
+<!-- Header Section -->
+<div class="text-center mb-12">
+<div class="mb-8 inline-block">
+<img alt="Vibra Events Logo" class="h-16 w-auto mx-auto mb-6" data-alt="Minimalist abstract circular logo with kinetic energy strokes in burnt orange and peach tones on a clean background" src="https://lh3.googleusercontent.com/aida/ADBb0ujE7eaSLfoYOyFhZ43zaK7eHqQViKcMHaqHkX4whBLH8nGgzdagCda0evBdMG1FrzDK-5LZeFzBfqyfP46J3sQ8cjb0lrKVpe67AhAQeF7vUu8YJx0XLUerjObUtop50t2KbQQbIo3Q82jdvBmrs6XfZ88UqvmIgq5CjwV2wvR_HT2AbZz81xtLD6ghj0Ynf_iwo43PAZ1WtwQXOuWNvpa12oMOLTBJT8uF5gn-6xWTYHyZl0uRZXSAx7ycDToopUYxfbXt55EseA" style="">
+</div>
+<h1 class="font-headline text-[3.5rem] font-extrabold text-primary leading-[1.1] tracking-tighter mb-4" style="">Vibra</h1>
+<p class="text-on-surface-variant font-medium tracking-wide" style="">Sinta o ritmo de cada experiência.</p>
+</div>
+<!-- Social Login Cluster -->
+<div class="w-full space-y-3 mb-10">
+<button class="w-full flex items-center justify-center gap-3 bg-surface-container-lowest text-on-surface font-semibold py-4 px-8 rounded-full shadow-[0_12px_40px_rgba(72,38,3,0.06)] hover:scale-[1.02] transition-transform active:scale-95" style="">
+<svg class="w-5 h-5" viewBox="0 0 24 24">
+<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
+<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
+<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"></path>
+<path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"></path>
+</svg>
+                    Continuar com Google
+                </button>
+<button class="w-full flex items-center justify-center gap-3 bg-inverse-surface text-surface-container-lowest font-semibold py-4 px-8 rounded-full shadow-[0_12px_40px_rgba(72,38,3,0.12)] hover:scale-[1.02] transition-transform active:scale-95" style="">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+<path d="M17.05 20.28c-.96.95-2.04 1.72-3.3 1.72-1.2 0-1.6-.74-3.1-.74-1.46 0-1.95.72-3.14.72-1.18 0-2.28-.78-3.35-1.9-2.3-2.34-3.5-6.17-3.5-8.5 0-3.66 2.4-5.63 4.7-5.63 1.22 0 2.22.65 3.08.65.82 0 1.95-.7 3.3-.7 1.44 0 3.9.52 5.37 2.58-3.08 1.6-2.58 5.75.54 7.22-.67 1.74-1.6 3.6-2.6 4.58zM12.03 5.07c-.12-2.3 1.93-4.32 4.1-4.47.26 2.44-2.15 4.55-4.1 4.47z"></path>
+</svg>
+                    Continuar com Apple
+                </button>
+</div>
+<!-- Divider -->
+<div class="w-full flex items-center gap-4 mb-10">
+<div class="h-[1px] flex-1 bg-outline-variant/30"></div>
+<span class="text-[10px] font-bold uppercase tracking-widest text-outline" style="">Ou use seu e-mail</span>
+<div class="h-[1px] flex-1 bg-outline-variant/30"></div>
+</div>
+<!-- Email Form -->
+<form class="w-full space-y-6">
+<div class="space-y-4">
+<div class="group">
+<label class="block text-[11px] font-bold uppercase tracking-widest text-primary px-5 mb-2 opacity-80" style="">E-mail</label>
+<input class="w-full bg-surface-container-highest/50 border-none focus:ring-2 focus:ring-primary-container focus:bg-surface-container-lowest rounded-full px-6 py-4 text-on-surface placeholder:text-outline/60 transition-all outline-none" placeholder="seu@email.com" type="email">
+</div>
+<div class="group">
+<label class="block text-[11px] font-bold uppercase tracking-widest text-primary px-5 mb-2 opacity-80" style="">Senha</label>
+<input class="w-full bg-surface-container-highest/50 border-none focus:ring-2 focus:ring-primary-container focus:bg-surface-container-lowest rounded-full px-6 py-4 text-on-surface placeholder:text-outline/60 transition-all outline-none" placeholder="••••••••" type="password">
+</div>
+</div>
+<div class="pt-4">
+<button class="w-full bg-gradient-to-r from-primary to-primary-container text-on-primary-fixed font-bold text-lg py-5 px-8 rounded-full shadow-[0_12px_40px_rgba(149,68,0,0.2)] hover:opacity-90 transition-all active:scale-95" type="submit" style="">
+                        Entrar na Vibra
+                    </button>
+</div>
+</form>
+<!-- Footer Action -->
+<footer class="mt-12 text-center">
+<p class="text-on-surface-variant font-medium" style="">
+                    Não tem uma conta? 
+                    <a class="text-primary font-bold ml-1 hover:underline underline-offset-4 decoration-primary-container transition-all" href="#" style="">Cadastre-se</a>
+</p>
+<button class="mt-8 text-[11px] font-bold uppercase tracking-widest text-outline hover:text-primary transition-colors" style="">
+                    Esqueci minha senha
+                </button>
+</footer>
+</div>
+</main>
+<!-- Bottom Decorative Bar (Non-Nav version for Login) -->
+<div class="fixed bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-primary-container to-secondary opacity-40"></div>
+</body></html>

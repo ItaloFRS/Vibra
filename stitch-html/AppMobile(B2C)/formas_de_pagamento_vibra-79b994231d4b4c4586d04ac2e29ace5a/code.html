@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Formas de Pagamento - Vibra</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #FFF4EF;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .pulse-gradient {
+            background: linear-gradient(135deg, #954400 0%, #FB8B3F 100%);
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-container": "#fb8b3f",
+              "surface-container-low": "#ffeee2",
+              "secondary-dim": "#584190",
+              "on-tertiary-fixed": "#37001d",
+              "on-surface": "#482603",
+              "primary-fixed": "#fb8b3f",
+              "surface-container": "#ffe3cf",
+              "background": "#fff4ef",
+              "on-primary-container": "#481e00",
+              "tertiary-fixed-dim": "#ff73b0",
+              "surface-dim": "#ffca9f",
+              "on-background": "#482603",
+              "error": "#b02500",
+              "on-primary-fixed-variant": "#562500",
+              "primary-fixed-dim": "#ea7e33",
+              "on-tertiary-container": "#640039",
+              "surface-container-lowest": "#ffffff",
+              "on-primary": "#fff0e9",
+              "surface-bright": "#fff4ef",
+              "tertiary-fixed": "#ff8cbb",
+              "tertiary-container": "#ff8cbb",
+              "tertiary": "#b00f69",
+              "inverse-primary": "#fb8b3f",
+              "outline": "#9c6d43",
+              "primary-dim": "#833b00",
+              "surface": "#fff4ef",
+              "on-tertiary": "#ffeff2",
+              "on-error": "#ffefec",
+              "surface-container-highest": "#ffd5b4",
+              "on-surface-variant": "#7d522b",
+              "outline-variant": "#d9a274",
+              "on-secondary-fixed-variant": "#594291",
+              "error-container": "#f95630",
+              "tertiary-dim": "#9d005c",
+              "secondary": "#644e9d",
+              "surface-tint": "#954400",
+              "secondary-fixed-dim": "#cdb9ff",
+              "inverse-surface": "#1b0a00",
+              "on-secondary": "#f8f0ff",
+              "error-dim": "#b92902",
+              "on-tertiary-fixed-variant": "#740043",
+              "inverse-on-surface": "#c79265",
+              "on-secondary-container": "#503987",
+              "secondary-container": "#dac9ff",
+              "on-secondary-fixed": "#3c2472",
+              "primary": "#954400",
+              "surface-container-high": "#ffdcc2",
+              "surface-variant": "#ffd5b4",
+              "secondary-fixed": "#dac9ff",
+              "on-primary-fixed": "#1a0700",
+              "on-error-container": "#520c00"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#FFF4EF] dark:bg-stone-950 flex items-center px-6 h-16 w-full max-w-none">
+<div class="flex items-center gap-4">
+<button class="active:scale-95 duration-200 hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined text-[#954400] dark:text-[#FB8B3F] text-2xl" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-['Plus_Jakarta_Sans'] text-lg font-bold tracking-tight text-[#954400] dark:text-[#FB8B3F]">Formas de Pagamento</h1>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-2xl mx-auto">
+<!-- Hero Editorial Section -->
+<section class="mb-12">
+<div class="relative h-48 rounded-xl overflow-hidden mb-8">
+<img alt="Finance Aesthetic" class="w-full h-full object-cover grayscale contrast-125 opacity-20" data-alt="Close-up of a high-end minimalist leather wallet and textured paper receipts on a warm sunlit stone surface with long shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKGHqnzq4niFhA1xucBEKoSvoUILuSlhvPBMCdEO2NEsqfGFmjdLLjjrXBkYMmlukSAYBBv4Ejavl6J2hcOd4KaKcBonodOp2SvaOOGS5lKzhX1FnbTCUbBVMpHQSxgIw7epZAAWVxEINZBHt2h9tg8pv_Q5Tf7TsfQEFfpbF2DHDXavCZQR24jCSXnuQdnZdcHFCjZ1kRmwgGrNZuW_oQ8DGn7AUieNpYgQBDcJz_pfNu_AfNPqv8NerPrgNGsw648SI5iT4MKjE"/>
+<div class="absolute inset-0 flex flex-col justify-end p-6">
+<p class="text-on-surface-variant font-medium text-sm tracking-widest uppercase mb-1">Gerenciamento</p>
+<h2 class="text-3xl font-extrabold tracking-tighter text-on-surface leading-none">Suas Carteiras.</h2>
+</div>
+</div>
+</section>
+<!-- Cartões Salvos -->
+<section class="mb-10">
+<div class="flex items-baseline justify-between mb-6">
+<h3 class="text-xl font-bold tracking-tight">Cartões Salvos</h3>
+<span class="text-xs font-bold text-primary-container bg-primary-container/10 px-3 py-1 rounded-full">2 ATIVOS</span>
+</div>
+<div class="space-y-4">
+<!-- Card Visa -->
+<div class="group relative bg-surface-container-lowest rounded-lg p-6 flex items-center justify-between transition-all hover:bg-surface-container-low shadow-sm overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary group-hover:w-1.5 transition-all"></div>
+<div class="flex items-center gap-5">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="credit_card">credit_card</span>
+</div>
+<div>
+<p class="font-bold text-on-surface">Nubank Pessoal</p>
+<p class="text-sm text-on-surface-variant font-medium tracking-widest">•••• 4590</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#1A1F71]" data-icon="payments" style="font-variation-settings: 'FILL' 1;">payments</span>
+<span class="material-symbols-outlined text-on-surface-variant/40" data-icon="more_vert">more_vert</span>
+</div>
+</div>
+<!-- Card Mastercard -->
+<div class="group relative bg-surface-container-lowest rounded-lg p-6 flex items-center justify-between transition-all hover:bg-surface-container-low shadow-sm overflow-hidden">
+<div class="flex items-center gap-5">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="credit_card">credit_card</span>
+</div>
+<div>
+<p class="font-bold text-on-surface">Vibra Business</p>
+<p class="text-sm text-on-surface-variant font-medium tracking-widest">•••• 8821</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#EB001B]" data-icon="contactless" style="font-variation-settings: 'FILL' 1;">contactless</span>
+<span class="material-symbols-outlined text-on-surface-variant/40" data-icon="more_vert">more_vert</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Adicionar Novo -->
+<section class="mb-12">
+<h3 class="text-xl font-bold tracking-tight mb-6">Adicionar Novo</h3>
+<div class="grid grid-cols-1 gap-3">
+<button class="flex items-center justify-between p-5 bg-surface-container-low rounded-lg active:scale-[0.98] transition-all group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="add_card">add_card</span>
+</div>
+<span class="font-bold text-on-surface">Novo Cartão de Crédito</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</button>
+<button class="flex items-center justify-between p-5 bg-surface-container-low rounded-lg active:scale-[0.98] transition-all group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="account_balance">account_balance</span>
+</div>
+<span class="font-bold text-on-surface">Pix</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</button>
+<button class="flex items-center justify-between p-5 bg-surface-container-low rounded-lg active:scale-[0.98] transition-all group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="google">google</span>
+</div>
+<span class="font-bold text-on-surface">Google Pay</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</section>
+<!-- Rodapé de Segurança -->
+<footer class="flex flex-col items-center justify-center py-8 gap-2 border-t border-outline-variant/15">
+<div class="flex items-center gap-2 opacity-60">
+<span class="material-symbols-outlined text-sm" data-icon="lock">lock</span>
+<p class="text-[10px] font-bold tracking-widest uppercase">Ambiente Seguro e Criptografado</p>
+</div>
+<p class="text-[10px] text-on-surface-variant/40 font-medium">© 2024 Vibra Energia S.A.</p>
+</footer>
+</main>
+<!-- FAB / Primary Action -->
+<div class="fixed bottom-24 left-0 right-0 px-6 z-40 md:relative md:bottom-0 md:px-0 md:mt-8 flex justify-center">
+<button class="pulse-gradient text-on-primary-fixed font-extrabold py-5 px-10 rounded-xl shadow-lg w-full max-w-sm active:scale-95 transition-transform tracking-widest text-sm flex items-center justify-center gap-3">
+<span class="material-symbols-outlined" data-icon="add_circle">add_circle</span>
+            ADICIONAR MÉTODO
+        </button>
+</div>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-[#FFFFFF]/60 dark:bg-orange-900/40 backdrop-blur-xl border-t border-[#D9A274]/15 rounded-t-[3rem] z-50 shadow-[0_-12px_40px_rgba(72,38,3,0.08)]">
+<a class="flex flex-col items-center justify-center text-[#482603] dark:text-orange-100/60 px-4 py-2 hover:opacity-80 active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="explore">explore</span>
+<span class="text-[11px] font-bold uppercase tracking-widest">Discover</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#482603] dark:text-orange-100/60 px-4 py-2 hover:opacity-80 active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="confirmation_number">confirmation_number</span>
+<span class="text-[11px] font-bold uppercase tracking-widest">Events</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#482603] dark:text-orange-100/60 px-4 py-2 hover:opacity-80 active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="group">group</span>
+<span class="text-[11px] font-bold uppercase tracking-widest">Connect</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#FB8B3F] text-[#1A0700] rounded-full px-6 py-2 hover:opacity-80 active:scale-90 transition-all" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="text-[11px] font-bold uppercase tracking-widest">Profile</span>
+</a>
+</nav>
+</body></html>

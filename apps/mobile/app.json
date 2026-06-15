@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "Vibra",
+    "slug": "vibra-mobile",
+    "scheme": "vibra",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+
+    "icon": "./assets/Monograma-l.png",
+
+    "splash": {
+      "image": "./assets/Logo_VibraPl.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFF4EF"
+    },
+    
+  
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.vibra.app"
+    },
+    "android": {
+      "package": "com.vibra.app",
+      "backgroundColor": "#FFF4EF"
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+    
+      "expo-router",
+      "expo-secure-store"
+
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

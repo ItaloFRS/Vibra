@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#ffdcc2",
+                    "secondary-dim": "#584190",
+                    "background": "#fff4ef",
+                    "on-primary-container": "#481e00",
+                    "on-error": "#ffefec",
+                    "outline-variant": "#d9a274",
+                    "surface-bright": "#fff4ef",
+                    "on-tertiary-fixed-variant": "#740043",
+                    "surface-container": "#ffe3cf",
+                    "primary": "#954400",
+                    "on-surface": "#482603",
+                    "on-primary-fixed-variant": "#562500",
+                    "secondary": "#644e9d",
+                    "tertiary-container": "#ff8cbb",
+                    "primary-dim": "#833b00",
+                    "on-tertiary-fixed": "#37001d",
+                    "tertiary-fixed-dim": "#ff73b0",
+                    "secondary-fixed-dim": "#cdb9ff",
+                    "on-secondary-fixed-variant": "#594291",
+                    "on-error-container": "#520c00",
+                    "surface-container-highest": "#ffd5b4",
+                    "error-dim": "#b92902",
+                    "tertiary-fixed": "#ff8cbb",
+                    "surface": "#fff4ef",
+                    "on-surface-variant": "#7d522b",
+                    "on-secondary-container": "#503987",
+                    "error": "#b02500",
+                    "surface-container-low": "#ffeee2",
+                    "tertiary-dim": "#9d005c",
+                    "surface-container-lowest": "#ffffff",
+                    "outline": "#9c6d43",
+                    "surface-dim": "#ffca9f",
+                    "inverse-surface": "#1b0a00",
+                    "on-primary": "#fff0e9",
+                    "on-secondary": "#f8f0ff",
+                    "on-background": "#482603",
+                    "inverse-on-surface": "#c79265",
+                    "secondary-container": "#dac9ff",
+                    "surface-tint": "#954400",
+                    "on-secondary-fixed": "#3c2472",
+                    "on-primary-fixed": "#1a0700",
+                    "error-container": "#f95630",
+                    "on-tertiary-container": "#640039",
+                    "on-tertiary": "#ffeff2",
+                    "secondary-fixed": "#dac9ff",
+                    "primary-fixed-dim": "#ea7e33",
+                    "inverse-primary": "#fb8b3f",
+                    "primary-fixed": "#fb8b3f",
+                    "primary-container": "#fb8b3f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-panel { background: rgba(27, 10, 0, 0.4); backdrop-filter: blur(24px); }
+        .pulse-gradient { background: linear-gradient(135deg, #954400 0%, #fb8b3f 100%); }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-stone-950 text-stone-100 overflow-hidden h-screen flex">
+<!-- SideNavBar (Authority: Shared Components JSON) -->
+<aside class="fixed left-0 top-0 h-full w-72 z-50 bg-stone-900 flex flex-col h-full py-8 px-4 font-plus-jakarta font-bold text-sm">
+<div class="text-xl font-black text-orange-700 mb-8 px-5">Pulse Studio</div>
+<div class="flex items-center gap-4 px-5 mb-10 group">
+<img alt="Producer Avatar" class="w-12 h-12 rounded-full border-2 border-orange-600/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxt655zHenKB0kp99j5QvW96AzT9J8cHY4-2nz5gnnGf4Rz6xnV-Ka9jNExPSamkeD98y4f6rfm-p-eAvptCNDntNYEcx4wzX8H8DX-DbtIZ8VLiEEEB0cVuF3Yp0qUW0S8pDP9x42T-ZsX9lVRhHsvbURlDtChiBNG8wOTejuIlgJxNBq82ECme7Z-G0rJqzt76KYf2bssPyRXJ_rpf_VMS5YpMIeFbaanxxncDum11ygdCuQ7KfrdtCKtb6LHhFjXYWsxvZYC_8"/>
+<div>
+<p class="text-stone-100 font-bold block">Elite Producer</p>
+<p class="text-stone-500 text-xs">Vibra Partner</p>
+</div>
+</div>
+<nav class="flex-1 space-y-2">
+<!-- Active: Dashboard -->
+<a class="flex items-center gap-3 text-orange-400 border-l-4 border-orange-600 pl-4 py-3 bg-stone-800/50 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+<span>Dashboard</span>
+</a>
+<a class="flex items-center gap-3 text-stone-500 hover:bg-orange-900/20 hover:text-orange-600 pl-5 py-3 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="confirmation_number">confirmation_number</span>
+<span>Events</span>
+</a>
+<a class="flex items-center gap-3 text-stone-500 hover:bg-orange-900/20 hover:text-orange-600 pl-5 py-3 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="payments">payments</span>
+<span>Finances</span>
+</a>
+<a class="flex items-center gap-3 text-stone-500 hover:bg-orange-900/20 hover:text-orange-600 pl-5 py-3 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+<span>Matches</span>
+</a>
+<a class="flex items-center gap-3 text-stone-500 hover:bg-orange-900/20 hover:text-orange-600 pl-5 py-3 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="insights">insights</span>
+<span>Analytics</span>
+</a>
+</nav>
+<div class="mt-auto space-y-2 pt-6">
+<button class="w-full pulse-gradient text-on-primary-fixed py-4 rounded-full font-extrabold flex items-center justify-center gap-2 mb-6 hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+                Create Event
+            </button>
+<a class="flex items-center gap-3 text-stone-500 hover:text-orange-400 pl-5 py-2 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="help">help</span>
+<span>Support</span>
+</a>
+<a class="flex items-center gap-3 text-stone-500 hover:text-red-400 pl-5 py-2 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="logout">logout</span>
+<span>Logout</span>
+</a>
+</div>
+</aside>
+<!-- Main Canvas -->
+<main class="flex-1 ml-72 h-screen overflow-y-auto no-scrollbar bg-stone-950">
+<!-- TopNavBar (Authority: Shared Components JSON) -->
+<header class="fixed top-0 right-0 w-[calc(100%-280px)] z-40 bg-stone-950/60 backdrop-blur-xl flex justify-between items-center px-10 py-4 shadow-xl shadow-orange-950/5">
+<div class="flex items-center gap-4 flex-1">
+<div class="relative w-96 group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-stone-500">search</span>
+<input class="w-full bg-stone-900/50 border-none rounded-full pl-12 pr-6 py-2.5 text-sm focus:ring-2 focus:ring-orange-600 transition-all text-stone-100 placeholder-stone-500" placeholder="Search events, analytics or matches..." type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<button class="relative text-stone-500 hover:text-orange-500 transition-colors">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+<span class="absolute top-0 right-0 w-2 h-2 bg-orange-600 rounded-full"></span>
+</button>
+<button class="text-stone-500 hover:text-orange-500 transition-colors">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+<div class="h-10 w-[1px] bg-stone-800 mx-2"></div>
+<div class="flex items-center gap-3">
+<img alt="Producer Profile" class="w-10 h-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABC0XepOgF76gptB6X4HI-KpA4sPBXpBsTjv3gXxk2ti0y8oRSMcVRjwNwS2J_5czbRXWJcit7_2uBX_zo1ZESYASCFS9mZVsXgDRQ1BIhjcFduXRooTt6VaWZHsBECe1-EcMMiQuoIondkKMBAmGjLLnz69xaAOs2gwVAiwzafZud1j5fXU8UgLP-PW7G_ulUuIT1TXuCBdKrnTlo-axkeRAzXuUEtpbfhodgFzsQfMYwfHv3ojjpYBYPUcJv4FyDNoQmna3p5Qg"/>
+<span class="text-sm font-bold text-stone-300">The Living Pulse</span>
+</div>
+</div>
+</header>
+<!-- Content Body -->
+<div class="pt-24 px-10 pb-12 space-y-10">
+<!-- Hero High Impact Metrics (Editorial Grid) -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<div class="bg-stone-900 p-8 rounded-xl relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10 text-6xl material-symbols-outlined" data-icon="payments">payments</div>
+<p class="text-stone-500 text-sm font-semibold uppercase tracking-widest mb-2">Receita Total</p>
+<h3 class="text-4xl font-black text-stone-100">R$ 1.2M</h3>
+<div class="mt-4 flex items-center gap-2 text-emerald-500 text-sm font-bold">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+<span>+14.2%</span>
+</div>
+</div>
+<div class="bg-stone-900 p-8 rounded-xl relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10 text-6xl material-symbols-outlined" data-icon="confirmation_number">confirmation_number</div>
+<p class="text-stone-500 text-sm font-semibold uppercase tracking-widest mb-2">Ingressos</p>
+<h3 class="text-4xl font-black text-stone-100">24.8k</h3>
+<div class="mt-4 flex items-center gap-2 text-emerald-500 text-sm font-bold">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+<span>+8.1%</span>
+</div>
+</div>
+<div class="bg-stone-900 p-8 rounded-xl relative overflow-hidden group border-b-4 border-orange-600">
+<div class="absolute top-0 right-0 p-4 opacity-10 text-6xl material-symbols-outlined" data-icon="favorite">favorite</div>
+<p class="text-stone-500 text-sm font-semibold uppercase tracking-widest mb-2">Matches</p>
+<h3 class="text-4xl font-black text-orange-500">8.5k</h3>
+<div class="mt-4 flex items-center gap-2 text-orange-400 text-sm font-bold">
+<span class="material-symbols-outlined text-sm">bolt</span>
+<span>High Velocity</span>
+</div>
+</div>
+<div class="bg-stone-900 p-8 rounded-xl relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10 text-6xl material-symbols-outlined" data-icon="share">share</div>
+<p class="text-stone-500 text-sm font-semibold uppercase tracking-widest mb-2">Engagement</p>
+<h3 class="text-4xl font-black text-stone-100">92%</h3>
+<div class="mt-4 flex items-center gap-2 text-secondary-fixed-dim text-sm font-bold">
+<span class="material-symbols-outlined text-sm">stars</span>
+<span>Top Tier</span>
+</div>
+</div>
+</div>
+<!-- Asymmetrical Data Section -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+<!-- Performance Chart Visual (Bento Style) -->
+<div class="lg:col-span-2 bg-stone-900/50 p-10 rounded-xl">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="text-3xl font-black tracking-tight mb-2">Vendas Mensais</h2>
+<p class="text-stone-500">Desempenho comparativo do último semestre</p>
+</div>
+<div class="flex gap-2">
+<span class="px-4 py-1 bg-orange-600/10 text-orange-500 text-xs font-bold rounded-full border border-orange-600/20">2024</span>
+<span class="px-4 py-1 bg-stone-800 text-stone-500 text-xs font-bold rounded-full">2023</span>
+</div>
+</div>
+<!-- Mock Chart -->
+<div class="h-64 flex items-end gap-6 w-full">
+<div class="flex-1 bg-stone-800 rounded-t-lg h-[40%] transition-all hover:bg-stone-700 relative group">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 bg-stone-100 text-stone-900 px-2 py-1 rounded text-[10px] font-black opacity-0 group-hover:opacity-100 transition-opacity">JAN</div>
+</div>
+<div class="flex-1 bg-stone-800 rounded-t-lg h-[55%] transition-all hover:bg-stone-700 relative group"></div>
+<div class="flex-1 bg-stone-800 rounded-t-lg h-[45%] transition-all hover:bg-stone-700 relative group"></div>
+<div class="flex-1 pulse-gradient rounded-t-lg h-[85%] transition-all hover:opacity-80 relative group">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 bg-orange-500 text-on-primary-fixed px-2 py-1 rounded text-[10px] font-black">APR</div>
+</div>
+<div class="flex-1 bg-stone-800 rounded-t-lg h-[70%] transition-all hover:bg-stone-700 relative group"></div>
+<div class="flex-1 bg-stone-800 rounded-t-lg h-[95%] transition-all hover:bg-stone-700 relative group shadow-[0_0_40px_rgba(251,139,63,0.2)]"></div>
+<div class="flex-1 bg-stone-800 rounded-t-lg h-[60%] transition-all hover:bg-stone-700 relative group"></div>
+</div>
+<div class="flex justify-between mt-6 text-[10px] font-bold text-stone-600 tracking-tighter uppercase">
+<span>Jan</span><span>Feb</span><span>Mar</span><span class="text-orange-500">Apr</span><span>May</span><span>Jun</span><span>Jul</span>
+</div>
+</div>
+<!-- Recent Activity (Glassmorphism Sidebar) -->
+<div class="glass-panel p-8 rounded-xl border border-stone-800/50">
+<h2 class="text-xl font-black mb-8 flex items-center gap-3">
+<span class="material-symbols-outlined text-orange-500">bolt</span>
+                        Atividade Social
+                    </h2>
+<div class="space-y-8">
+<div class="flex gap-4">
+<div class="relative">
+<img alt="User Avatar" class="w-12 h-12 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIFSK7fHFobJrjpxptiGZZ19NN4HGZAPL2MiJW2xI7DB46yz2H4oFD679kAfKSjevhpoH7o2TRgQkeKzIuZc89BimLMdemG55RV75qw9LL9f8KYll34qrAKzRBtpxoW68dzliuWt79zT29rOF3X5EZTfDB-i0-iqd-n1wSLEx9w6mK9DtEgwya7U02by9g-TmNBGbp80TOBQz_jvJ7toZPy4xPgj0NFFDJ7H8HQh9Yof9QD0C8MWMdk_OuGCar7pS9hBp8AwFOwZ8"/>
+<span class="absolute -bottom-1 -right-1 bg-orange-500 rounded-full p-0.5 border-2 border-stone-950">
+<span class="material-symbols-outlined text-[10px] block font-bold" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</span>
+</div>
+<div>
+<p class="text-sm font-bold text-stone-200">Novo Match Gerado</p>
+<p class="text-xs text-stone-500">Mariana e Lucas deram match no evento <span class="text-orange-500">Techno Pulse</span></p>
+<p class="text-[10px] text-stone-600 mt-1 uppercase font-bold">Há 2 minutos</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="relative">
+<img alt="User Avatar" class="w-12 h-12 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2WaabFGXv4gIqnKj3tVZRYg5t_vh554x79ti46Igq884TZTn-r3IWIRC4hNoZFqZPbIOklvStFaVrRallmR9C323M43GABvdVFlVnMyUrL4tOi1UkF52T3jQTnmDIIZxzMHdBOeICXheMSm0dXJxd10-WFhLiR5WrAL4zIt9epBwQx0jwIWQ1vrxAshhrrbYTqK1ohkSuDHMjaOBl5FRVVB3VijozS1zFyzT71n64m4wwtABBqO1LwqXUO2-Yp6GkwoZZGKOGDTA"/>
+<span class="absolute -bottom-1 -right-1 bg-secondary rounded-full p-0.5 border-2 border-stone-950">
+<span class="material-symbols-outlined text-[10px] block font-bold">chat</span>
+</span>
+</div>
+<div>
+<p class="text-sm font-bold text-stone-200">Novo Post na Comunidade</p>
+<p class="text-xs text-stone-500">"Alguém animado para o show de sábado?" — <span class="text-secondary-fixed">@roberto_vibe</span></p>
+<p class="text-[10px] text-stone-600 mt-1 uppercase font-bold">Há 15 minutos</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="relative">
+<img alt="User Avatar" class="w-12 h-12 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvSLaafKBklfMT3wMDodmxaUy9quTfxt32iLzlXgG-KcESQM_XRQWuOryb7z07R969gOSuGV4iaZn0MX9kM0oDI-pNT19WIDKSCAFFXt6sMuOb3VGuntU9X75ZTaLODDJluQZFQMESHJoX8JHkafYuTnfSASkBEmO9qD6dTqfZxPCanPJQMR4plLryhVrK9o75wUi2apEAKFhbqvMJvLeBwXrO-5jt4uM25AF3wkCHIMmI_6I6s7J2RXnMw-G1seg5yL6dKjNCzXY"/>
+<span class="absolute -bottom-1 -right-1 bg-orange-500 rounded-full p-0.5 border-2 border-stone-950">
+<span class="material-symbols-outlined text-[10px] block font-bold" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</span>
+</div>
+<div>
+<p class="text-sm font-bold text-stone-200">Novo Match Gerado</p>
+<p class="text-xs text-stone-500">Ana e Pedro se conectaram via <span class="text-orange-500">Vibra Match</span></p>
+<p class="text-[10px] text-stone-600 mt-1 uppercase font-bold">Há 42 minutos</p>
+</div>
+</div>
+</div>
+<button class="w-full mt-10 py-3 rounded-full border border-stone-800 text-stone-400 text-sm font-bold hover:bg-stone-900 transition-all">Ver Toda Atividade</button>
+</div>
+</div>
+<!-- Eventos em Destaque (Asymmetric Layout) -->
+<section>
+<div class="flex justify-between items-center mb-8">
+<h2 class="text-3xl font-black tracking-tight">Eventos em Destaque</h2>
+<a class="text-orange-500 font-bold flex items-center gap-2 hover:translate-x-1 transition-transform" href="#">
+                        Ver todos <span class="material-symbols-outlined">arrow_right_alt</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Event Card 1 -->
+<div class="bg-stone-900 rounded-xl overflow-hidden group">
+<div class="h-48 relative">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="vibrant underground techno club scene with laser lights and crowds dancing in motion blur" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA0AhZ_DbiutPKGGra7rOwjq1YhjzDfTJ-vx_ykmGTCOdjStgcTcyIj--OUUgNRLeuDl1LOip62eIozZNmxm5bg3y66dKOx3DIpf3ZrYReYfns0Su273wsTuCAFhEjIu6VcduGej9xKTOdxHzhZdohjle5R8EyFrzs6Tsyf8YLtdGpcH5ZjxdUZT0rtZSC68Khyxrm-heGR4VFHGGaERnebr97HlMTxb35SIx2c3F4lT17DfleZFDYHL9MWcwLhNvEPt6swJ6OiBz8');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-stone-900 via-transparent to-transparent"></div>
+<span class="absolute top-4 left-4 bg-emerald-500 text-on-primary-fixed text-[10px] font-black px-3 py-1 rounded-full uppercase">Vendas Abertas</span>
+</div>
+<div class="p-6">
+<h4 class="text-xl font-bold mb-1">Techno Pulse: Underworld</h4>
+<p class="text-stone-500 text-sm mb-6 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">location_on</span> Arena Vibra, SP
+                            </p>
+<div class="space-y-4">
+<div class="flex justify-between text-xs font-bold uppercase tracking-widest text-stone-400">
+<span>Progresso de Vendas</span>
+<span class="text-orange-500">82%</span>
+</div>
+<div class="w-full h-2 bg-stone-800 rounded-full overflow-hidden">
+<div class="h-full pulse-gradient rounded-full" style="width: 82%"></div>
+</div>
+<div class="flex justify-between items-center pt-2">
+<div class="flex -space-x-3">
+<img class="w-8 h-8 rounded-full border-2 border-stone-900" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe0CC8m8lujFd9SkDZxdNczqpgN36LRG2Q2j2mAXRpH_DvX_-Plvl_q1KnVU3VFIOsSpNyVGDoRUdcy_7tN8pHhburUIc_hlEZoVyHgsFn76Q2SCQeWuYmIdxWws5A0uiy1sVohawdrOXCkHZFgb5B5fIxd9qCExmfFaBwNh2b4IAE7jZTG7sYBrwjt106wJ1AGa7iPu5WS4Rz5q2dK54-OMMK23w_TWgt3_jKsiXe6gJztiuw1rrxFRvF5EyujABxnfTYabs4W3I"/>
+<img class="w-8 h-8 rounded-full border-2 border-stone-900" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP6eKWDGonaqW9xC9HbeUrTPy9cP_lhD5swT_1TnHC7OzBv6qQFXi1Qm1RF0qaRS3Xr1ySOSMfENaFcWB34rIG3yBKMhPoGxReiZmNdOP6LslVNwip2qTC1Y-3vtOlUDDLpdRIRwfOCCNnnVzK1yrVl8KsiAXnAPFlyKXAIxljejfQNb-loS75cBTzvSlLk9vUKkVnyMHswVLjV68WacYgrK2mKWilA5FwOlL5E_wB5HJUThiGTxTTBIwR0gOZQS-i2pcmaDI7DJw"/>
+<img class="w-8 h-8 rounded-full border-2 border-stone-900" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3-jPoeUnH9F1pjqiwUU7yo36s1Ad0WfpmBUEO3_87yC4__1XUzOXZiI5h3QcqomK6RHV2sL0VoNNqk9h0CJbUXhqXNHaqUq5EJVpy6SQPCdQb4BqX3dL5Lpefsvq8UrYJp1_7feJPAOMSUJEFLrQUKp8KPrEJyVKSB9yAVUXP5bi25fwwgyQilClxvcKmV0mRTojEd2h4j15roySMRe-e76Urq7DfT8wlfoPw8BmTqtzaPbwbne9lsa08S-HLlJIQlYUZoOdcAMo"/>
+<div class="w-8 h-8 rounded-full bg-stone-800 border-2 border-stone-900 flex items-center justify-center text-[10px] font-bold">+4.2k</div>
+</div>
+<span class="text-stone-400 text-xs">12.4k Participantes</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Event Card 2 -->
+<div class="bg-stone-900 rounded-xl overflow-hidden group">
+<div class="h-48 relative">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="dramatic stage lighting at a luxury sunset beach party with warm bokeh effect and palm trees" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD671h-LTK5LI_82O0g8cOlJAlDSSywWGDHB_fN2jnY8LnUt05Fe9tb7LxUxporCTrFBy2PNSE35RBWBbTzrlft4uhsfK_2fIbioHzQwzeFLWLnbdOpNQyxQbpg4nxrOlHgqURajkD5xTHR0H7msWy_8AF2Kstu0a-cfLthXvS4T8Od0YFz8mOqe4ZaliZG3rZVJpz0yVPHj1U4G84CIKYn4U40R_vsH_q9iwgNes0eZEoYXQBxO9aFAhJfwcztB5XrbSdhLUH5Kyk');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-stone-900 via-transparent to-transparent"></div>
+<span class="absolute top-4 left-4 bg-orange-600 text-on-primary-fixed text-[10px] font-black px-3 py-1 rounded-full uppercase">Sold Out</span>
+</div>
+<div class="p-6">
+<h4 class="text-xl font-bold mb-1">Golden Hour Festival</h4>
+<p class="text-stone-500 text-sm mb-6 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">location_on</span> Rooftop Lounge, RJ
+                            </p>
+<div class="space-y-4">
+<div class="flex justify-between text-xs font-bold uppercase tracking-widest text-stone-400">
+<span>Progresso de Vendas</span>
+<span class="text-orange-500">100%</span>
+</div>
+<div class="w-full h-2 bg-stone-800 rounded-full overflow-hidden">
+<div class="h-full pulse-gradient rounded-full" style="width: 100%"></div>
+</div>
+<div class="flex justify-between items-center pt-2">
+<div class="flex -space-x-3">
+<img class="w-8 h-8 rounded-full border-2 border-stone-900" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAK6o1Y11TBoOBBrbn1W4MdUbQrWopIeNUmJQQ8e62MQTvkkSm2_xIszFPiynrRVrfeILQP15vUDAeHQJfjfj8GDbsLwqx11nHrNqvdv97pabH5PHyrWxVwOcqGg4jQ6xmhDJJZ97-eCbxRQfagzMhPkjkvnMOGVGYDBy165gena4BZVxMNBovXUn1tOmEHhvCdxSNpKyeHjbXPjy0kdJth_R7u1htDmD_BUCIJI9ufxJenKSunhwYSXgS4G_oGb9Qfo7DuXN-n7SA"/>
+<img class="w-8 h-8 rounded-full border-2 border-stone-900" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd21sgwY2DCVjDhUdEutVVjrJ8hTKPG0z-AvT21BeVFZavZuKd1cA73IwfNdsOC5pVAFoakHj0bRKSH9lYZpuxxnjOgxg_Zlza4H7ZPeRkh1KG_qvGX3cGVk_FLGbtDNG5O_DrHuD6jvKpf7edNeGnCVV2f5p1mVAnjOHLD4fks4F4owE19euJE1jsoLFeFWdSPBOUUb0jeNJSo-HYVPJLDSYrt90ShCBb2kJvwVt17hh1LIE0Nd5dDnHc88QUoh2XAy1qVILXXxw"/>
+<div class="w-8 h-8 rounded-full bg-stone-800 border-2 border-stone-900 flex items-center justify-center text-[10px] font-bold">+2.8k</div>
+</div>
+<span class="text-stone-400 text-xs">8.5k Participantes</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Event Card 3 -->
+<div class="bg-stone-900 rounded-xl overflow-hidden group">
+<div class="h-48 relative">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="cinematic view of a massive indoor electronic music festival with blue and orange lighting effects" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD9Cds9dF8fQjRESmsnkL6F0e5aEr3u-qllmWt_yMrr5RDFGAP4cMgni6Xr6D4tcty15IXy8bHTXgadJohK74ch2rQbSs_bEBrEM5iESWGf8mnITRCSjq6s8b3CUp5IhUC2XrwhemfX5MZ43BLW0dytPqnBcK3-e0OjaJXJfi-We6gO2iFUSO_qy-H-02O600Vtd9UdmznkNvRc0VGrAilIf7L2qIeXLhjvBEgg-9-iig2uRO5PoHnisN4AVYHNHs58YBJ3fkeu7cA');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-stone-900 via-transparent to-transparent"></div>
+<span class="absolute top-4 left-4 bg-emerald-500 text-on-primary-fixed text-[10px] font-black px-3 py-1 rounded-full uppercase">Vendas Abertas</span>
+</div>
+<div class="p-6">
+<h4 class="text-xl font-bold mb-1">Vibra Neon Night</h4>
+<p class="text-stone-500 text-sm mb-6 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">location_on</span> Espaço Unimed, SP
+                            </p>
+<div class="space-y-4">
+<div class="flex justify-between text-xs font-bold uppercase tracking-widest text-stone-400">
+<span>Progresso de Vendas</span>
+<span class="text-orange-500">45%</span>
+</div>
+<div class="w-full h-2 bg-stone-800 rounded-full overflow-hidden">
+<div class="h-full pulse-gradient rounded-full" style="width: 45%"></div>
+</div>
+<div class="flex justify-between items-center pt-2">
+<div class="flex -space-x-3">
+<img class="w-8 h-8 rounded-full border-2 border-stone-900" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNveaf2gbk8XQC1o1zgpdoB6lAvIAgpArcBmTqOD4nLZhkQ7LqgPBtq06b869thnZrLb_nYIfPZZdc49fLgqYc2-2I5uZWYGIhz_-wg8Ul1vHLYe81hQMx74dJIxXnoo1NqyQVXn7jcB_VKxMi0lCL_Ew2iOdyDM7ngwQ9dKNRl5J_Xj897JaSPyLNUGICRT9-vZEsYqkUvCRuG-ZEN-1HitnZ2K-Dl9MRqB_sd3XuNjnyW3LXs1IUbU6W1tzS7TK4vw2J_dJyfRA"/>
+<img class="w-8 h-8 rounded-full border-2 border-stone-900" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGvBi8tm7UsbDOzHavM7OnpQ9jP4iR9lz_e8URU6K91oAIoIx6AfL7JgSEQAx1ZyO4mnPV78yWILVCPitTVHJQ7MKf9W6YFMbzX-3zJv4A27Pn09-HTFg6rrvj2mYE9aKWSw08xkR4pNt69Os7WogWMjEsquzV7_w-OZdVkPjbcQzXggE0EdGUBsj9DKqtlottJt5KWFF26cnI4xu2dLlGW15tpIFMIphroqC2klY4nlYvgARuDznNnKgaLtp-zxy565DUP97HlSI"/>
+<img class="w-8 h-8 rounded-full border-2 border-stone-900" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArW16cswavj-Dq2KI2_FIJVEnyxUfJao3k0TOHO6ma5S2ZNZ_PeS-cDLuj8uUlwf1iUK5LN9VHb2bIzWVU76UkLjksgft3VJTmHmKwvLVNBQvAG7X1asFB5FiVMSFMpD89_sB8oZtwAfd4P_6nl5Oro0ZuYNlZ-LMMqodJs5jTZ7vEGkenO4MMAY8ZzlE5coLJZPMxLgvUazVIztvgAiHk7lPr6Y5jYDH2TsryQRBCGfFwixyju0rHvUx6af3Uq38VDAhuNcUQfXo"/>
+<div class="w-8 h-8 rounded-full bg-stone-800 border-2 border-stone-900 flex items-center justify-center text-[10px] font-bold">+1.2k</div>
+</div>
+<span class="text-stone-400 text-xs">3.9k Participantes</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+</body></html>

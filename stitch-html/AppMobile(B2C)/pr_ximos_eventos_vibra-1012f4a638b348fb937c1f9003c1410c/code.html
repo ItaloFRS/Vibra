@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vibra - Próximos Eventos</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "error": "#b02500",
+                        "outline": "#9c6d43",
+                        "error-container": "#f95630",
+                        "on-surface-variant": "#7d522b",
+                        "inverse-primary": "#fb8b3f",
+                        "on-background": "#482603",
+                        "primary-dim": "#833b00",
+                        "on-secondary-fixed-variant": "#594291",
+                        "secondary-fixed-dim": "#cdb9ff",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#d9a274",
+                        "on-tertiary-container": "#640039",
+                        "inverse-on-surface": "#c79265",
+                        "secondary-container": "#dac9ff",
+                        "on-secondary-container": "#503987",
+                        "tertiary-fixed": "#ff8cbb",
+                        "primary": "#954400",
+                        "on-tertiary-fixed": "#37001d",
+                        "error-dim": "#b92902",
+                        "tertiary": "#b00f69",
+                        "on-surface": "#482603",
+                        "on-secondary-fixed": "#3c2472",
+                        "surface-tint": "#954400",
+                        "primary-fixed-dim": "#ea7e33",
+                        "surface-container-high": "#ffdcc2",
+                        "surface-container-low": "#ffeee2",
+                        "on-secondary": "#f8f0ff",
+                        "on-primary-fixed-variant": "#562500",
+                        "on-tertiary": "#ffeff2",
+                        "tertiary-fixed-dim": "#ff73b0",
+                        "surface-variant": "#ffd5b4",
+                        "surface": "#fff4ef",
+                        "secondary-dim": "#584190",
+                        "tertiary-container": "#ff8cbb",
+                        "on-error-container": "#520c00",
+                        "inverse-surface": "#1b0a00",
+                        "on-primary-container": "#481e00",
+                        "surface-bright": "#fff4ef",
+                        "surface-dim": "#ffca9f",
+                        "secondary": "#644e9d",
+                        "primary-fixed": "#fb8b3f",
+                        "background": "#fff4ef",
+                        "primary-container": "#fb8b3f",
+                        "surface-container-highest": "#ffd5b4",
+                        "surface-container": "#ffe3cf",
+                        "tertiary-dim": "#9d005c",
+                        "on-primary": "#fff0e9",
+                        "on-error": "#ffefec",
+                        "secondary-fixed": "#dac9ff",
+                        "on-tertiary-fixed-variant": "#740043",
+                        "on-primary-fixed": "#1a0700"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen pb-32">
+<!-- TopAppBar Execution -->
+<header class="w-full sticky top-0 z-50 bg-[#FFF4EF] dark:bg-stone-950 flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#954400]" data-icon="calendar_today">calendar_today</span>
+<h1 class="font-plus-jakarta text-2xl font-bold tracking-tighter text-[#954400]">Próximos Eventos</h1>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#954400] hover:opacity-80 transition-opacity cursor-pointer" data-icon="search">search</span>
+<div class="w-8 h-8 rounded-full bg-primary-container overflow-hidden border-2 border-primary-fixed">
+<img class="w-full h-full object-cover" data-alt="portrait of a stylish young woman smiling, vibrant orange lighting theme, high-end photography style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApydcsvloa4bwqPPRahPR8fGqZqPCD2Hc_xvlCnWgZy47Pfcy1Dt7fPDIV9coSj2fE3ocgiRVRp0sKyV4Gt7XL4kMaUzKD4HmEL4phs5D17PPLMqadtrnFk0ZkXqdev530BdrnXsM-vqYTEiCW8UZl2eg_ZLypQ_7IEqPBz_p9AiZHR8YfekRK2w8KW8S1aDaoW-mCES4ldUUbiH7i0qe0TrNLNRYVserXp4_JY5pPtRGrGOv0FSarnHOFamMA2hXkjzMcnAbjWes"/>
+</div>
+</div>
+</header>
+<main class="px-6 space-y-8 mt-4">
+<!-- Logo Branding Area -->
+<div class="flex justify-start">
+<img alt="Vibra Logo" class="h-8 object-contain opacity-90" data-alt="Vibra brand logo, minimalist and premium aesthetic, orange and deep brown tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAG-slqXOzR07nKDEXr3sDJXf8VeplkbLmt-_wN5QTrfjmbEJxJI1HIRX2J_jMNlmHPnNMP-v4BJnlytOZ8Fke-fqr9Fuig2QDF171-JqpSFk2oR3sxT_aimwasSC7GLwagD9_xGxhFF_StZpTTjLbY4Md6t5B9hLuVAUJ9bJjFVsSVn11K7JozSzBNyyBrQq_RscL7KkLgN4EfmhtneI80_YLVraYppoixYcDurKUvzJKdZSquuinHfE9mA5Rx9S5DIMbAEmDHxE"/>
+</div>
+<!-- Airbnb Style Horizontal Calendar -->
+<section class="space-y-4">
+<div class="flex items-center justify-between">
+<h2 class="text-on-surface font-bold text-lg">Novembro 2024</h2>
+<span class="text-primary font-semibold text-sm">Ver tudo</span>
+</div>
+<div class="flex overflow-x-auto gap-3 no-scrollbar py-2">
+<!-- Inactive Day -->
+<div class="flex-shrink-0 w-16 h-20 flex flex-col items-center justify-center rounded-xl bg-surface-container-low border border-outline-variant/10">
+<span class="text-[10px] uppercase tracking-widest opacity-60 font-bold">Seg</span>
+<span class="text-lg font-extrabold">12</span>
+</div>
+<!-- Inactive Day -->
+<div class="flex-shrink-0 w-16 h-20 flex flex-col items-center justify-center rounded-xl bg-surface-container-low border border-outline-variant/10">
+<span class="text-[10px] uppercase tracking-widest opacity-60 font-bold">Ter</span>
+<span class="text-lg font-extrabold">13</span>
+</div>
+<!-- Active Day (DS Highlight #FB8B3F / Primary Fixed) -->
+<div class="flex-shrink-0 w-16 h-20 flex flex-col items-center justify-center rounded-xl bg-primary-container text-on-primary-fixed shadow-lg shadow-primary/10">
+<span class="text-[10px] uppercase tracking-widest font-bold">Qua</span>
+<span class="text-lg font-extrabold">14</span>
+</div>
+<!-- Inactive Day -->
+<div class="flex-shrink-0 w-16 h-20 flex flex-col items-center justify-center rounded-xl bg-surface-container-low border border-outline-variant/10">
+<span class="text-[10px] uppercase tracking-widest opacity-60 font-bold">Qui</span>
+<span class="text-lg font-extrabold">15</span>
+</div>
+<!-- Inactive Day -->
+<div class="flex-shrink-0 w-16 h-20 flex flex-col items-center justify-center rounded-xl bg-surface-container-low border border-outline-variant/10">
+<span class="text-[10px] uppercase tracking-widest opacity-60 font-bold">Sex</span>
+<span class="text-lg font-extrabold">16</span>
+</div>
+<!-- Inactive Day -->
+<div class="flex-shrink-0 w-16 h-20 flex flex-col items-center justify-center rounded-xl bg-surface-container-low border border-outline-variant/10">
+<span class="text-[10px] uppercase tracking-widest opacity-60 font-bold">Sáb</span>
+<span class="text-lg font-extrabold">17</span>
+</div>
+<!-- Inactive Day -->
+<div class="flex-shrink-0 w-16 h-20 flex flex-col items-center justify-center rounded-xl bg-surface-container-low border border-outline-variant/10">
+<span class="text-[10px] uppercase tracking-widest opacity-60 font-bold">Dom</span>
+<span class="text-lg font-extrabold">18</span>
+</div>
+</div>
+</section>
+<!-- Quick Filters -->
+<section class="flex gap-2 overflow-x-auto no-scrollbar">
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-bold text-sm whitespace-nowrap">Todas</button>
+<button class="bg-surface-container-highest text-on-surface px-6 py-2 rounded-full font-semibold text-sm whitespace-nowrap">Festas</button>
+<button class="bg-surface-container-highest text-on-surface px-6 py-2 rounded-full font-semibold text-sm whitespace-nowrap">Shows</button>
+<button class="bg-surface-container-highest text-on-surface px-6 py-2 rounded-full font-semibold text-sm whitespace-nowrap">Cultura</button>
+<button class="bg-surface-container-highest text-on-surface px-6 py-2 rounded-full font-semibold text-sm whitespace-nowrap">Gastronomia</button>
+</section>
+<!-- Editorial Event List -->
+<section class="space-y-10">
+<!-- Event Card 1 -->
+<div class="group relative space-y-4">
+<div class="relative aspect-[16/9] w-full overflow-hidden rounded-xl bg-surface-container-highest">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="dynamic dj performance at a crowded night club, neon orange and purple lighting, atmospheric smoke, high energy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHh1n7kUVGf4R8DSQllPD4ywE44yhOajp9O74QkWfaSDdNj2kCDRixGf1AMg6A4FVMK1VfPRGGIwS5pVmqV-2q1ZDspvOAJY3J_JlD1SekjIbn_W0HMXpCgEA0JPxcPQz56gfc-LaQzV9uG61LXgWMHsDFr2yNJgQaRz1_R-NopOxOYQzyqD2HcOIfyA-mz_U32sBTbyyOd6XR9TUzSjVsIANisOheKItp2LtfOhm21xsxJ5PEIMAYAWodV76w-X1Is8yaHIJ1-80"/>
+<div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full flex items-center gap-1.5 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-[10px] font-bold text-on-background uppercase tracking-wider">Matching Now</span>
+</div>
+<div class="absolute bottom-4 right-4 bg-primary text-on-primary px-4 py-2 rounded-full font-bold text-xs">
+                        A partir de R$ 80
+                    </div>
+</div>
+<div class="flex gap-6">
+<div class="flex flex-col items-center">
+<span class="text-primary font-black text-2xl leading-none">14</span>
+<span class="text-[10px] uppercase tracking-widest font-bold opacity-40">Nov</span>
+</div>
+<div class="flex-1 space-y-1">
+<h3 class="text-xl font-bold leading-tight group-hover:text-primary transition-colors">Vibra Sunset: Electronic Session</h3>
+<div class="flex items-center gap-4 text-sm opacity-70">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+<span>Skyline Rooftop, SP</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="schedule">schedule</span>
+<span>17:00</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Event Card 2 -->
+<div class="group relative space-y-4">
+<div class="relative aspect-[16/9] w-full overflow-hidden rounded-xl bg-surface-container-highest">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="outdoor summer music festival stage, large crowd with hands in the air, warm sunset lighting, cinematic quality" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBspmFBs7ZfoGlvSCCbiB4FaWXM5qhCnHoyLYtBsNxXtXccoqD-ZAye9GhhkljjXRBWh8lF_Bu9TKRhEeBgMfmLTrj-uNHZLrlsk8xxNWyEfThqF6sDgqIFUIXzsXcNBnWQwOTcdms6_s2ZPbIoEJSva-goxBUxCiHo91tJuR883H78F7xnp6nDwyQBC7V6vgDtT8060cVLfDPsxeK_Nqnds_8yrEEZVpLI3z1fAvbIIlWWDoPD_OLk4Yvnvpdyx1PnNkf-Wxe7tE4"/>
+<div class="absolute bottom-4 right-4 bg-primary text-on-primary px-4 py-2 rounded-full font-bold text-xs">
+                        Esgotado
+                    </div>
+</div>
+<div class="flex gap-6">
+<div class="flex flex-col items-center">
+<span class="text-on-surface font-black text-2xl leading-none opacity-40">15</span>
+<span class="text-[10px] uppercase tracking-widest font-bold opacity-40">Nov</span>
+</div>
+<div class="flex-1 space-y-1">
+<h3 class="text-xl font-bold leading-tight group-hover:text-primary transition-colors">Jazz in the Garden</h3>
+<div class="flex items-center gap-4 text-sm opacity-70">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+<span>Parque Ibirapuera, SP</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="schedule">schedule</span>
+<span>14:00</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Event Card 3 -->
+<div class="group relative space-y-4">
+<div class="relative aspect-[16/9] w-full overflow-hidden rounded-xl bg-surface-container-highest">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="abstract artistic exhibition space with vibrant orange light installations, modern museum interior, high-end editorial look" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByiuYDMj7PzoxcpZoac39Eb1yIXGd8kLzW8_slCbAqjISJ80u7h88RnJU9pkdAWA4RtcV59B5i2sfblj3tcOTYfLP7Q8b6prZXfUi_BDcdnqWZqcMogDmfMXGDswRMzGbhehRgqqk9NweqDLH7V_cB6A2RjPUb5MoZ1vxNoASM3dOprvMxCMPRc4bQMeKwwdb95jTX64_-YjDOc8Si0xYOiq-T4arP_Bx_x7ZMeBonaeczEYmLoiVANl3iHc36LhlqNi0yzsM3FrU"/>
+<div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full flex items-center gap-1.5 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-[10px] font-bold text-on-background uppercase tracking-wider">Matching Now</span>
+</div>
+<div class="absolute bottom-4 right-4 bg-primary text-on-primary px-4 py-2 rounded-full font-bold text-xs">
+                        A partir de R$ 45
+                    </div>
+</div>
+<div class="flex gap-6">
+<div class="flex flex-col items-center">
+<span class="text-on-surface font-black text-2xl leading-none opacity-40">16</span>
+<span class="text-[10px] uppercase tracking-widest font-bold opacity-40">Nov</span>
+</div>
+<div class="flex-1 space-y-1">
+<h3 class="text-xl font-bold leading-tight group-hover:text-primary transition-colors">Art Pulse Expo: 2024</h3>
+<div class="flex items-center gap-4 text-sm opacity-70">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+<span>Museu de Arte Moderna, SP</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="schedule">schedule</span>
+<span>10:00</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar Execution -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-white/60 dark:bg-stone-900/60 backdrop-blur-xl shadow-[0_-12px_40px_rgba(72,38,3,0.08)] flex justify-around items-center px-4 pb-8 pt-4 rounded-t-[3rem]">
+<!-- Explorar (Active) -->
+<a class="flex flex-col items-center justify-center bg-[#FB8B3F] text-[#1A0700] rounded-full px-6 py-2 transition-transform Active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-plus-jakarta text-[11px] font-bold uppercase tracking-widest mt-1">Explorar</span>
+</a>
+<!-- Match (Inactive) -->
+<a class="flex flex-col items-center justify-center text-[#482603] dark:text-stone-400 opacity-60 hover:bg-[#FFEE E2] dark:hover:bg-stone-800 rounded-full transition-colors p-2" href="#">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+<span class="font-plus-jakarta text-[11px] font-bold uppercase tracking-widest mt-1">Match</span>
+</a>
+<!-- Ingressos (Inactive) -->
+<a class="flex flex-col items-center justify-center text-[#482603] dark:text-stone-400 opacity-60 hover:bg-[#FFEE E2] dark:hover:bg-stone-800 rounded-full transition-colors p-2" href="#">
+<span class="material-symbols-outlined" data-icon="confirmation_number">confirmation_number</span>
+<span class="font-plus-jakarta text-[11px] font-bold uppercase tracking-widest mt-1">Ingressos</span>
+</a>
+<!-- Perfil (Inactive) -->
+<a class="flex flex-col items-center justify-center text-[#482603] dark:text-stone-400 opacity-60 hover:bg-[#FFEE E2] dark:hover:bg-stone-800 rounded-full transition-colors p-2" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-plus-jakarta text-[11px] font-bold uppercase tracking-widest mt-1">Perfil</span>
+</a>
+</nav>
+<!-- Contextual Floating Action Button (Optional logic check - Home/Dashboard appropriate) -->
+<button class="fixed bottom-28 right-6 w-14 h-14 bg-primary text-on-primary rounded-full shadow-lg flex items-center justify-center hover:scale-105 active:scale-95 transition-all">
+<span class="material-symbols-outlined" data-icon="add" style="font-variation-settings: 'FILL' 1;">add</span>
+</button>
+</body></html>

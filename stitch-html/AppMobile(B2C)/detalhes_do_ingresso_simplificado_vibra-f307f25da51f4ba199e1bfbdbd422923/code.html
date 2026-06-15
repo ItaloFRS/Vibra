@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-fixed": "#3c2472",
+              "on-secondary-container": "#503987",
+              "primary": "#954400",
+              "tertiary-container": "#ff8cbb",
+              "surface-container-high": "#ffdcc2",
+              "on-primary-container": "#481e00",
+              "background": "#fff4ef",
+              "surface-container": "#ffe3cf",
+              "on-surface-variant": "#7d522b",
+              "on-primary-fixed": "#1a0700",
+              "tertiary-fixed-dim": "#ff73b0",
+              "surface-container-highest": "#ffd5b4",
+              "primary-fixed": "#fb8b3f",
+              "tertiary-fixed": "#ff8cbb",
+              "on-background": "#482603",
+              "surface-dim": "#ffca9f",
+              "inverse-primary": "#fb8b3f",
+              "surface": "#fff4ef",
+              "primary-fixed-dim": "#ea7e33",
+              "surface-tint": "#954400",
+              "secondary-fixed": "#dac9ff",
+              "error-container": "#f95630",
+              "on-tertiary-fixed-variant": "#740043",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary": "#f8f0ff",
+              "inverse-surface": "#1b0a00",
+              "tertiary": "#b00f69",
+              "surface-variant": "#ffd5b4",
+              "on-primary-fixed-variant": "#562500",
+              "on-secondary-fixed-variant": "#594291",
+              "primary-container": "#fb8b3f",
+              "on-tertiary-fixed": "#37001d",
+              "on-tertiary-container": "#640039",
+              "on-tertiary": "#ffeff2",
+              "error-dim": "#b92902",
+              "outline": "#9c6d43",
+              "secondary-container": "#dac9ff",
+              "error": "#b02500",
+              "on-error": "#ffefec",
+              "inverse-on-surface": "#c79265",
+              "surface-bright": "#fff4ef",
+              "primary-dim": "#833b00",
+              "surface-container-low": "#ffeee2",
+              "outline-variant": "#d9a274",
+              "on-primary": "#fff0e9",
+              "on-error-container": "#520c00",
+              "tertiary-dim": "#9d005c",
+              "secondary": "#644e9d",
+              "on-surface": "#482603",
+              "secondary-fixed-dim": "#cdb9ff",
+              "secondary-dim": "#584190"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .qr-pulse {
+        box-shadow: 0 0 0 0 rgba(251, 139, 63, 0.4);
+        animation: pulse 2s infinite;
+      }
+      @keyframes pulse {
+        0% { box-shadow: 0 0 0 0 rgba(251, 139, 63, 0.7); }
+        70% { box-shadow: 0 0 0 15px rgba(251, 139, 63, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(251, 139, 63, 0); }
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-fixed">
+<!-- TopAppBar -->
+<nav class="w-full top-0 z-50 bg-[#FFF4EF] dark:bg-stone-950 flex items-center justify-between px-6 py-4 w-full">
+<button class="text-[#954400] dark:text-[#FB8B3F] hover:opacity-80 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="font-['Plus_Jakarta_Sans'] font-bold tracking-tight text-[#954400] dark:text-[#FB8B3F] text-xl">Your Ticket</h1>
+<button class="text-[#954400] dark:text-[#FB8B3F] hover:opacity-80 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined">share</span>
+</button>
+</nav>
+<main class="max-w-md mx-auto px-6 pb-32 pt-4">
+<!-- QR Code Section -->
+<section class="flex flex-col items-center mb-10">
+<div class="relative group">
+<!-- Glowing Background for Kinetic Feel -->
+<div class="absolute -inset-4 bg-primary-container opacity-10 blur-2xl rounded-full"></div>
+<div class="qr-pulse relative bg-surface-container-lowest p-8 rounded-xl shadow-[0_12px_40px_rgba(72,38,3,0.08)]">
+<img alt="QR Code" class="w-48 h-48 grayscale hover:grayscale-0 transition-all duration-500" data-alt="sharp and clear minimalist QR code printed on high-quality white paper texture with clean black edges" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABrQXCGGdjEkLqD3KttBI6HKeGZ-ArOSGXqURPUz4WcYmtVLZRhmq9e9dJvQ59a0qWaF4Ik58P8ea6jqwBg5Y_vRkshFu9xx7V_Ft1HUacjoG1q_hIlAd_USzgmC-mdY_7dmdlnB18mCjsjoZqSuxrr_E8XK44X7RTtej8ZfpM5OD3M200vnI9e_UOxPXvUT-i5AVb4j7r6dup9iM_PPNf2xZXgcvOwVV1bQBouKcHcxvbBKd80vqJMBlwLKCSTbQ7KfCO6001yCo"/>
+</div>
+</div>
+<div class="mt-8 text-center">
+<p class="font-bold tracking-widest text-primary text-xs uppercase mb-1">APRESENTE NO CHECK-IN</p>
+<div class="h-1 w-12 bg-primary-container mx-auto rounded-full"></div>
+</div>
+</section>
+<!-- Event Info Card -->
+<section class="bg-surface-container-low rounded-xl p-6 mb-8 relative overflow-hidden">
+<!-- Asymmetrical Background Accent -->
+<div class="absolute -top-10 -right-10 w-32 h-32 bg-primary-container/10 rounded-full blur-3xl"></div>
+<div class="flex items-center gap-4 mb-8">
+<div class="w-16 h-16 rounded-full overflow-hidden flex-shrink-0 bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="vibrant neon music festival stage at night with purple and orange laser lights and a crowd silhouette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDK0LDiSgPfRItvntasuxZ3jbk90Ql5ehA8QlcPsk7B7-M_En0WEJl2nCVVkJveVQSPRDrazo-sLRpRWDfpIWxcB8-FZ0mysHNes2LJVgCtCvRvJGvWklkiHDP86c8cXXZzcFV2tRSQq3Y2T4qGtYwcAlWT4Uz63aXNSR4tDWTXHqKNgbcnLdW_Y3NIy_cf7LIyF07Cpi8LB-MZNbdE_vP5UeLn-tRTZl028kQWtINcyeKoezBdof_JhiG2LKlkMPwSFKB3uyD7ZNk"/>
+</div>
+<div>
+<h2 class="font-headline font-bold text-xl leading-tight text-on-surface">Neon Dreams Festival 2024</h2>
+<p class="text-on-surface-variant text-sm flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-sm">location_on</span> Arena Vibra
+                    </p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-y-6 gap-x-4">
+<div class="flex flex-col">
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/60">Data</span>
+<span class="font-bold text-lg text-on-surface">24 Ago</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/60">Horário</span>
+<span class="font-bold text-lg text-on-surface">21:00h</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/60">Setor</span>
+<span class="font-bold text-lg text-primary">VIP Lounge</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/60">Assento</span>
+<span class="font-bold text-lg text-on-surface">B / 14</span>
+</div>
+</div>
+<div class="mt-8 pt-6 border-t border-outline-variant/15">
+<a class="flex items-center justify-between text-primary font-bold text-sm group" href="#">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined">map</span>
+                        Abrir localização no Maps
+                    </span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">chevron_right</span>
+</a>
+</div>
+</section>
+<!-- Actions -->
+<div class="space-y-4 mb-12">
+<button class="w-full bg-primary-container text-on-primary-fixed font-bold py-4 rounded-full shadow-lg shadow-primary-fixed/20 flex items-center justify-center gap-2 active:scale-95 transition-all">
+<span class="material-symbols-outlined">directions</span>
+                Como Chegar
+            </button>
+</div>
+<!-- Extra: Wallet Branding -->
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-8 pt-4 bg-[#FFFFFF]/60 backdrop-blur-xl z-50 rounded-t-[3rem] shadow-[0_-12px_40px_rgba(72,38,3,0.08)]">
+<div class="flex flex-col items-center justify-center text-[#482603] opacity-60 hover:bg-[#FFEE E2] rounded-full px-4 py-2 transition-all">
+<span class="material-symbols-outlined">explore</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-bold uppercase tracking-wider mt-1">Explore</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-[#FB8B3F] text-[#1A0700] rounded-full px-6 py-2 transition-all duration-300">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">confirmation_number</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-bold uppercase tracking-wider mt-1">Tickets</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#482603] opacity-60 hover:bg-[#FFEE E2] rounded-full px-4 py-2 transition-all">
+<span class="material-symbols-outlined">favorite</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-bold uppercase tracking-wider mt-1">Saved</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#482603] opacity-60 hover:bg-[#FFEE E2] rounded-full px-4 py-2 transition-all">
+<span class="material-symbols-outlined">person</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-bold uppercase tracking-wider mt-1">Profile</span>
+</div>
+</nav>
+</body></html>

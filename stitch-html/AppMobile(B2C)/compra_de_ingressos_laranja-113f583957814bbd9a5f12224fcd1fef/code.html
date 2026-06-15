@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-error": "#ffefec",
+              "on-surface": "#482603",
+              "tertiary": "#b00f69",
+              "primary-container": "#fb8b3f",
+              "tertiary-dim": "#9d005c",
+              "inverse-on-surface": "#c79265",
+              "primary": "#954400",
+              "on-primary-container": "#481e00",
+              "primary-fixed-dim": "#ea7e33",
+              "secondary-fixed-dim": "#cdb9ff",
+              "on-tertiary-container": "#640039",
+              "surface-container-highest": "#ffd5b4",
+              "on-primary-fixed": "#1a0700",
+              "secondary-fixed": "#dac9ff",
+              "tertiary-fixed-dim": "#ff73b0",
+              "secondary-dim": "#584190",
+              "primary-fixed": "#fb8b3f",
+              "surface": "#fff4ef",
+              "surface-container-low": "#ffeee2",
+              "secondary-container": "#dac9ff",
+              "on-tertiary-fixed": "#37001d",
+              "surface-container-lowest": "#ffffff",
+              "surface-container": "#ffe3cf",
+              "error": "#b02500",
+              "error-container": "#f95630",
+              "tertiary-fixed": "#ff8cbb",
+              "outline": "#9c6d43",
+              "surface-dim": "#ffca9f",
+              "surface-bright": "#fff4ef",
+              "secondary": "#644e9d",
+              "on-primary": "#fff0e9",
+              "on-error-container": "#520c00",
+              "primary-dim": "#833b00",
+              "surface-container-high": "#ffdcc2",
+              "tertiary-container": "#ff8cbb",
+              "on-background": "#482603",
+              "on-tertiary-fixed-variant": "#740043",
+              "outline-variant": "#d9a274",
+              "surface-tint": "#954400",
+              "background": "#fff4ef",
+              "on-secondary-fixed-variant": "#594291",
+              "on-secondary": "#f8f0ff",
+              "inverse-primary": "#fb8b3f",
+              "error-dim": "#b92902",
+              "on-secondary-fixed": "#3c2472",
+              "on-surface-variant": "#7d522b",
+              "on-tertiary": "#ffeff2",
+              "inverse-surface": "#1b0a00",
+              "surface-variant": "#ffd5b4",
+              "on-primary-fixed-variant": "#562500",
+              "on-secondary-container": "#503987"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .pulse-gradient {
+            background: linear-gradient(135deg, #954400 0%, #FB8B3F 100%);
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen pb-40">
+<!-- TopAppBar -->
+<header class="bg-[#FFF4EF] flex items-center px-6 h-16 w-full justify-between docked full-width top-0 shadow-[0_12px_40px_rgba(72,38,3,0.08)] sticky z-50">
+<div class="flex items-center gap-4">
+<button class="text-[#954400] active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="text-[#954400] font-['Plus_Jakarta_Sans'] font-bold tracking-tight text-lg">Comprar Ingressos</h1>
+</div>
+<div class="text-xl font-extrabold text-[#954400]">
+            NDF'24
+        </div>
+</header>
+<main class="max-w-2xl mx-auto px-6 pt-8">
+<!-- Event Header Editorial -->
+<section class="mb-12">
+<div class="relative w-full aspect-[21/9] rounded-xl overflow-hidden mb-6 shadow-xl">
+<img alt="Neon Dreams Festival Header" class="w-full h-full object-cover" data-alt="vibrant neon concert stage with crowd silhouettes in purple and orange atmospheric lighting high energy festival photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdxOp-8YpUH3OzyXeMX1tEshakmNAejDy8PtvkQSIqemj7z1M_pElTg50NSgFq60-9BIY9119ndQDWn0oTz9jKE1ry4V9epTBNQWvmmMthlCPr9_Cxod-MqdsRjUWtTT2wXoqFjEcRCCH5DpuC2U8KHe2nlWs2sZvd7vkRD5RyqKM2vRUWIShETJri0kZsiwEk-j6dwId-pVk39nBLxBkZ6gtziRWUB-hBzLPljncmdCaCkPHwUAnaHarbNMy4bkZEVQ5mZyPN_8w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#1A0700]/80 to-transparent"></div>
+<div class="absolute bottom-4 left-6">
+<span class="bg-primary-container text-on-primary-fixed text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest mb-2 inline-block">São Paulo, BR</span>
+<h2 class="text-white text-2xl font-extrabold leading-tight">Neon Dreams Festival 2024</h2>
+</div>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant mb-2">
+<span class="material-symbols-outlined text-primary" data-icon="calendar_today">calendar_today</span>
+<span class="text-sm font-semibold">15 de Novembro, 2024 • 18:00</span>
+</div>
+</section>
+<!-- Tab Navigation (Custom Component) -->
+<nav class="flex gap-2 overflow-x-auto hide-scrollbar mb-10 pb-2">
+<button class="px-6 py-2 rounded-full text-sm font-bold opacity-60 hover:opacity-100 transition-all whitespace-nowrap">Feed</button>
+<button class="px-6 py-2 rounded-full text-sm font-bold bg-primary-container text-on-primary-fixed shadow-md whitespace-nowrap">Ingressos</button>
+<button class="px-6 py-2 rounded-full text-sm font-bold opacity-60 hover:opacity-100 transition-all whitespace-nowrap">Comunidade</button>
+<button class="px-6 py-2 rounded-full text-sm font-bold opacity-60 hover:opacity-100 transition-all whitespace-nowrap">Match</button>
+<button class="px-6 py-2 rounded-full text-sm font-bold opacity-60 hover:opacity-100 transition-all whitespace-nowrap">VIP</button>
+</nav>
+<!-- Ticket Selection Section -->
+<section class="space-y-6">
+<h3 class="text-3xl font-extrabold tracking-tighter mb-8 ml-2">Escolha seu tipo de ingresso</h3>
+<!-- Ticket Card 1: Pista -->
+<div class="bg-surface-container-low rounded-xl p-6 relative overflow-hidden group hover:bg-surface-container transition-colors duration-300">
+<div class="flex justify-between items-start relative z-10">
+<div>
+<h4 class="text-xl font-bold text-on-surface mb-1">Pista</h4>
+<p class="text-sm text-on-surface-variant max-w-[200px] leading-relaxed">Acesso total à área comum e praça de alimentação.</p>
+<div class="mt-4 flex items-baseline gap-1">
+<span class="text-xs font-bold opacity-60">R$</span>
+<span class="text-2xl font-black text-primary">150</span>
+</div>
+</div>
+<div class="flex items-center bg-surface-container-lowest rounded-full p-1 shadow-sm">
+<button class="w-10 h-10 flex items-center justify-center text-primary hover:bg-surface-container-highest rounded-full transition-colors active:scale-90">
+<span class="material-symbols-outlined" data-icon="remove">remove</span>
+</button>
+<span class="w-8 text-center font-bold">0</span>
+<button class="w-10 h-10 flex items-center justify-center bg-primary-container text-on-primary-fixed rounded-full shadow-md active:scale-90">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+<!-- Visual Accent -->
+<div class="absolute -right-4 -bottom-4 opacity-5 pointer-events-none">
+<span class="material-symbols-outlined text-[120px]" data-icon="confirmation_number">confirmation_number</span>
+</div>
+</div>
+<!-- Ticket Card 2: Pista Premium -->
+<div class="bg-surface-container-low border-2 border-primary-container rounded-xl p-6 relative overflow-hidden group shadow-lg">
+<div class="absolute top-0 right-0 bg-primary-container text-on-primary-fixed px-4 py-1 text-[10px] font-black rounded-bl-xl tracking-widest">MAIS VENDIDO</div>
+<div class="flex justify-between items-start relative z-10">
+<div>
+<h4 class="text-xl font-bold text-on-surface mb-1">Pista Premium</h4>
+<p class="text-sm text-on-surface-variant max-w-[200px] leading-relaxed">Frente do palco garantida com bares exclusivos.</p>
+<div class="mt-4 flex items-baseline gap-1">
+<span class="text-xs font-bold opacity-60">R$</span>
+<span class="text-2xl font-black text-primary">300</span>
+</div>
+</div>
+<div class="flex items-center bg-surface-container-lowest rounded-full p-1 shadow-sm">
+<button class="w-10 h-10 flex items-center justify-center text-primary hover:bg-surface-container-highest rounded-full transition-colors active:scale-90">
+<span class="material-symbols-outlined" data-icon="remove">remove</span>
+</button>
+<span class="w-8 text-center font-bold">1</span>
+<button class="w-10 h-10 flex items-center justify-center bg-primary-container text-on-primary-fixed rounded-full shadow-md active:scale-90">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Ticket Card 3: VIP Backstage -->
+<div class="bg-[#1A0700] rounded-xl p-6 relative overflow-hidden group shadow-2xl">
+<div class="flex justify-between items-start relative z-10">
+<div>
+<h4 class="text-xl font-bold text-primary-container mb-1">VIP Backstage</h4>
+<p class="text-sm text-surface-container-highest/60 max-w-[200px] leading-relaxed">Open Bar, Food Premium e After Party.</p>
+<div class="mt-4 flex items-baseline gap-1">
+<span class="text-xs font-bold opacity-60 text-surface-container-highest">R$</span>
+<span class="text-2xl font-black text-primary-container">600</span>
+</div>
+</div>
+<div class="flex items-center bg-[#2A1200] rounded-full p-1 shadow-sm">
+<button class="w-10 h-10 flex items-center justify-center text-primary-container hover:bg-[#482603] rounded-full transition-colors active:scale-90">
+<span class="material-symbols-outlined" data-icon="remove">remove</span>
+</button>
+<span class="w-8 text-center font-bold text-white">0</span>
+<button class="w-10 h-10 flex items-center justify-center bg-primary-container text-on-primary-fixed rounded-full shadow-md active:scale-90">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+<!-- Glass Reflection Effect -->
+<div class="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent pointer-events-none"></div>
+</div>
+</section>
+<!-- Summary Floating Panel (Mobile Optimized) -->
+<div class="fixed bottom-24 left-0 w-full px-6 z-40 md:static md:mt-12 md:px-0">
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-[0_-8px_30px_rgba(72,38,3,0.1)] md:shadow-none border border-outline-variant/10">
+<div class="flex justify-between items-center mb-6">
+<div>
+<p class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Valor Total</p>
+<p class="text-3xl font-black text-on-surface">R$ 300,00</p>
+</div>
+<div class="text-right">
+<p class="text-xs font-semibold text-primary">1x Ingresso selecionado</p>
+<p class="text-[10px] text-on-surface-variant">Taxas inclusas</p>
+</div>
+</div>
+<button class="w-full pulse-gradient text-on-primary-fixed py-5 rounded-full font-black text-lg tracking-widest active:scale-[0.98] transition-all shadow-[0_12px_40px_rgba(251,139,63,0.3)]">
+                    FINALIZAR COMPRA
+                </button>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 h-24 bg-[#FFFFFF]/60 backdrop-blur-xl shadow-[0_-8px_30px_rgba(72,38,3,0.05)] rounded-t-[3rem] md:hidden">
+<a class="flex flex-col items-center justify-center text-[#482603] opacity-50 hover:opacity-100" href="#">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[12px] font-semibold">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#482603] opacity-50 hover:opacity-100" href="#">
+<span class="material-symbols-outlined" data-icon="celebration">celebration</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[12px] font-semibold">Match</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#FB8B3F] text-[#1A0700] rounded-full px-5 py-2 scale-110 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="confirmation_number">confirmation_number</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[12px] font-semibold">Ingressos</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#482603] opacity-50 hover:opacity-100" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[12px] font-semibold">Profile</span>
+</a>
+</nav>
+</body></html>

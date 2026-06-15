@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary": "#b00f69",
+              "tertiary-container": "#ff8cbb",
+              "inverse-primary": "#fb8b3f",
+              "on-tertiary-container": "#640039",
+              "secondary-dim": "#584190",
+              "surface-container-low": "#ffeee2",
+              "primary-dim": "#833b00",
+              "tertiary-dim": "#9d005c",
+              "secondary-fixed": "#dac9ff",
+              "on-tertiary-fixed": "#37001d",
+              "on-background": "#482603",
+              "primary-container": "#fb8b3f",
+              "on-secondary-container": "#503987",
+              "surface-bright": "#fff4ef",
+              "on-tertiary-fixed-variant": "#740043",
+              "inverse-surface": "#1b0a00",
+              "on-error-container": "#520c00",
+              "secondary-container": "#dac9ff",
+              "tertiary-fixed-dim": "#ff73b0",
+              "on-error": "#ffefec",
+              "outline": "#9c6d43",
+              "outline-variant": "#d9a274",
+              "background": "#fff4ef",
+              "secondary": "#644e9d",
+              "on-primary-fixed-variant": "#562500",
+              "tertiary-fixed": "#ff8cbb",
+              "primary-fixed": "#fb8b3f",
+              "on-secondary-fixed-variant": "#594291",
+              "surface-container-highest": "#ffd5b4",
+              "on-primary": "#fff0e9",
+              "error-container": "#f95630",
+              "on-primary-container": "#481e00",
+              "surface-dim": "#ffca9f",
+              "surface-container-high": "#ffdcc2",
+              "on-primary-fixed": "#1a0700",
+              "error": "#b02500",
+              "on-surface-variant": "#7d522b",
+              "error-dim": "#b92902",
+              "inverse-on-surface": "#c79265",
+              "on-surface": "#482603",
+              "on-tertiary": "#ffeff2",
+              "primary-fixed-dim": "#ea7e33",
+              "primary": "#954400",
+              "surface-container": "#ffe3cf",
+              "on-secondary": "#f8f0ff",
+              "secondary-fixed-dim": "#cdb9ff",
+              "surface-variant": "#ffd5b4",
+              "surface-tint": "#954400",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary-fixed": "#3c2472",
+              "surface": "#fff4ef"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .bg-glass {
+        background: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(20px);
+      }
+      .pulse-gradient {
+        background: linear-gradient(135deg, #954400 0%, #FB8B3F 100%);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar Predicted Component -->
+<nav class="fixed top-0 w-full z-50 bg-[#FFF4EF] dark:bg-stone-950 flex items-center justify-between px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#954400] dark:text-[#FB8B3F] cursor-pointer hover:opacity-80 transition-opacity active:scale-95 duration-150" data-icon="arrow_back">arrow_back</span>
+<h1 class="font-headline font-bold tracking-tight text-lg text-[#954400] dark:text-[#FB8B3F]">Neon Dreams Festival</h1>
+</div>
+<div class="flex items-center">
+<span class="material-symbols-outlined text-[#954400] dark:text-[#FB8B3F] cursor-pointer hover:opacity-80 transition-opacity active:scale-95 duration-150" data-icon="tune">tune</span>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="pt-20 pb-32 px-4 max-w-md mx-auto min-h-screen">
+<!-- Tab Navigation (Contextual Filter) -->
+<div class="flex justify-between items-center mb-8 px-2 overflow-x-auto no-scrollbar gap-6 py-2">
+<div class="flex flex-col items-center gap-1 cursor-pointer transition-colors text-[#482603]/60 group">
+<span class="font-headline text-[10px] font-bold uppercase tracking-widest group-hover:text-primary">Feed</span>
+</div>
+<div class="flex flex-col items-center gap-1 cursor-pointer transition-colors text-[#482603]/60 group">
+<span class="font-headline text-[10px] font-bold uppercase tracking-widest group-hover:text-primary">Ingressos</span>
+</div>
+<div class="flex flex-col items-center gap-1 cursor-pointer transition-colors text-[#482603]/60 group">
+<span class="font-headline text-[10px] font-bold uppercase tracking-widest group-hover:text-primary">Comunidade</span>
+</div>
+<div class="flex flex-col items-center gap-1 cursor-pointer relative after:content-[''] after:absolute after:-bottom-2 after:w-1 after:h-1 after:bg-[#954400] after:rounded-full">
+<span class="font-headline text-[10px] font-bold uppercase tracking-widest text-[#954400]">Match</span>
+</div>
+<div class="flex flex-col items-center gap-1 cursor-pointer transition-colors text-[#482603]/60 group">
+<span class="font-headline text-[10px] font-bold uppercase tracking-widest group-hover:text-primary">VIP</span>
+</div>
+</div>
+<!-- Vibra Match Profile Card (Editorial Layout) -->
+<div class="relative w-full aspect-[3/4] rounded-xl overflow-hidden shadow-[0_12px_40px_rgba(72,38,3,0.08)] bg-surface-container-low group">
+<img alt="Mariana" class="w-full h-full object-cover" data-alt="Stunning cinematic portrait of a young woman with curly hair at a music festival, golden hour sunlight, wearing festival glitter and stylish accessories" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsgpI3EjDHteKIRNcciPcXLL7aCD-ip5XwWU-uGEnWPjI2bRIKlFR7ftzCgl6YyjsOepoUb946ovAPxWv-GG6vawo3rOrQOPodOovLgLaPAOh6zJwTAHw-9FJATACBHArHoP7dL_-Mum9bKNqiYUUkrlFSWWtASMjYV8KEM7hHXCecvzBigprOO9pin-uVopKEeJj2VFJhkVVS79BzSU96MtBkjqfmuz6dHMVx_ltqBhqjD-toq4cYBtVlol4Q_gNkwknCrPwKXcs"/>
+<!-- Information Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-[#1A0700]/90 via-transparent to-transparent flex flex-col justify-end p-8">
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full text-xs font-bold tracking-wide uppercase flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm" data-icon="workspace_premium" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+                        VIP Lounge
+                    </span>
+<span class="bg-white/20 backdrop-blur-md text-white px-4 py-1.5 rounded-full text-xs font-bold tracking-wide uppercase flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm" data-icon="electric_bolt" style="font-variation-settings: 'FILL' 1;">electric_bolt</span>
+                        Vibe: Techno
+                    </span>
+</div>
+<h2 class="text-white text-4xl font-headline font-extrabold tracking-tight mb-1">Mariana, 24</h2>
+<p class="text-white/80 font-body text-sm max-w-[80%] leading-relaxed">Procurando alguém para fritar no set do Vintage Culture e dividir um combo de drinks no VIP.</p>
+</div>
+</div>
+<!-- Match Interaction Bar -->
+<div class="flex justify-center items-center gap-6 mt-8">
+<button class="w-14 h-14 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center transition-all hover:scale-110 active:scale-95 shadow-lg">
+<span class="material-symbols-outlined text-3xl" data-icon="close">close</span>
+</button>
+<button class="w-20 h-20 rounded-full pulse-gradient text-on-primary-fixed flex items-center justify-center transition-all hover:scale-110 active:scale-90 shadow-2xl shadow-primary-container/40">
+<span class="material-symbols-outlined text-4xl" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<button class="w-14 h-14 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center transition-all hover:scale-110 active:scale-95 shadow-lg border-2 border-primary-container/20">
+<span class="material-symbols-outlined text-3xl" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+</div>
+<!-- Festival Context Banner -->
+<div class="mt-10 p-6 rounded-xl bg-surface-container-high relative overflow-hidden flex items-center gap-4">
+<div class="absolute top-0 right-0 w-24 h-24 bg-primary-container/10 rounded-full -mr-12 -mt-12"></div>
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-on-primary-container" data-icon="confirmation_number">confirmation_number</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-on-surface leading-tight">Match com o Festival</h3>
+<p class="text-sm text-on-surface-variant leading-snug">Você e Mariana já garantiram seus ingressos para o Neon Dreams!</p>
+</div>
+</div>
+</main>
+<!-- BottomNavBar Component -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-xl bg-white/60 dark:bg-stone-900/60 backdrop-blur-xl shadow-[0_-12px_40px_rgba(72,38,3,0.08)] flex justify-around items-center px-4 pb-8 pt-4">
+<div class="flex flex-col items-center justify-center text-[#482603]/60 dark:text-stone-500 hover:text-[#FB8B3F] transition-colors cursor-pointer transform active:scale-90 duration-200">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-headline text-[10px] font-bold uppercase tracking-widest mt-1">Feed</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#482603]/60 dark:text-stone-500 hover:text-[#FB8B3F] transition-colors cursor-pointer transform active:scale-90 duration-200">
+<span class="material-symbols-outlined" data-icon="confirmation_number">confirmation_number</span>
+<span class="font-headline text-[10px] font-bold uppercase tracking-widest mt-1">Ingressos</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#482603]/60 dark:text-stone-500 hover:text-[#FB8B3F] transition-colors cursor-pointer transform active:scale-90 duration-200">
+<span class="material-symbols-outlined" data-icon="group">group</span>
+<span class="font-headline text-[10px] font-bold uppercase tracking-widest mt-1">Comunidade</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#954400] dark:text-[#FB8B3F] relative after:content-[''] after:absolute after:-bottom-1 after:w-1 after:h-1 after:bg-[#954400] after:rounded-full cursor-pointer transform active:scale-90 duration-200">
+<span class="material-symbols-outlined" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span class="font-headline text-[10px] font-bold uppercase tracking-widest mt-1">Match</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#482603]/60 dark:text-stone-500 hover:text-[#FB8B3F] transition-colors cursor-pointer transform active:scale-90 duration-200">
+<span class="material-symbols-outlined" data-icon="workspace_premium">workspace_premium</span>
+<span class="font-headline text-[10px] font-bold uppercase tracking-widest mt-1">VIP</span>
+</div>
+</nav>
+</body></html>

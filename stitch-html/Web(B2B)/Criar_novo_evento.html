@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Criar Novo Evento | Pulse Events</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "error-container": "#f95630",
+                      "on-tertiary": "#ffeff2",
+                      "surface-container-low": "#ffeee2",
+                      "on-tertiary-container": "#640039",
+                      "surface": "#fff4ef",
+                      "background": "#fff4ef",
+                      "secondary-dim": "#584190",
+                      "on-secondary-container": "#503987",
+                      "error-dim": "#b92902",
+                      "primary-fixed-dim": "#ea7e33",
+                      "on-primary-fixed-variant": "#562500",
+                      "tertiary-dim": "#9d005c",
+                      "surface-container-lowest": "#ffffff",
+                      "secondary": "#644e9d",
+                      "surface-container": "#ffe3cf",
+                      "primary-fixed": "#fb8b3f",
+                      "secondary-fixed-dim": "#cdb9ff",
+                      "surface-tint": "#954400",
+                      "on-secondary-fixed": "#3c2472",
+                      "primary-dim": "#833b00",
+                      "secondary-fixed": "#dac9ff",
+                      "on-primary-container": "#481e00",
+                      "outline-variant": "#d9a274",
+                      "tertiary-fixed-dim": "#ff73b0",
+                      "on-secondary": "#f8f0ff",
+                      "on-background": "#482603",
+                      "on-error": "#ffefec",
+                      "outline": "#9c6d43",
+                      "on-primary-fixed": "#1a0700",
+                      "surface-container-highest": "#ffd5b4",
+                      "on-error-container": "#520c00",
+                      "on-secondary-fixed-variant": "#594291",
+                      "on-tertiary-fixed-variant": "#740043",
+                      "on-surface": "#482603",
+                      "primary": "#954400",
+                      "on-tertiary-fixed": "#37001d",
+                      "surface-dim": "#ffca9f",
+                      "error": "#b02500",
+                      "on-surface-variant": "#7d522b",
+                      "tertiary-fixed": "#ff8cbb",
+                      "primary-container": "#fb8b3f",
+                      "inverse-primary": "#fb8b3f",
+                      "inverse-surface": "#1b0a00",
+                      "inverse-on-surface": "#c79265",
+                      "on-primary": "#fff0e9",
+                      "surface-container-high": "#ffdcc2",
+                      "surface-bright": "#fff4ef",
+                      "secondary-container": "#dac9ff",
+                      "tertiary-container": "#ff8cbb",
+                      "surface-variant": "#ffd5b4",
+                      "tertiary": "#b00f69"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Plus Jakarta Sans"],
+                      "body": ["Plus Jakarta Sans"],
+                      "label": ["Plus Jakarta Sans"]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .ghost-border { outline: 1px solid rgba(217, 162, 116, 0.15); }
+        .pulse-gradient { background: linear-gradient(135deg, #954400 0%, #FB8B3F 100%); }
+        .glass-panel { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(20px); }
+    </style>
+</head>
+<body class="bg-stone-950 text-stone-100 min-h-screen">
+<!-- SideNavBar (Authority: JSON) -->
+<aside class="h-screen w-72 fixed left-0 top-0 pt-20 bg-stone-900 shadow-[12px_0_40px_rgba(72,38,3,0.05)] z-50">
+<div class="flex flex-col gap-2 p-4 h-full">
+<div class="px-6 mb-8">
+<div class="text-xl font-bold text-stone-100">Produtora Master</div>
+<div class="text-xs text-stone-400">Plano Premium</div>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-4 text-stone-400 px-6 py-3 hover:bg-stone-800/60 rounded-full transition-all" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-medium">Dashboard</span>
+</a>
+<!-- Active Item: Eventos -->
+<a class="flex items-center gap-4 text-[#FB8B3F] bg-stone-800 rounded-full px-6 py-3 border-l-4 border-[#954400] translate-x-1 transition-transform" href="#">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="font-bold">Eventos</span>
+</a>
+<a class="flex items-center gap-4 text-stone-400 px-6 py-3 hover:bg-stone-800/60 rounded-full transition-all" href="#">
+<span class="material-symbols-outlined">payments</span>
+<span class="font-medium">Financeiro</span>
+</a>
+<a class="flex items-center gap-4 text-stone-400 px-6 py-3 hover:bg-stone-800/60 rounded-full transition-all" href="#">
+<span class="material-symbols-outlined">group</span>
+<span class="font-medium">Equipe</span>
+</a>
+<a class="flex items-center gap-4 text-stone-400 px-6 py-3 hover:bg-stone-800/60 rounded-full transition-all" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-medium">Configurações</span>
+</a>
+</nav>
+<div class="mt-auto p-4">
+<button class="w-full pulse-gradient text-[#1A0700] font-bold py-4 px-6 rounded-full flex items-center justify-center gap-2 active:scale-95 transition-transform">
+<span class="material-symbols-outlined">add</span>
+                    Novo Evento
+                </button>
+</div>
+</div>
+</aside>
+<!-- Main Canvas -->
+<main class="ml-72 p-12 max-w-[1200px]">
+<!-- Header & Breadcrumbs -->
+<header class="flex justify-between items-end mb-12">
+<div>
+<nav class="flex items-center gap-2 text-stone-500 text-sm mb-4">
+<span>Eventos</span>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span class="text-stone-300">Criar Novo Evento</span>
+</nav>
+<h1 class="text-[3.5rem] font-extrabold tracking-tighter leading-none text-stone-50">
+                    Criar Novo <span class="text-[#FB8B3F]">Evento</span>
+</h1>
+</div>
+<div class="flex gap-4">
+<button class="px-8 py-3 rounded-full border border-stone-700 text-stone-300 font-bold hover:bg-stone-900 transition-colors">
+                    Salvar Rascunho
+                </button>
+<button class="px-8 py-3 rounded-full bg-[#C86419] text-white font-bold shadow-lg shadow-[#C86419]/20 hover:scale-105 active:scale-95 transition-all">
+                    Publicar Evento
+                </button>
+</div>
+</header>
+<!-- Form Sections: Editorial Layout -->
+<div class="space-y-12">
+<!-- Section 1: Basic Info -->
+<section class="grid grid-cols-12 gap-8 items-start">
+<div class="col-span-4 sticky top-12">
+<div class="flex items-center gap-4 mb-4">
+<span class="w-12 h-12 rounded-full bg-stone-900 flex items-center justify-center text-[#FB8B3F] font-black border border-stone-800">01</span>
+<h2 class="text-xl font-bold tracking-tight">Informações Básicas</h2>
+</div>
+<p class="text-stone-400 text-sm leading-relaxed">Defina a identidade central do seu evento. O nome e a descrição são os primeiros pontos de contato com seu público.</p>
+</div>
+<div class="col-span-8 space-y-6 bg-stone-900/40 p-8 rounded-xl ghost-border">
+<div class="space-y-2">
+<label class="text-xs font-bold text-stone-500 uppercase tracking-widest ml-1">Nome do Evento</label>
+<input class="w-full bg-stone-950 border-none rounded-xl p-4 focus:ring-2 focus:ring-[#FB8B3F] text-stone-100 placeholder:text-stone-700" placeholder="Ex: Festival de Verão Pulse 2024" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-xs font-bold text-stone-500 uppercase tracking-widest ml-1">Categoria</label>
+<select class="w-full bg-stone-950 border-none rounded-xl p-4 focus:ring-2 focus:ring-[#FB8B3F] text-stone-100 appearance-none">
+<option>Música &amp; Festivais</option>
+<option>Tecnologia</option>
+<option>Artes &amp; Teatro</option>
+<option>Gastronomia</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold text-stone-500 uppercase tracking-widest ml-1">Visibilidade</label>
+<div class="flex p-1 bg-stone-950 rounded-full">
+<button class="flex-1 py-3 px-4 rounded-full bg-stone-800 text-stone-100 font-bold text-sm">Público</button>
+<button class="flex-1 py-3 px-4 rounded-full text-stone-500 font-bold text-sm">Privado</button>
+</div>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold text-stone-500 uppercase tracking-widest ml-1">Descrição</label>
+<div class="bg-stone-950 rounded-xl min-h-[200px] p-6 border-b-4 border-stone-900">
+<div class="flex gap-4 mb-4 pb-4 border-b border-stone-900 text-stone-500">
+<span class="material-symbols-outlined cursor-pointer hover:text-stone-200">format_bold</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-stone-200">format_italic</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-stone-200">format_list_bulleted</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-stone-200">link</span>
+</div>
+<textarea class="w-full bg-transparent border-none focus:ring-0 text-stone-300 resize-none h-32" placeholder="Conte mais detalhes sobre a experiência do evento..."></textarea>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Media -->
+<section class="grid grid-cols-12 gap-8 items-start">
+<div class="col-span-4 sticky top-12">
+<div class="flex items-center gap-4 mb-4">
+<span class="w-12 h-12 rounded-full bg-stone-900 flex items-center justify-center text-[#FB8B3F] font-black border border-stone-800">02</span>
+<h2 class="text-xl font-bold tracking-tight">Mídia do Evento</h2>
+</div>
+<p class="text-stone-400 text-sm leading-relaxed">Imagens de alta qualidade aumentam a conversão em até 40%. Use o formato 16:9.</p>
+</div>
+<div class="col-span-8 bg-stone-900/40 p-8 rounded-xl ghost-border">
+<div class="relative group cursor-pointer overflow-hidden rounded-xl border-2 border-dashed border-stone-800 aspect-video flex flex-col items-center justify-center bg-stone-950 hover:border-[#FB8B3F]/50 transition-colors">
+<img alt="Banner Placeholder" class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-105 transition-transform duration-700" data-alt="cinematic shot of a vibrant music festival stage at night with colorful lights and laser beams cutting through a dark atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS8fbUnWvR7SfdUx2xVawq3ND3MTGndIsVNoKaM9JqV_4xq2upCXMV5Vk2a5nZimmmnaoKBh9763jgGJ9ej4kaCSvYUU43B1hUp1HGgQya_b_fxj8LxLMAt6PObV8NsghG6SDhm6UPRIRLemnJ-pfC4T_wuLT2nI9tASo0aItB2azu-qj8aSiZWs5LU_NblxTIiIUXswe6FWV0LIKf7NpQvADnci4B2m7V9y6W_cIopJoFlK3X9fnb_XsK9F9BsDTrhTQdNm8fhYA"/>
+<div class="relative z-10 text-center">
+<div class="w-16 h-16 rounded-full bg-stone-900 flex items-center justify-center mx-auto mb-4 border border-stone-800 text-[#FB8B3F]">
+<span class="material-symbols-outlined text-3xl">add_photo_alternate</span>
+</div>
+<span class="block text-stone-100 font-bold">Arraste seu banner aqui</span>
+<span class="text-stone-500 text-sm">PNG ou JPG (Recomendado 1920x1080)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Data & Local -->
+<section class="grid grid-cols-12 gap-8 items-start">
+<div class="col-span-4 sticky top-12">
+<div class="flex items-center gap-4 mb-4">
+<span class="w-12 h-12 rounded-full bg-stone-900 flex items-center justify-center text-[#FB8B3F] font-black border border-stone-800">03</span>
+<h2 class="text-xl font-bold tracking-tight">Data e Local</h2>
+</div>
+</div>
+<div class="col-span-8 space-y-6 bg-stone-900/40 p-8 rounded-xl ghost-border">
+<div class="grid grid-cols-3 gap-6">
+<div class="space-y-2">
+<label class="text-xs font-bold text-stone-500 uppercase tracking-widest ml-1">Data</label>
+<div class="relative">
+<input class="w-full bg-stone-950 border-none rounded-xl p-4 focus:ring-2 focus:ring-[#FB8B3F] text-stone-100" type="date"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold text-stone-500 uppercase tracking-widest ml-1">Início</label>
+<input class="w-full bg-stone-950 border-none rounded-xl p-4 focus:ring-2 focus:ring-[#FB8B3F] text-stone-100" type="time"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold text-stone-500 uppercase tracking-widest ml-1">Fim</label>
+<input class="w-full bg-stone-950 border-none rounded-xl p-4 focus:ring-2 focus:ring-[#FB8B3F] text-stone-100" type="time"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold text-stone-500 uppercase tracking-widest ml-1">Localização</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-stone-500">location_on</span>
+<input class="w-full bg-stone-950 border-none rounded-xl p-4 pl-12 focus:ring-2 focus:ring-[#FB8B3F] text-stone-100 placeholder:text-stone-700" placeholder="Busque o endereço ou nome do local..." type="text"/>
+</div>
+</div>
+<div class="h-[250px] rounded-xl overflow-hidden grayscale contrast-125 opacity-80 border border-stone-800">
+<img alt="Mapa do local" class="w-full h-full object-cover" data-alt="minimalist dark theme city map showing urban grid streets and avenues with glowing accents" data-location="Sao Paulo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKNa-jFQVJr2XyHfd6Uhv0ghSf_QX8-GKLuKrAwNRc_uXxixFn7WDHoBid6hOEAfOYzmPU5AxrKCgF0OCf-kyoOKPOy_wll4v8fme4hv8cjVwNIPf8zMOSCPflRUImrQyUJDEPG9FvkLDb5MN9QzbyX32LziFoPno1tvsBplJa3bxo2J6YVQgsv59M7EUdcoD8dzulnFO2TYuNp02hY-kUxLMSuEoztKS7FaBJa8-8O4QgbOObhOupqG6Rv8WFErL4a7UPD5CHWFE"/>
+</div>
+</div>
+</section>
+<!-- Section 4: Tickets -->
+<section class="grid grid-cols-12 gap-8 items-start">
+<div class="col-span-4 sticky top-12">
+<div class="flex items-center gap-4 mb-4">
+<span class="w-12 h-12 rounded-full bg-stone-900 flex items-center justify-center text-[#FB8B3F] font-black border border-stone-800">04</span>
+<h2 class="text-xl font-bold tracking-tight">Ingressos</h2>
+</div>
+<button class="flex items-center gap-2 text-[#FB8B3F] font-bold text-sm hover:underline">
+<span class="material-symbols-outlined">add_circle</span>
+                        Adicionar Novo Lote
+                    </button>
+</div>
+<div class="col-span-8 bg-stone-900/40 rounded-xl ghost-border overflow-hidden">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-stone-900/80">
+<th class="px-6 py-4 text-xs font-bold text-stone-500 uppercase tracking-widest">Nome do Lote</th>
+<th class="px-6 py-4 text-xs font-bold text-stone-500 uppercase tracking-widest">Preço</th>
+<th class="px-6 py-4 text-xs font-bold text-stone-500 uppercase tracking-widest">Qtd.</th>
+<th class="px-6 py-4 text-xs font-bold text-stone-500 uppercase tracking-widest">Status</th>
+<th class="px-6 py-4"></th>
+</tr>
+</thead>
+<tbody class="divide-y divide-stone-800">
+<tr class="hover:bg-stone-800/40 transition-colors">
+<td class="px-6 py-4 font-bold text-stone-200">Early Bird - Meia</td>
+<td class="px-6 py-4 text-stone-300">R$ 80,00</td>
+<td class="px-6 py-4 text-stone-300">200</td>
+<td class="px-6 py-4">
+<span class="px-3 py-1 bg-emerald-900/30 text-emerald-400 text-xs font-bold rounded-full">Ativo</span>
+</td>
+<td class="px-6 py-4 text-right">
+<button class="material-symbols-outlined text-stone-600 hover:text-stone-300">more_vert</button>
+</td>
+</tr>
+<tr class="hover:bg-stone-800/40 transition-colors">
+<td class="px-6 py-4 font-bold text-stone-200">Inteira Promocional</td>
+<td class="px-6 py-4 text-stone-300">R$ 150,00</td>
+<td class="px-6 py-4 text-stone-300">500</td>
+<td class="px-6 py-4">
+<span class="px-3 py-1 bg-stone-800 text-stone-500 text-xs font-bold rounded-full">Aguardando</span>
+</td>
+<td class="px-6 py-4 text-right">
+<button class="material-symbols-outlined text-stone-600 hover:text-stone-300">more_vert</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Section 5: Lineup (Bento Style) -->
+<section class="grid grid-cols-12 gap-8 items-start mb-24">
+<div class="col-span-4 sticky top-12">
+<div class="flex items-center gap-4 mb-4">
+<span class="w-12 h-12 rounded-full bg-stone-900 flex items-center justify-center text-[#FB8B3F] font-black border border-stone-800">05</span>
+<h2 class="text-xl font-bold tracking-tight">Lineup</h2>
+</div>
+</div>
+<div class="col-span-8 grid grid-cols-2 gap-4">
+<!-- Artist Card 1 -->
+<div class="bg-stone-900/40 p-4 rounded-xl ghost-border flex items-center gap-4">
+<div class="w-16 h-16 rounded-full overflow-hidden border-2 border-[#FB8B3F]">
+<img alt="Artista 1" class="w-full h-full object-cover" data-alt="portrait of a futuristic electronic music artist with neon backlighting and metallic accessories" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsiEOWEZrNagTqafxgjbPTclqoG0zVVM7G77-DkrrOoLGYLNnEIzgb_gpZeiohkpJTs128Ri3JJYfWjJG0btqzmCiK1EqxRDZj-GDEgxG_7mYYrOg5f-lv_BBzFJc8wgkdo2ihgu3KVUDFL9r5iG15TwRtKolkziuDm_yC8kuULIAw1IArsPYNxyA5XUmkkDwinj22PfDHY32CzqobTvcM_8AsU4RTuAcxmzKcRalAwTrldJl5dnwp2__J06Cpg5R2egSedZQjckk"/>
+</div>
+<div class="flex-1">
+<h4 class="font-bold text-stone-100">Cyber Pulse</h4>
+<p class="text-xs text-stone-500">22:00 - 00:00</p>
+</div>
+<button class="material-symbols-outlined text-stone-600 hover:text-red-400">delete</button>
+</div>
+<!-- Artist Card 2 -->
+<div class="bg-stone-900/40 p-4 rounded-xl ghost-border flex items-center gap-4">
+<div class="w-16 h-16 rounded-full overflow-hidden border-2 border-stone-800">
+<img alt="Artista 2" class="w-full h-full object-cover" data-alt="cool urban dj wearing headphones in a moody dimly lit studio with subtle orange glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8AFsZDuGZD85_qxGGl8ZJuZi0WTD7rjxue3ezqlqkv6Z_QESn8H7eawGJVFrtiv5evxQx8jYipHYfSdBdrswRPeY5ANMOWdsJwTB39nS0FC_7NvKUPeCjZo-PjpUn9CWgEIA_d1B2zWDHH3_zdOrEMX79ztMG3XRc_5kEXIL_Rnez_XvezR14GnFd3IDujbZlPBkN4HctEc-zc0QmIWIeuza9CHILapg9ETvpScOlfnMUL7U6CZDsHuz1_pHN5EMj503JDKU0X5g"/>
+</div>
+<div class="flex-1">
+<h4 class="font-bold text-stone-100">DJ Kinetico</h4>
+<p class="text-xs text-stone-500">00:00 - 02:00</p>
+</div>
+<button class="material-symbols-outlined text-stone-600 hover:text-red-400">delete</button>
+</div>
+<!-- Add Artist Button -->
+<button class="col-span-2 py-6 rounded-xl border-2 border-dashed border-stone-800 text-stone-500 font-bold flex items-center justify-center gap-3 hover:border-[#FB8B3F]/50 hover:text-[#FB8B3F] transition-all">
+<span class="material-symbols-outlined">add_circle</span>
+                        Adicionar Artista ao Lineup
+                    </button>
+</div>
+</section>
+</div>
+<!-- Footer Actions Overlay (Glassmorphism) -->
+<div class="fixed bottom-8 left-72 right-12 z-40">
+<div class="max-w-[1100px] mx-auto glass-panel border border-white/10 p-4 rounded-full flex justify-between items-center shadow-2xl">
+<div class="flex items-center gap-4 ml-6">
+<div class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></div>
+<span class="text-sm font-medium text-stone-400">Alterações salvas automaticamente</span>
+</div>
+<div class="flex gap-4">
+<button class="px-6 py-2 rounded-full text-stone-400 font-bold text-sm hover:text-stone-100">Descartar</button>
+<button class="px-10 py-3 rounded-full bg-[#C86419] text-white font-bold shadow-lg shadow-[#C86419]/30 hover:scale-105 active:scale-95 transition-all">
+                        Publicar Evento Agora
+                    </button>
+</div>
+</div>
+</div>
+</main>
+</body></html>

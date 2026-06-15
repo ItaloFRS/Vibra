@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Neon Dreams Festival 2024 - Comunidade</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-bright": "#fff4ef",
+              "on-surface-variant": "#7d522b",
+              "surface-container": "#ffe3cf",
+              "on-error": "#ffefec",
+              "secondary-dim": "#584190",
+              "surface-dim": "#ffca9f",
+              "background": "#fff4ef",
+              "tertiary-container": "#ff8cbb",
+              "primary-container": "#fb8b3f",
+              "on-secondary": "#f8f0ff",
+              "secondary-fixed-dim": "#cdb9ff",
+              "on-primary": "#fff0e9",
+              "primary-fixed": "#fb8b3f",
+              "on-secondary-fixed": "#3c2472",
+              "secondary": "#644e9d",
+              "inverse-primary": "#fb8b3f",
+              "surface-container-lowest": "#ffffff",
+              "on-surface": "#482603",
+              "tertiary-dim": "#9d005c",
+              "tertiary-fixed": "#ff8cbb",
+              "on-secondary-container": "#503987",
+              "inverse-surface": "#1b0a00",
+              "surface-variant": "#ffd5b4",
+              "primary-dim": "#833b00",
+              "tertiary": "#b00f69",
+              "on-primary-fixed-variant": "#562500",
+              "surface-tint": "#954400",
+              "on-tertiary-container": "#640039",
+              "secondary-fixed": "#dac9ff",
+              "surface-container-highest": "#ffd5b4",
+              "secondary-container": "#dac9ff",
+              "on-tertiary-fixed": "#37001d",
+              "on-tertiary": "#ffeff2",
+              "on-secondary-fixed-variant": "#594291",
+              "surface-container-high": "#ffdcc2",
+              "surface-container-low": "#ffeee2",
+              "surface": "#fff4ef",
+              "primary": "#954400",
+              "outline-variant": "#d9a274",
+              "on-primary-container": "#481e00",
+              "primary-fixed-dim": "#ea7e33",
+              "error-container": "#f95630",
+              "on-primary-fixed": "#1a0700",
+              "on-error-container": "#520c00",
+              "tertiary-fixed-dim": "#ff73b0",
+              "error": "#b02500",
+              "on-background": "#482603",
+              "inverse-on-surface": "#c79265",
+              "outline": "#9c6d43",
+              "on-tertiary-fixed-variant": "#740043",
+              "error-dim": "#b92902"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      body { font-family: 'Plus Jakarta Sans', sans-serif; }
+      .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+      .glass-card { background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(20px); }
+      .pulse-gradient { background: linear-gradient(135deg, #954400 0%, #fb8b3f 100%); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-fixed min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="bg-[#FFF4EF] dark:bg-orange-950/20 w-full top-0 z-50 fixed">
+<div class="flex items-center justify-between px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<button class="active:scale-95 duration-200 text-[#954400] dark:text-[#FB8B3F]">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<h1 class="text-[#954400] dark:text-[#FB8B3F] font-extrabold tracking-tighter text-xl">Pulse Event</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="active:scale-95 duration-200 text-[#954400] dark:text-[#FB8B3F]">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</div>
+</div>
+</header>
+<main class="pt-20 px-4 md:px-8 max-w-5xl mx-auto">
+<!-- Editorial Header Section -->
+<section class="mt-8 mb-12">
+<h2 class="text-[3.5rem] font-extrabold leading-none tracking-tight text-on-surface mb-2">Neon Dreams<br/><span class="text-primary-container">Community</span></h2>
+<p class="text-on-surface-variant font-medium text-lg max-w-md mt-4">Conecte-se com o pulso vibrante do festival antes mesmo do primeiro beat.</p>
+</section>
+<!-- Dynamic Secondary Navigation -->
+<nav class="flex gap-2 mb-10 overflow-x-auto pb-4 no-scrollbar">
+<button class="px-6 py-2 rounded-full font-bold text-sm bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-colors whitespace-nowrap">Feed</button>
+<button class="px-6 py-2 rounded-full font-bold text-sm bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-colors whitespace-nowrap">Ingressos</button>
+<button class="px-8 py-2 rounded-full font-bold text-sm bg-primary-container text-on-primary-fixed shadow-lg shadow-primary-container/20 whitespace-nowrap">Comunidade</button>
+<button class="px-6 py-2 rounded-full font-bold text-sm bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-colors whitespace-nowrap">Match</button>
+<button class="px-6 py-2 rounded-full font-bold text-sm bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-colors whitespace-nowrap">VIP</button>
+</nav>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Sidebar: Canais do Evento -->
+<aside class="lg:col-span-4 space-y-6">
+<div class="bg-surface-container-low p-8 rounded-xl border-l-4 border-primary">
+<h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">hub</span>
+                        Canais do Evento
+                    </h3>
+<div class="space-y-4">
+<a class="group flex items-center justify-between p-4 bg-surface-container-lowest rounded-full hover:bg-primary-container transition-all duration-300" href="#">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined">diamond</span>
+</div>
+<span class="font-bold text-on-surface group-hover:text-on-primary-fixed">Lounge VIP</span>
+</div>
+<span class="text-xs font-bold bg-primary px-2 py-1 rounded-full text-white">12</span>
+</a>
+<a class="group flex items-center justify-between p-4 bg-surface-container-lowest rounded-full hover:bg-primary-container transition-all duration-300" href="#">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined">directions_car</span>
+</div>
+<span class="font-bold text-on-surface group-hover:text-on-primary-fixed">Transporte &amp; Caronas</span>
+</div>
+</a>
+<a class="group flex items-center justify-between p-4 bg-surface-container-lowest rounded-full hover:bg-primary-container transition-all duration-300" href="#">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined">forum</span>
+</div>
+<span class="font-bold text-on-surface group-hover:text-on-primary-fixed">Geral</span>
+</div>
+</a>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-xl h-48 group">
+<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="vibrant crowd at a neon music festival with colorful laser beams and glowing atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTEWRyleZ0BuV19YjiuRKiWBz5t9NSpQ54pqAHq3NOCPoj4b2ImCX_-yTNYs8SiTsAnqbFLVLG5tBxR7HzTK4syha8M0k2RqKla6M7AnCIWuiaujiGHOVFP2q1bUcrpTSXoD-_Mn48fXN-GyE0Z8TYESYVqHdNw1Sh5QkzWdB5CDxyeSJ9jUuIg7LWfTab4lrsdEilSnxeJq_l5SnRKRcYXds6cuFLE1JpCnR5e_4wnKLSbAoTh79Rpu5ZWfsXkT_LS-sdngJBzu8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-6">
+<span class="text-white font-bold text-lg">Guia do Festival 2024</span>
+</div>
+</div>
+</aside>
+<!-- Main Feed: Discussões em Alta -->
+<section class="lg:col-span-8 space-y-8">
+<div class="flex items-center justify-between px-2">
+<h3 class="text-2xl font-bold tracking-tight">Discussões em Alta</h3>
+<div class="flex gap-2">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Live Feed</span>
+</div>
+</div>
+<!-- Post Item 1 -->
+<article class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_12px_40px_rgba(72,38,3,0.04)] relative">
+<div class="flex items-start gap-5">
+<img class="w-14 h-14 rounded-full object-cover border-2 border-primary-container p-0.5" data-alt="close-up portrait of a smiling young woman with artistic neon makeup and curly hair" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6MfTKwTj6LSYdKcvCHM_S6iCVrn8fQnI5iYcaOsNiAHtmDbIG4z_9HsUdXx5jEf90lnwgV-P2n9W_FWC52jlJ8ERM-PRHXy1vZ756fMGz0gwxHaonRsOow6wdT8TEWOZv5siqIgOTT_qdrJ3LFKv9Pk5xmSiRAtB5Pi1fLjMSOPiJ12-DDVEu72h_6LpOigs7dWZmL0iwLQf3Zcia242diQBTl5dZDfSMsecX0n-ZwnLhC7cSfmJYjsFllE8QqEJW5Ukv2HSQTRM"/>
+<div class="flex-1">
+<div class="flex justify-between items-center mb-1">
+<h4 class="font-extrabold text-on-surface">Beatriz Silveira</h4>
+<span class="text-xs font-medium text-on-surface-variant">2h atrás</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed text-lg mb-6">Alguém saindo da região da Paulista no sábado? Estou procurando carona e topo rachar o combustível! 🚗✨</p>
+<div class="flex items-center gap-6">
+<button class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+<span class="text-sm font-bold">24</span>
+</button>
+<button class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">chat_bubble</span>
+<span class="text-sm font-bold">8</span>
+</button>
+<button class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors ml-auto">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- Post Item 2 -->
+<article class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_12px_40px_rgba(72,38,3,0.04)] relative">
+<div class="flex items-start gap-5">
+<img class="w-14 h-14 rounded-full object-cover border-2 border-primary-container p-0.5" data-alt="portrait of a creative man wearing stylish orange tinted glasses and a minimalist outfit" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDo-KQcnp03Vu3SF0BmkpRHIHPZ6MiLOU8nvOo6UrnLlDBlFQi7MrCJnwXEbo4gg58jJ4r07xz3BIoGFIBX5GTjdB9iW-6C3MBnWfPD8CvZMnDTTDs0_T6Au8FGN44mw2IEsdFr3Kp0q9DhZb3pkn7N3GnTVNOfogq_ijo21LL4yXBKMDBFL9NmLXkrQjxrxuzHFRtQxHhTKNhdI1kHClJkgmC0CzwDM4zsLr4IGvXvCCa94I0pAPmYauKhO9C2jplOE3gxr2K4iJk"/>
+<div class="flex-1">
+<div class="flex justify-between items-center mb-1">
+<h4 class="font-extrabold text-on-surface">Marcos Andrade</h4>
+<span class="text-xs font-medium text-on-surface-variant">5h atrás</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed text-lg mb-4">Já saiu o line-up completo do palco Afterglow? Ouvi boatos de um set surpresa à meia-noite...</p>
+<div class="rounded-xl overflow-hidden mb-6 h-64">
+<img class="w-full h-full object-cover" data-alt="atmospheric stage with massive led screens and purple stage lighting in a large festival arena" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfBTZBJEgtdMP8jJ6kf7yMh1JEL-Rrb4r2NkZmcXGLp_MzsacoB-QwLdTGOTVs2twLcOFNAyvguAg7fnl_GDPmx-kKDo1q9BEd4DQd8JiUIGQ4ulVhGEAoaIZaSsIsDCqYnl_f-i_CfAyKefYDDe3QOh4_vSUgHLb07wrt6rE-pRbIjVR6H-GGFvN6HHgIERXvLkmhaIaR1cCbADWvYx9o1c6-M15cDW_AtLhtz6OWw4NaeumhVx2cPqy4UhfIB0YN84o32BNbzRY"/>
+</div>
+<div class="flex items-center gap-6">
+<button class="flex items-center gap-2 text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span class="text-sm font-bold">142</span>
+</button>
+<button class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">chat_bubble</span>
+<span class="text-sm font-bold">45</span>
+</button>
+<button class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors ml-auto">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+</section>
+</div>
+</main>
+<!-- Floating Action Button -->
+<button class="fixed bottom-32 right-8 w-16 h-16 pulse-gradient rounded-full shadow-[0_12px_40px_rgba(149,68,0,0.3)] flex items-center justify-center text-on-primary active:scale-90 transition-all z-50">
+<span class="material-symbols-outlined text-3xl">add</span>
+</button>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-8 pt-4 bg-[#FFFFFF]/60 dark:bg-orange-950/40 backdrop-blur-xl rounded-t-[3rem] shadow-[0_-12px_40px_rgba(72,38,3,0.08)] z-50">
+<a class="flex flex-col items-center justify-center text-[#482603] dark:text-orange-100/70 px-5 py-2 hover:bg-[#FFEE E2] dark:hover:bg-orange-900/30 rounded-full transition-all" href="#">
+<span class="material-symbols-outlined">explore</span>
+<span class="font-plus-jakarta-sans text-[10px] font-bold uppercase tracking-widest mt-1">Explorar</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#482603] dark:text-orange-100/70 px-5 py-2 hover:bg-[#FFEE E2] dark:hover:bg-orange-900/30 rounded-full transition-all" href="#">
+<span class="material-symbols-outlined">diversity_3</span>
+<span class="font-plus-jakarta-sans text-[10px] font-bold uppercase tracking-widest mt-1">Match</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#FB8B3F] text-[#1A0700] rounded-full px-5 py-2 active:scale-90 duration-300 ease-out transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">confirmation_number</span>
+<span class="font-plus-jakarta-sans text-[10px] font-bold uppercase tracking-widest mt-1">Ingressos</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#482603] dark:text-orange-100/70 px-5 py-2 hover:bg-[#FFEE E2] dark:hover:bg-orange-900/30 rounded-full transition-all" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-plus-jakarta-sans text-[10px] font-bold uppercase tracking-widest mt-1">Perfil</span>
+</a>
+</nav>
+</body></html>

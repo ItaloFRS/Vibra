@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "error-dim": "#b92902",
+              "surface-variant": "#ffd5b4",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-highest": "#ffd5b4",
+              "secondary-dim": "#584190",
+              "on-tertiary-fixed": "#37001d",
+              "tertiary": "#b00f69",
+              "on-tertiary-container": "#640039",
+              "outline-variant": "#d9a274",
+              "surface-bright": "#fff4ef",
+              "secondary": "#644e9d",
+              "on-background": "#482603",
+              "surface-tint": "#954400",
+              "on-primary-container": "#481e00",
+              "primary-fixed-dim": "#ea7e33",
+              "on-tertiary": "#ffeff2",
+              "on-secondary-fixed-variant": "#594291",
+              "surface-dim": "#ffca9f",
+              "on-secondary-fixed": "#3c2472",
+              "tertiary-fixed-dim": "#ff73b0",
+              "primary-fixed": "#fb8b3f",
+              "on-surface-variant": "#7d522b",
+              "on-primary-fixed-variant": "#562500",
+              "surface-container": "#ffe3cf",
+              "inverse-primary": "#fb8b3f",
+              "primary-dim": "#833b00",
+              "on-tertiary-fixed-variant": "#740043",
+              "tertiary-dim": "#9d005c",
+              "on-error-container": "#520c00",
+              "on-primary": "#fff0e9",
+              "surface-container-low": "#ffeee2",
+              "error-container": "#f95630",
+              "on-surface": "#482603",
+              "secondary-fixed": "#dac9ff",
+              "surface-container-high": "#ffdcc2",
+              "primary-container": "#fb8b3f",
+              "error": "#b02500",
+              "tertiary-fixed": "#ff8cbb",
+              "on-secondary-container": "#503987",
+              "on-primary-fixed": "#1a0700",
+              "outline": "#9c6d43",
+              "secondary-fixed-dim": "#cdb9ff",
+              "secondary-container": "#dac9ff",
+              "background": "#fff4ef",
+              "primary": "#954400",
+              "tertiary-container": "#ff8cbb",
+              "inverse-on-surface": "#c79265",
+              "on-secondary": "#f8f0ff",
+              "surface": "#fff4ef",
+              "on-error": "#ffefec",
+              "inverse-surface": "#1b0a00"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #FFF4EF;
+            color: #482603;
+        }
+        .editorial-gradient {
+            background: linear-gradient(135deg, #954400 0%, #FB8B3F 100%);
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface min-h-screen pb-32">
+<!-- Top Navigation Anchor -->
+<header class="w-full top-0 z-50 bg-[#FFF4EF] shadow-[0_12px_40px_rgba(72,38,3,0.08)] flex items-center justify-between px-6 py-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#954400] text-2xl">menu</span>
+<h1 class="text-2xl font-black text-[#954400] tracking-tighter">Event Pulse</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-[#482603] opacity-60 font-bold hover:opacity-100 transition-opacity" href="#">Feed</a>
+<a class="text-[#482603] opacity-60 font-bold hover:opacity-100 transition-opacity" href="#">Ingressos</a>
+<a class="text-[#482603] opacity-60 font-bold hover:opacity-100 transition-opacity" href="#">Comunidade</a>
+<a class="text-[#482603] opacity-60 font-bold hover:opacity-100 transition-opacity" href="#">Match</a>
+<a class="text-[#954400] border-b-4 border-[#954400] font-bold" href="#">VIP</a>
+</nav>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-[#FB8B3F]">
+<img alt="User Avatar" data-alt="close-up portrait of a stylish young man with a friendly expression in a modern urban setting with soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5tU3KmpivKllx6G7miH-ccqj0kXpHO1vjtEw03-RWK15QvIwdCegiPIuoxhrDy82FHCoZKjHOSaXPthmNtb4B3lJsQmYdmoJ0ZBgYpXbXwZV7A61Xcc0fc8uIkx21pB3zUrQ1Dl0Pc7GYBIazm-jSMBiO_VMV8RcM4-lPEKJFgMjgcDQGl6eKd_sJfb5d8yS-LMpRs__tk01E6Z-ymm7lu9X1YuvKBltOx_N5bKjd07vAdwrU7_6Uxfhh2KPfLLD3e-n93V__dnk"/>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 pt-12">
+<!-- Editorial Header Section -->
+<section class="mb-16">
+<div class="inline-flex items-center px-4 py-1 rounded-full bg-primary-container text-on-primary-fixed font-bold text-xs uppercase tracking-widest mb-6">
+                Exclusive Access
+            </div>
+<h2 class="text-5xl md:text-7xl font-extrabold text-on-background tracking-tighter leading-[0.9] mb-4">
+                Neon Dreams <br/> <span class="text-primary-container">VIP Lounge</span>
+</h2>
+<p class="text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+                Connect with the festival's elite. Exclusive matching and discussions curated for our premium members.
+            </p>
+</section>
+<!-- Main Content Layout: Asymmetric Bento -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+<!-- VIP Match Section (Social Connector) -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<div class="flex justify-between items-end mb-2">
+<h3 class="text-2xl font-bold tracking-tight">VIP Match</h3>
+<span class="text-primary font-bold text-sm">Discover your vibe</span>
+</div>
+<div class="relative group overflow-hidden rounded-xl bg-surface-container-lowest shadow-[0_12px_40px_rgba(72,38,3,0.08)]">
+<div class="aspect-[4/5] relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="editorial style portrait of a confident man named Ricardo in a premium outdoor lounge during sunset with golden warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiIPXOUkXLBosBZXRTbztyGGbrBGNax1Rph8tzW7SIdSqe8H1Fu_frc1LG6cErhwOFBSPIUx6OxsZhbB2WH3nedNIf3MDl0JbrngAvdCCRYO4Vij4p_KrL0k6BVszss089wcQWbZaHbNwYcnZ04Yq6iI-EfPO8yz_a2CkmDDK0gQRMgnkJODgn7eL5cs_KDXI_VEUbWiu1nI_x-t5ouIoT8nm-TX2nygjrdaD19SqEot4H4VsDAPKCYOn3p2iEBXqFaZ8PG9UyMKY"/>
+<!-- VIP Badge Overlay -->
+<div class="absolute top-6 left-6 editorial-gradient text-on-primary-fixed px-4 py-1.5 rounded-full flex items-center gap-2 shadow-lg">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span class="text-xs font-black uppercase tracking-widest">VIP Member</span>
+</div>
+<!-- Profile Info Overlay -->
+<div class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-[#1A0700] via-transparent to-transparent text-white">
+<h4 class="text-3xl font-extrabold tracking-tight mb-1">Ricardo, 28</h4>
+<p class="text-white/80 text-sm mb-4 leading-relaxed line-clamp-2">
+                                Looking for fellow techno enthusiasts to experience the main stage from the front row. Architecture lover and festival veteran.
+                            </p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-[10px] font-bold uppercase tracking-wider">Deep House</span>
+<span class="px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-[10px] font-bold uppercase tracking-wider">Urban Art</span>
+<span class="px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-[10px] font-bold uppercase tracking-wider">Mixology</span>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="p-6 flex items-center justify-center gap-6 bg-white">
+<button class="w-16 h-16 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-3xl">close</span>
+</button>
+<button class="w-20 h-20 rounded-full editorial-gradient flex items-center justify-center text-on-primary-fixed shadow-[0_8px_25px_rgba(200,100,25,0.4)] active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<button class="w-16 h-16 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-3xl">star</span>
+</button>
+</div>
+</div>
+</div>
+<!-- VIP Community Section (Exclusive Lounge) -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<div class="flex justify-between items-end mb-2">
+<h3 class="text-2xl font-bold tracking-tight">VIP Lounge Discussions</h3>
+<button class="text-primary font-bold text-sm flex items-center gap-1">
+                        View All <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<div class="flex flex-col gap-4">
+<!-- Post 1 -->
+<div class="p-6 bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_rgba(72,38,3,0.04)] border-l-4 border-primary">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-3">
+<div class="relative">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="professional headshot of a stylish young woman smiling at the camera with a soft warm blurred background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4Isl7Fym_aAzzhGkKuvV4bJOxWjYXivyiWHAWXVAcIID_FeYWdLVC3emyECe_a5J0m9-afhD23NsyRQksxhYorVlXfR7ve2tFhzT4-dHBEHf3aCTW6oNjcExEngxQzWu_WkBcSZ30OicB4A776j5kfyUl3mnz4-lJdIvA3CXb-_qfXsOrSousTlSvMyTdXvpsnHwYklsh9DWxf2Zl60r_wwBq8yG_rSfl48evTm-5BRc3n03fiSnJnnGFMRojacoUei6YGAaiGV4"/>
+<div class="absolute -bottom-1 -right-1 bg-primary text-on-primary rounded-full p-0.5 border-2 border-white">
+<span class="material-symbols-outlined text-[10px]" style="font-variation-settings: 'FILL' 1;">stars</span>
+</div>
+</div>
+<div>
+<h5 class="font-bold text-on-background text-sm">Marina Veras</h5>
+<span class="text-[10px] text-on-surface-variant uppercase tracking-widest font-bold">5 min ago</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant opacity-40">more_horiz</span>
+</div>
+<p class="text-on-surface text-base mb-6 leading-relaxed">
+                            Has anyone checked the VIP bar on the second level? The signature cocktail "Neon Sunset" is actually incredible. Would love to grab a round with someone! 🍸
+                        </p>
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1; color: #FB8B3F;">favorite</span>
+<span class="text-xs font-bold">24</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-xl">chat_bubble</span>
+<span class="text-xs font-bold">8</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-xl">share</span>
+</div>
+</div>
+</div>
+<!-- Post 2 -->
+<div class="p-6 bg-surface-container-low rounded-xl shadow-[0_4px_20px_rgba(72,38,3,0.04)]">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-3">
+<div class="relative">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="portrait of a bearded man with a fashionable aesthetic looking thoughtful in soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9BRtVjlL-xi3UXdjl3WuSZdhC3g4eyATrSybcBR_Gz50cK28T6lS2VyVz5Ta9Bv83t7_PpRe1vm2R0anzMnFUlQiAe1HEmKVM5uWHw877wZGoKlcZhTPrln6VepcSLKf5GU8cd-UqXgrr9MYNzT1FKvXRj9xDNrvShsCqaaU1yodPBAdgvea1hXUlpMsXan_9RMmOHIN_AeavUM3_TIIL3mguVQ7ibQL4WEmOzzUEnVd3lbTPMfqGIto5uHFQ_6wg0YFJc6Cre3Q"/>
+<div class="absolute -bottom-1 -right-1 bg-primary text-on-primary rounded-full p-0.5 border-2 border-white">
+<span class="material-symbols-outlined text-[10px]" style="font-variation-settings: 'FILL' 1;">stars</span>
+</div>
+</div>
+<div>
+<h5 class="font-bold text-on-background text-sm">Daniel Rocha</h5>
+<span class="text-[10px] text-on-surface-variant uppercase tracking-widest font-bold">42 min ago</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant opacity-40">more_horiz</span>
+</div>
+<p class="text-on-surface text-base mb-6 leading-relaxed">
+                            Secured a table for the after-party at the Sky Terrace. I have 2 extra spots for fellow VIPs. DM me if you want to join! 🌃✨
+                        </p>
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-xl">favorite</span>
+<span class="text-xs font-bold">56</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-xl">chat_bubble</span>
+<span class="text-xs font-bold">15</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-xl">share</span>
+</div>
+</div>
+</div>
+<!-- Floating Action for Posts -->
+<button class="w-full py-4 rounded-xl border-2 border-dashed border-outline-variant flex items-center justify-center gap-2 text-on-surface-variant font-bold hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined">add_circle</span>
+                        Share a VIP Pulse
+                    </button>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Shell -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-8 pt-4 bg-[#FFFFFF]/60 backdrop-blur-xl z-50 rounded-t-[3rem] shadow-[0_-8px_30px_rgba(72,38,3,0.05)]">
+<a class="flex flex-col items-center justify-center text-[#482603] opacity-70" href="#">
+<span class="material-symbols-outlined">rss_feed</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-widest mt-1">Feed</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#482603] opacity-70" href="#">
+<span class="material-symbols-outlined">confirmation_number</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-widest mt-1">Ingressos</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#482603] opacity-70" href="#">
+<span class="material-symbols-outlined">group</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-widest mt-1">Comunidade</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#482603] opacity-70" href="#">
+<span class="material-symbols-outlined">style</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-widest mt-1">Match</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#FB8B3F] text-[#1A0700] rounded-full px-5 py-2 scale-110 transition-transform" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-widest mt-1">VIP</span>
+</a>
+</nav>
+</body></html>
