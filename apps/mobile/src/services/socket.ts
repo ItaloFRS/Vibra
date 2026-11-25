@@ -18,10 +18,10 @@ if (typeof window === 'undefined') {
   (global as any).window = global;
 }
 if (typeof window.location === 'undefined') {
-  (window as any).location = { protocol: 'http:', host: '10.5.0.152:8080' };
+  (window as any).location = { protocol: "http:", host: "192.168.0.6:8080" };
 }
 
-const WS_URL = process.env.EXPO_PUBLIC_WS_URL || 'http://10.5.0.152:8080/ws'; 
+const WS_URL = process.env.EXPO_PUBLIC_WS_URL || "http://192.168.0.6:8080/ws"; 
 
 export interface MessagePayload {
   channelId?: string;
