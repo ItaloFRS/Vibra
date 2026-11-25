@@ -9,16 +9,12 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-
     "icon": "./assets/Monograma-l.png",
-
     "splash": {
       "image": "./assets/Logo_VibraPl.png",
       "resizeMode": "contain",
       "backgroundColor": "#FFF4EF"
     },
-    
-  
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.vibra.app"
@@ -31,13 +27,19 @@
       "bundler": "metro"
     },
     "plugins": [
-    
       "expo-router",
       "expo-secure-store"
-
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "e84f9526-41f6-406b-a162-afa5167273cd"
+      }
     }
   }
 }

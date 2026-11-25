@@ -7,7 +7,7 @@ const api = axios.create({
    * - Usando o IP detectado nos seus logs: 192.168.0.3
    * - Adicionada a porta 8080 padrão do Spring Boot
    */
-  baseURL: 'http://10.5.0.152:8080/api/v1',
+  baseURL: 'http://192.168.0.6:8080/api/v1',
 });
 
 api.interceptors.request.use(async (config) => {
@@ -23,4 +23,3 @@ api.interceptors.request.use(async (config) => {
 });
 
 export default api;
-X
